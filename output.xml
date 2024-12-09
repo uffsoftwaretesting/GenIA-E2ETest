@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-11-26T12:16:17.199855" rpa="false" schemaversion="5">
+<suite id="s1" name="Test1" source="C:\Users\Elvis\OneDrive\Área de Trabalho\Crawl4AI_Test\.robot\test1.robot">
+<test id="s1-t1" name="Test Valid Signup" line="44">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:17.897214" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/SignUp'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-26T12:16:17.897214" elapsed="3.934379"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-26T12:16:21.874025" elapsed="0.737908"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:22.618568" level="INFO">Typing text 'Maria' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[@id='input_nome']'.</msg>
+<arg>xpath:${INPUT_NAME}</arg>
+<arg>Maria</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:22.615941" elapsed="0.841566"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:23.460094" level="INFO">Typing text 'Silva' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[2]'.</msg>
+<arg>xpath:${INPUT_SURNAME}</arg>
+<arg>Silva</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:23.458731" elapsed="0.349519"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:23.820208" level="INFO">Typing text 'maria@example.com' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[@id='input_email']'.</msg>
+<arg>xpath:${INPUT_EMAIL}</arg>
+<arg>maria@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:23.818696" elapsed="0.373454"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:24.194139" level="INFO">Typing text 'maria@example.com' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[@id='input_confirmar_email']'.</msg>
+<arg>xpath:${INPUT_CONFIRM_EMAIL}</arg>
+<arg>maria@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:24.194139" elapsed="0.563490"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:24.758800" level="INFO">Typing text 'Senha123' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[@id='input_senha']'.</msg>
+<arg>xpath:${INPUT_PASSWORD}</arg>
+<arg>Senha123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:24.757629" elapsed="0.296478"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:25.061315" level="INFO">Typing text 'Senha123' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[@id='input_confirmar_senha']'.</msg>
+<arg>xpath:${INPUT_CONFIRM_PASSWORD}</arg>
+<arg>Senha123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:25.057784" elapsed="0.306577"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:25.377510" level="INFO">Clicking element 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/button[@id='submit_form']'.</msg>
+<arg>xpath:${BUTTON_SIGNUP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:25.373461" elapsed="0.195099"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:25.627596" level="INFO">Current page contains text 'Cadastro realizado com sucesso!'.</msg>
+<arg>${SUCCESS_MESSAGE}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-11-26T12:16:25.570052" elapsed="0.057544"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-26T12:16:25.630704" elapsed="2.764332"/>
+</kw>
+<status status="PASS" start="2024-11-26T12:16:17.895701" elapsed="10.499335"/>
+</test>
+<test id="s1-t2" name="Test Invalid Name" line="57">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:28.397545" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/SignUp'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-26T12:16:28.397545" elapsed="3.768370"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-26T12:16:32.172849" elapsed="0.135611"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:32.339048" level="INFO">Typing text 'M' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[@id='input_nome']'.</msg>
+<arg>xpath:${INPUT_NAME}</arg>
+<arg>M</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:32.338538" elapsed="1.169483"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:33.519436" level="INFO">Typing text 'Silva' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[2]'.</msg>
+<arg>xpath:${INPUT_SURNAME}</arg>
+<arg>Silva</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:33.518407" elapsed="0.569203"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:34.097809" level="INFO">Typing text 'maria@example.com' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[@id='input_email']'.</msg>
+<arg>xpath:${INPUT_EMAIL}</arg>
+<arg>maria@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:34.095077" elapsed="0.568248"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:34.665713" level="INFO">Typing text 'maria@example.com' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[@id='input_confirmar_email']'.</msg>
+<arg>xpath:${INPUT_CONFIRM_EMAIL}</arg>
+<arg>maria@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:34.664692" elapsed="0.483342"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:35.173998" level="INFO">Typing text 'Senha123' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[@id='input_senha']'.</msg>
+<arg>xpath:${INPUT_PASSWORD}</arg>
+<arg>Senha123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:35.170307" elapsed="0.500979"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:35.676093" level="INFO">Typing text 'Senha123' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[@id='input_confirmar_senha']'.</msg>
+<arg>xpath:${INPUT_CONFIRM_PASSWORD}</arg>
+<arg>Senha123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:35.672653" elapsed="0.373081"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:36.048120" level="INFO">Clicking element 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/button[@id='submit_form']'.</msg>
+<arg>xpath:${BUTTON_SIGNUP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:36.046744" elapsed="0.182020"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:36.263006" level="INFO">Current page contains text 'Nome deve ter entre 2 e 50 caracteres.'.</msg>
+<arg>${ERROR_NAME}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-11-26T12:16:36.230194" elapsed="0.032812"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-26T12:16:36.264264" elapsed="3.265099"/>
+</kw>
+<status status="PASS" start="2024-11-26T12:16:28.396035" elapsed="11.134360"/>
+</test>
+<test id="s1-t3" name="Test Email Mismatch" line="70">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:39.535381" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/SignUp'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-26T12:16:39.534373" elapsed="3.587596"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-26T12:16:43.123221" elapsed="0.194497"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:43.365156" level="INFO">Typing text 'Maria' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[@id='input_nome']'.</msg>
+<arg>xpath:${INPUT_NAME}</arg>
+<arg>Maria</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:43.365156" elapsed="0.542229"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:43.918899" level="INFO">Typing text 'Silva' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[2]'.</msg>
+<arg>xpath:${INPUT_SURNAME}</arg>
+<arg>Silva</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:43.918899" elapsed="0.374173"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:44.304968" level="INFO">Typing text 'maria@example.com' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[@id='input_email']'.</msg>
+<arg>xpath:${INPUT_EMAIL}</arg>
+<arg>maria@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:44.303953" elapsed="0.379179"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:44.710060" level="INFO">Typing text 'other@example.com' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[@id='input_confirmar_email']'.</msg>
+<arg>xpath:${INPUT_CONFIRM_EMAIL}</arg>
+<arg>other@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:44.710060" elapsed="0.388846"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:45.100520" level="INFO">Typing text 'Senha123' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[@id='input_senha']'.</msg>
+<arg>xpath:${INPUT_PASSWORD}</arg>
+<arg>Senha123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:45.099991" elapsed="0.451810"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:45.554271" level="INFO">Typing text 'Senha123' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[@id='input_confirmar_senha']'.</msg>
+<arg>xpath:${INPUT_CONFIRM_PASSWORD}</arg>
+<arg>Senha123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:45.553739" elapsed="0.570367"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:46.130671" level="INFO">Clicking element 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/button[@id='submit_form']'.</msg>
+<arg>xpath:${BUTTON_SIGNUP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:46.126129" elapsed="0.256917"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:46.452238" level="INFO">Current page contains text 'Os e-mails não coincidem.'.</msg>
+<arg>${ERROR_EMAIL}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-11-26T12:16:46.394741" elapsed="0.057497"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-26T12:16:46.453511" elapsed="2.735892"/>
+</kw>
+<status status="PASS" start="2024-11-26T12:16:39.533386" elapsed="9.657471"/>
+</test>
+<test id="s1-t4" name="Test Weak Password" line="83">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:49.194362" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/SignUp'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-26T12:16:49.194362" elapsed="3.197608"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-26T12:16:52.393488" elapsed="0.098605"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:52.494103" level="INFO">Typing text 'Maria' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[@id='input_nome']'.</msg>
+<arg>xpath:${INPUT_NAME}</arg>
+<arg>Maria</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:52.493103" elapsed="0.968621"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:53.479017" level="INFO">Typing text 'Silva' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[2]'.</msg>
+<arg>xpath:${INPUT_SURNAME}</arg>
+<arg>Silva</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:53.477629" elapsed="0.253183"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:53.749954" level="INFO">Typing text 'maria@example.com' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[@id='input_email']'.</msg>
+<arg>xpath:${INPUT_EMAIL}</arg>
+<arg>maria@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:53.749954" elapsed="0.698023"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:54.451184" level="INFO">Typing text 'maria@example.com' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[@id='input_confirmar_email']'.</msg>
+<arg>xpath:${INPUT_CONFIRM_EMAIL}</arg>
+<arg>maria@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:54.449909" elapsed="0.474701"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:54.927612" level="INFO">Typing text 'senha123' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[@id='input_senha']'.</msg>
+<arg>xpath:${INPUT_PASSWORD}</arg>
+<arg>senha123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:54.926615" elapsed="0.377982"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:55.305589" level="INFO">Typing text 'senha123' into text field 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/input[@id='input_confirmar_senha']'.</msg>
+<arg>xpath:${INPUT_CONFIRM_PASSWORD}</arg>
+<arg>senha123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:55.305589" elapsed="0.259979"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:55.570133" level="INFO">Clicking element 'xpath:/html/body/div[@id='root']/div/div[@class='_sign_up0_1g5mh_1']/div[@class='_sign_up_1g5mh_1']/form/button[@id='submit_form']'.</msg>
+<arg>xpath:${BUTTON_SIGNUP}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-26T12:16:55.569141" elapsed="0.198525"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-11-26T12:16:55.839199" level="INFO">Current page contains text 'A senha deve ter pelo menos 8 caracteres, incluindo uma letra maiúscula, uma letra minúscula e um número.'.</msg>
+<arg>${ERROR_PASSWORD}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-11-26T12:16:55.773964" elapsed="0.065235"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-26T12:16:55.841840" elapsed="3.260332"/>
+</kw>
+<status status="PASS" start="2024-11-26T12:16:49.192347" elapsed="9.910910"/>
+</test>
+<doc>Test suite for Sign-Up page validation</doc>
+<status status="PASS" start="2024-11-26T12:16:17.205866" elapsed="41.898404"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Test1">Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

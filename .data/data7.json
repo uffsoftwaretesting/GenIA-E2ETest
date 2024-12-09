@@ -1,0 +1,51 @@
+[
+    {
+        "type": "input",
+        "request_description": "Field to enter NomeSobrenome",
+        "identifier_type": "Full XPath",
+        "identifier_tracking": "/html/body/div[1]/div[1]/div[1]/div[3]/div/form/input[1]",
+        "naming": "input_nome_sobrenome"
+    },
+    {
+        "type": "input",
+        "request_description": "Field to enter E-mail",
+        "identifier_type": "Full XPath",
+        "identifier_tracking": "/html/body/div[1]/div[1]/div[1]/div[3]/div/form/input[2]",
+        "naming": "input_email"
+    },
+    {
+        "type": "input",
+        "request_description": "Field to confirm E-mail",
+        "identifier_type": "Full XPath",
+        "identifier_tracking": "/html/body/div[1]/div[1]/div[1]/div[3]/div/form/input[3]",
+        "naming": "input_confirm_email"
+    },
+    {
+        "type": "input",
+        "request_description": "Field to enter Senha",
+        "identifier_type": "Full XPath",
+        "identifier_tracking": "/html/body/div[1]/div[1]/div[1]/div[3]/div/form/input[4]",
+        "naming": "input_senha"
+    },
+    {
+        "type": "input",
+        "request_description": "Field to confirm Senha",
+        "identifier_type": "Full XPath",
+        "identifier_tracking": "/html/body/div[1]/div[1]/div[1]/div[3]/div/form/input[5]",
+        "naming": "input_confirm_senha"
+    },
+    {
+        "type": "button",
+        "request_description": "Button to agree with Terms of use",
+        "identifier_type": "Full XPath",
+        "identifier_tracking": "/html/body/div[1]/div[1]/div[1]/div[3]/div/form/input[6]",
+        "naming": "button_agree_terms"
+    },
+    {
+        "type": "button",
+        "request_description": "Button to Sign Up",
+        "identifier_type": "Full XPath",
+        "identifier_tracking": "/html/body/div[1]/div[1]/div[1]/div[3]/div/form/input[7]",
+        "naming": "button_sign_up"
+    }
+]

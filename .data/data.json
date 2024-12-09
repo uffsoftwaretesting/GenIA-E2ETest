@@ -1,0 +1,42 @@
+[
+    {
+        "type": "input",
+        "request_description": "Field to enter the CPF number",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body//input[@placeholder='Seu CPF (somente n\u00fameros)']",
+        "naming": "input_cpf",
+        "error": false
+    },
+    {
+        "type": "input",
+        "request_description": "Field to enter the IdUFF password",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body//input[@placeholder='Senha do seu IdUFF']",
+        "naming": "input_password",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to submit the login form",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body//button[contains(text(), 'Acesse o seu idUFF')]",
+        "naming": "button_login",
+        "error": false
+    },
+    {
+        "type": "link",
+        "request_description": "Link to activate or recover account",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body//a[contains(text(), 'Ative ou recupere sua conta aqui')]",
+        "naming": "link_activate_account",
+        "error": false
+    },
+    {
+        "type": "link",
+        "request_description": "Link to validate a declaration",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body//a[contains(text(), 'Quer verificar a autenticidade de uma declara\u00e7\u00e3o? Clique aqui')]",
+        "naming": "link_validate_declaration",
+        "error": false
+    }
+]

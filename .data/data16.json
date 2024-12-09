@@ -1,0 +1,58 @@
+[
+    {
+        "type": "input",
+        "request_description": "Field to enter the first name",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/form/input[@name='first_name']",
+        "naming": "input_first_name",
+        "error": false
+    },
+    {
+        "type": "input",
+        "request_description": "Field to enter the last name",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/form/input[@name='last_name']",
+        "naming": "input_last_name",
+        "error": false
+    },
+    {
+        "type": "input",
+        "request_description": "Field to enter the email",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/form/input[@name='email']",
+        "naming": "input_email",
+        "error": false
+    },
+    {
+        "type": "input",
+        "request_description": "Field to confirm the email",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/form/input[@name='confirm_email']",
+        "naming": "input_confirm_email",
+        "error": false
+    },
+    {
+        "type": "input",
+        "request_description": "Field to enter the password",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/form/input[@name='password']",
+        "naming": "input_password",
+        "error": false
+    },
+    {
+        "type": "input",
+        "request_description": "Field to confirm the password",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/form/input[@name='confirm_password']",
+        "naming": "input_confirm_password",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to submit the sign up form",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/form/button[@id='sign_up_button']",
+        "naming": "button_sign_up",
+        "error": false
+    }
+]
