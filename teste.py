@@ -10,6 +10,7 @@ import openai
 import os
 from dotenv import load_dotenv
 
+url = r'https://automationexercise.com/'
 
 load_dotenv()
 
@@ -41,8 +42,6 @@ class OpenAIModelForm(BaseModel):
 crawler = WebCrawler()
 
 crawler.warmup()
-
-url = r'https://automationexercise.com/'
 
 json_result = crawler.run(
     url=url,
@@ -160,17 +159,14 @@ unique_filename = generate_unique_json_filename(output_dir, "dataOpenAI")
 with open(unique_filename, "w", encoding="utf-8") as f:
     f.write(completion.choices[0].message.content)
 
-with open("signUp.feature", "r", encoding="utf-8") as file:
-    signUp_content = file.read()
-
-with open("signIn.feature", "r", encoding="utf-8") as file:
-    signIn_content = file.read()
+with open("Test_Case_3.feature", "r", encoding="utf-8") as file:
+    Test_Case_3 = file.read()
 
 completion_final = client.chat.completions.create(
     model="gpt-4o",
     messages=[
         {   "role": "user", 
-            "content": f"According to the following user story: {signIn_content}, and the list of JSON objects: {completion.choices[0].message.content}, create the 'example' attribute and add to it a list of strings containing example responses for each index of the list.\n\n" 
+            "content": f"According to the following user story: {Test_Case_3}, and the list of JSON objects: {completion.choices[0].message.content}, create the 'example' attribute and add to it a list of strings containing example responses for each index of the list.\n\n" 
             "Example:\n"
             "[\n"
             "    {\n"
@@ -221,7 +217,7 @@ robot_test = client.chat.completions.create(
     messages=[
         {
             "role": "user", 
-            "content": f"According to the following user story: {signIn_content}, URL: {url}, and the list of JSON objects: {completion_final.choices[0].message.content}, create an E2E test script using Python, Robot Framework, and Selenium for the Test Case."
+            "content": f"According to the following user story: {Test_Case_3}, URL: {url}, and the list of JSON objects: {completion_final.choices[0].message.content}, create an E2E test script using Python, Robot Framework, and Selenium for the Test Case."
         }
     ]
 )
@@ -244,6 +240,7 @@ unique_filename = generate_unique_filename(robot_file, "test")
 
 with open(unique_filename, "w", encoding="utf-8") as f:
     f.write(robot_test.choices[0].message.content)
+
 
 
 

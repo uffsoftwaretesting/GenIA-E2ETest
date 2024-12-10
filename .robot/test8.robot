@@ -60,7 +60,7 @@ ${ACCOUNT_DELETED}        xpath=//*[text()='ACCOUNT DELETED!']
 # ```robot
 *** Variables ***
 ${NAME}          Example User
-${EMAIL}         example106@example.com
+${EMAIL}         example107@example.com
 ${PASSWORD}      examplePassword123
 ${DATE_OF_BIRTH}     01/01/1990
 ${FIRST_NAME}    Example

@@ -39,9 +39,9 @@ url = r'https://automationexercise.com/'
 #         description="A concise and meaningful variable name representing the element in code. Example: 'input_first_name'."
 #     )
 
-# crawler = WebCrawler()
+crawler = WebCrawler()
 
-# crawler.warmup()
+crawler.warmup()
 
 # json_result = crawler.run(
 #     url=url,
@@ -126,9 +126,9 @@ url = r'https://automationexercise.com/'
 
 # json_result = json_result.extracted_content
 
-# html_result = BeautifulSoup(crawler.run(url).html, 'html.parser')
+html_result = BeautifulSoup(crawler.run(url).html, 'html.parser')
 
-# html_body = (html_result.body).prettify
+html_body = (html_result.body).prettify
 
 client = openai.OpenAI(api_key=api_key_string)
 
@@ -136,7 +136,7 @@ client = openai.OpenAI(api_key=api_key_string)
 #     model="gpt-4o",
 #     messages=[
 #         {"role": "user", 
-#          "content": f"According to the following HTML code: {html_body}, enhance this list of json objects: {json_result} with the correct Absolute Xpath of each HTML element listed. Take into account the elements of the Header so as not to alter the true path, do not disregard any HTML element so that there are no errors in the result. Return only the list of json objects, no comments or feedbacks, just the []. Take into account that this result will be used to perform software tests with HTML elements, so the veracity of the information is essential."}
+#          "content": f"According to the following HTML code: {html_body}, enhance this list of json objects: {json_result} with the correct Absolute Xpath of each HTML element listed. Take into account the elements of the Header so as not to alter the true path, do not disregard any HTML element so that there are no errors in the result. Return the list of json objects. Take into account that this result will be used to perform software tests with HTML elements, so the veracity of the information is essential."}
 #     ]
 # )
 
@@ -214,8 +214,8 @@ client = openai.OpenAI(api_key=api_key_string)
 # with open(unique_filename, "w", encoding="utf-8") as f:
 #     f.write(completion_final.choices[0].message.content)
 
-with open("Test_Case_1.feature", "r", encoding="utf-8") as file:
-    Test_Case_1 = file.read()
+with open("Test_Case_12.feature", "r", encoding="utf-8") as file:
+    Test_Case_12 = file.read()
 
 with open(".dataOpenAIFinal/dataOpenAIFinal4.json", "r", encoding="utf-8") as file:
     json_content = file.read()
@@ -225,12 +225,41 @@ robot_test = client.chat.completions.create(
     messages=[
         {
             "role": "user", 
-            "content": f"According to the following user story: {Test_Case_1}, URL: {url}, and the list of JSON objects: {json_content}, create an E2E test script using Python, Robot Framework, and Selenium for the Test Case."
+            "content": f"According to the following user story: {Test_Case_12}, URL: {html_body}, and the list of JSON objects: {json_content}, create an E2E test script using Python, Robot Framework, and Selenium for the Test Case."
         }
     ]
 )
 
+robot_test_final = client.chat.completions.create(
+    model="gpt-4o",
+    messages=[
+        {
+            "role": "user", 
+            "content": f"According to the following user story: {Test_Case_12}, URL: {url}, and this robot framework's E2E Test: {robot_test.choices[0].message.content}, create a perfect E2E test script using Python, Robot Framework, and Selenium for the Test Case."
+        }
+    ]
+)
+
+
 robot_file = ".robot"
+
+# def generate_unique_filename(directory, base_name, extension="robot"):
+#     counter = 1
+#     while True:
+#         file_name = f"{base_name}{counter}.{extension}"
+#         full_path = os.path.join(directory, file_name)
+#         if not os.path.exists(full_path):
+#             return full_path
+#         counter += 1
+
+# if not os.path.exists(robot_file):
+#     os.makedirs(robot_file)
+
+# unique_filename = generate_unique_filename(robot_file, "test")
+
+# with open(unique_filename, "w", encoding="utf-8") as f:
+#     f.write(robot_test.choices[0].message.content)
+
 
 def generate_unique_filename(directory, base_name, extension="robot"):
     counter = 1
@@ -247,8 +276,7 @@ if not os.path.exists(robot_file):
 unique_filename = generate_unique_filename(robot_file, "test")
 
 with open(unique_filename, "w", encoding="utf-8") as f:
-    f.write(robot_test.choices[0].message.content)
-
+    f.write(robot_test_final.choices[0].message.content)
 
 
 

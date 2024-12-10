@@ -1,201 +1,201 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-12-09T23:29:12.723560" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-12-10T12:17:32.917615" rpa="false" schemaversion="5">
 <suite id="s1" name="Test8" source="C:\Users\Elvis\OneDrive\Área de Trabalho\Crawl4AI_Test\.robot\test8.robot">
 <test id="s1-t1" name="Register User" line="91">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-12-09T23:29:13.066733" level="INFO">Opening browser 'Chrome' to base url 'http://automationexercise.com'.</msg>
-<msg time="2024-12-09T23:29:13.655066" level="WARN">The chromedriver version (130.0.6723.116) detected in PATH at C:\Users\Elvis\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.109); currently, chromedriver 131.0.6778.87 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-12-10T12:17:33.413354" level="INFO">Opening browser 'Chrome' to base url 'http://automationexercise.com'.</msg>
+<msg time="2024-12-10T12:17:34.221504" level="WARN">The chromedriver version (130.0.6723.116) detected in PATH at C:\Users\Elvis\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.109); currently, chromedriver 131.0.6778.87 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
 <arg>${HOME_URL}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-09T23:29:13.066733" elapsed="4.911417"/>
+<status status="PASS" start="2024-12-10T12:17:33.413354" elapsed="23.193425"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-09T23:29:17.979388" elapsed="0.063933"/>
+<status status="PASS" start="2024-12-10T12:17:56.629330" elapsed="2.300933"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${SIGNUP_LOGIN_BUTTON}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-09T23:29:18.043321" elapsed="0.047460"/>
+<status status="PASS" start="2024-12-10T12:17:58.933771" elapsed="0.107296"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-09T23:29:18.092055" level="INFO">Clicking element 'xpath=//a[@href='/login']'.</msg>
+<msg time="2024-12-10T12:17:59.043307" level="INFO">Clicking element 'xpath=//a[@href='/login']'.</msg>
 <arg>${SIGNUP_LOGIN_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-09T23:29:18.091407" elapsed="2.187197"/>
+<status status="PASS" start="2024-12-10T12:17:59.042767" elapsed="2.024529"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${NEW_USER_SIGNUP}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-09T23:29:20.278604" elapsed="0.026170"/>
+<status status="PASS" start="2024-12-10T12:18:01.079521" elapsed="0.047494"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-09T23:29:20.310790" level="INFO">Typing text 'Example User' into text field 'name=name'.</msg>
+<msg time="2024-12-10T12:18:01.167150" level="INFO">Typing text 'Example User' into text field 'name=name'.</msg>
 <arg>name=name</arg>
 <arg>${NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-09T23:29:20.304774" elapsed="0.203942"/>
+<status status="PASS" start="2024-12-10T12:18:01.167150" elapsed="1.104532"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-09T23:29:20.518089" level="INFO">Typing text 'example106@example.com' into text field '//*[@id="form"]/div/div/div[3]/div/form/input[3]'.</msg>
+<msg time="2024-12-10T12:18:02.277296" level="INFO">Typing text 'example107@example.com' into text field '//*[@id="form"]/div/div/div[3]/div/form/input[3]'.</msg>
 <arg>//*[@id="form"]/div/div/div[3]/div/form/input[3]</arg>
 <arg>${EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-09T23:29:20.517118" elapsed="0.175449"/>
+<status status="PASS" start="2024-12-10T12:18:02.277296" elapsed="0.881935"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-09T23:29:20.697771" level="INFO">Clicking element 'xpath=//button[text()='Signup']'.</msg>
+<msg time="2024-12-10T12:18:03.163366" level="INFO">Clicking element 'xpath=//button[text()='Signup']'.</msg>
 <arg>${SIGNUP_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-09T23:29:20.692567" elapsed="1.970622"/>
+<status status="PASS" start="2024-12-10T12:18:03.162357" elapsed="3.351241"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-09T23:29:22.664014" level="INFO">Typing text 'examplePassword123' into text field 'name=password'.</msg>
+<msg time="2024-12-10T12:18:06.517549" level="INFO">Typing text 'examplePassword123' into text field 'name=password'.</msg>
 <arg>name=password</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-09T23:29:22.663189" elapsed="0.246423"/>
+<status status="PASS" start="2024-12-10T12:18:06.516445" elapsed="0.835466"/>
 </kw>
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2024-12-09T23:29:22.913327" level="INFO">Selecting options from selection list 'name=days' by value 1.</msg>
+<msg time="2024-12-10T12:18:07.384750" level="INFO">Selecting options from selection list 'name=days' by value 1.</msg>
 <arg>name=days</arg>
 <arg>1</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2024-12-09T23:29:22.913327" elapsed="0.144790"/>
+<status status="PASS" start="2024-12-10T12:18:07.384750" elapsed="0.602186"/>
 </kw>
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2024-12-09T23:29:23.060025" level="INFO">Selecting options from selection list 'name=months' by value 1.</msg>
+<msg time="2024-12-10T12:18:07.989239" level="INFO">Selecting options from selection list 'name=months' by value 1.</msg>
 <arg>name=months</arg>
 <arg>1</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2024-12-09T23:29:23.059408" elapsed="0.120781"/>
+<status status="PASS" start="2024-12-10T12:18:07.987941" elapsed="0.261867"/>
 </kw>
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2024-12-09T23:29:23.180656" level="INFO">Selecting options from selection list 'name=years' by value 1990.</msg>
+<msg time="2024-12-10T12:18:08.253364" level="INFO">Selecting options from selection list 'name=years' by value 1990.</msg>
 <arg>name=years</arg>
 <arg>1990</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2024-12-09T23:29:23.180656" elapsed="0.160983"/>
+<status status="PASS" start="2024-12-10T12:18:08.253364" elapsed="0.310974"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-09T23:29:23.345987" level="INFO">Typing text 'Example' into text field 'name=first_name'.</msg>
+<msg time="2024-12-10T12:18:08.564338" level="INFO">Typing text 'Example' into text field 'name=first_name'.</msg>
 <arg>name=first_name</arg>
 <arg>${FIRST_NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-09T23:29:23.345159" elapsed="0.175728"/>
+<status status="PASS" start="2024-12-10T12:18:08.564338" elapsed="0.336258"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-09T23:29:23.527444" level="INFO">Typing text 'User' into text field 'name=last_name'.</msg>
+<msg time="2024-12-10T12:18:08.919762" level="INFO">Typing text 'User' into text field 'name=last_name'.</msg>
 <arg>name=last_name</arg>
 <arg>${LAST_NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-09T23:29:23.526434" elapsed="0.183730"/>
+<status status="PASS" start="2024-12-10T12:18:08.917950" elapsed="0.375536"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-09T23:29:23.711530" level="INFO">Typing text 'Example Co.' into text field 'name=company'.</msg>
+<msg time="2024-12-10T12:18:09.293486" level="INFO">Typing text 'Example Co.' into text field 'name=company'.</msg>
 <arg>name=company</arg>
 <arg>${COMPANY}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-09T23:29:23.710164" elapsed="0.216311"/>
+<status status="PASS" start="2024-12-10T12:18:09.293486" elapsed="0.391922"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-09T23:29:23.926475" level="INFO">Typing text '123 Example St' into text field 'name=address1'.</msg>
+<msg time="2024-12-10T12:18:09.686288" level="INFO">Typing text '123 Example St' into text field 'name=address1'.</msg>
 <arg>name=address1</arg>
 <arg>${ADDRESS}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-09T23:29:23.926475" elapsed="0.212460"/>
+<status status="PASS" start="2024-12-10T12:18:09.686288" elapsed="0.309910"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-09T23:29:24.142288" level="INFO">Typing text 'Apartment 456' into text field 'name=address2'.</msg>
+<msg time="2024-12-10T12:18:10.000966" level="INFO">Typing text 'Apartment 456' into text field 'name=address2'.</msg>
 <arg>name=address2</arg>
 <arg>${ADDRESS2}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-09T23:29:24.138935" elapsed="0.209349"/>
+<status status="PASS" start="2024-12-10T12:18:09.996198" elapsed="0.302367"/>
 </kw>
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2024-12-09T23:29:24.348284" level="INFO">Selecting options from selection list 'name=country' by label United States.</msg>
+<msg time="2024-12-10T12:18:10.299126" level="INFO">Selecting options from selection list 'name=country' by label United States.</msg>
 <arg>name=country</arg>
 <arg>${COUNTRY}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2024-12-09T23:29:24.348284" elapsed="0.114181"/>
+<status status="PASS" start="2024-12-10T12:18:10.299126" elapsed="0.184782"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-09T23:29:24.464712" level="INFO">Typing text 'Example State' into text field 'name=state'.</msg>
+<msg time="2024-12-10T12:18:10.486272" level="INFO">Typing text 'Example State' into text field 'name=state'.</msg>
 <arg>name=state</arg>
 <arg>${STATE}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-09T23:29:24.464064" elapsed="0.194632"/>
+<status status="PASS" start="2024-12-10T12:18:10.486272" elapsed="0.308464"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-09T23:29:24.666755" level="INFO">Typing text 'Example City' into text field 'name=city'.</msg>
+<msg time="2024-12-10T12:18:10.795684" level="INFO">Typing text 'Example City' into text field 'name=city'.</msg>
 <arg>name=city</arg>
 <arg>${CITY}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-09T23:29:24.666755" elapsed="0.190464"/>
+<status status="PASS" start="2024-12-10T12:18:10.795684" elapsed="0.337015"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-09T23:29:24.857219" level="INFO">Typing text '12345' into text field 'name=zipcode'.</msg>
+<msg time="2024-12-10T12:18:11.134982" level="INFO">Typing text '12345' into text field 'name=zipcode'.</msg>
 <arg>name=zipcode</arg>
 <arg>${ZIPCODE}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-09T23:29:24.857219" elapsed="0.172464"/>
+<status status="PASS" start="2024-12-10T12:18:11.134262" elapsed="0.280165"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-09T23:29:25.029683" level="INFO">Typing text '1234567890' into text field 'name=mobile_number'.</msg>
+<msg time="2024-12-10T12:18:11.418064" level="INFO">Typing text '1234567890' into text field 'name=mobile_number'.</msg>
 <arg>name=mobile_number</arg>
 <arg>${MOBILE_NUMBER}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-09T23:29:25.029683" elapsed="0.172479"/>
+<status status="PASS" start="2024-12-10T12:18:11.418064" elapsed="0.262847"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-09T23:29:25.204902" level="INFO">Clicking element 'xpath=//button[text()='Create Account']'.</msg>
+<msg time="2024-12-10T12:18:11.684963" level="INFO">Clicking element 'xpath=//button[text()='Create Account']'.</msg>
 <arg>${CREATE_ACCOUNT_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-09T23:29:25.204302" elapsed="3.015860"/>
+<status status="PASS" start="2024-12-10T12:18:11.683486" elapsed="3.530319"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>//*[@id="form"]/div/div/div/h2/b</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-09T23:29:28.220162" elapsed="0.032570"/>
+<status status="PASS" start="2024-12-10T12:18:15.213805" elapsed="0.437983"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-09T23:29:28.254666" level="INFO">Clicking element 'xpath=//a[text()='Continue']'.</msg>
+<msg time="2024-12-10T12:18:15.653928" level="INFO">Clicking element 'xpath=//a[text()='Continue']'.</msg>
 <arg>${CONTINUE_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-09T23:29:28.253739" elapsed="1.669109"/>
+<status status="PASS" start="2024-12-10T12:18:15.652785" elapsed="2.846228"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2024-12-09T23:29:35.321297" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-69.png"&gt;&lt;img src="selenium-screenshot-69.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-12-09T23:29:35.322313" level="FAIL">Element 'xpath=//*[@class='user']//b' not visible after 5 seconds.</msg>
+<msg time="2024-12-10T12:18:23.936978" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-12-10T12:18:23.936978" level="FAIL">Element 'xpath=//*[@class='user']//b' not visible after 5 seconds.</msg>
 <arg>${LOGGED_IN_AS}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2024-12-09T23:29:29.923560" elapsed="5.398753">Element 'xpath=//*[@class='user']//b' not visible after 5 seconds.</status>
+<status status="FAIL" start="2024-12-10T12:18:18.500036" elapsed="5.446201">Element 'xpath=//*[@class='user']//b' not visible after 5 seconds.</status>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>${DELETE_ACCOUNT_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-12-09T23:29:35.322313" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-12-10T12:18:23.946237" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${ACCOUNT_DELETED}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2024-12-09T23:29:35.322313" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-12-10T12:18:23.951571" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>${CONTINUE_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-12-09T23:29:35.322313" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-12-10T12:18:23.951571" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-12-09T23:29:35.322313" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-12-10T12:18:23.953071" elapsed="0.000000"/>
 </kw>
 <doc>Test the user registration process</doc>
-<status status="FAIL" start="2024-12-09T23:29:13.066733" elapsed="22.263712">Element 'xpath=//*[@class='user']//b' not visible after 5 seconds.</status>
+<status status="FAIL" start="2024-12-10T12:17:33.409348" elapsed="50.543723">Element 'xpath=//*[@class='user']//b' not visible after 5 seconds.</status>
 </test>
 <doc>Test Case for Registering User on automationexercise.com</doc>
-<status status="FAIL" start="2024-12-09T23:29:12.731072" elapsed="22.599373"/>
+<status status="FAIL" start="2024-12-10T12:17:32.923469" elapsed="51.031152"/>
 </suite>
 <statistics>
 <total>
@@ -208,6 +208,6 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2024-12-09T23:29:13.655066" level="WARN">The chromedriver version (130.0.6723.116) detected in PATH at C:\Users\Elvis\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.109); currently, chromedriver 131.0.6778.87 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-12-10T12:17:34.221504" level="WARN">The chromedriver version (130.0.6723.116) detected in PATH at C:\Users\Elvis\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.109); currently, chromedriver 131.0.6778.87 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
 </errors>
 </robot>
