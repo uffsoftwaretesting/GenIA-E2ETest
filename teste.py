@@ -7,6 +7,7 @@ from pydantic import BaseModel, Field
 from bs4 import BeautifulSoup
 from openai import OpenAI
 import openai
+import os
 from dotenv import load_dotenv
 
 
@@ -14,6 +15,7 @@ load_dotenv()
 
 api_key_string = os.getenv("OPENAI_API_KEY")
 
+print(api_key_string)
 class OpenAIModelForm(BaseModel):
     type: str = Field(
         ..., 
@@ -37,9 +39,10 @@ class OpenAIModelForm(BaseModel):
     )
 
 crawler = WebCrawler()
+
 crawler.warmup()
 
-url = r'http://localhost:5173/SignUp'
+url = r'https://automationexercise.com/'
 
 json_result = crawler.run(
     url=url,
@@ -51,7 +54,7 @@ json_result = crawler.run(
         extraction_type="schema",
         instruction = """
 
-        You must analyze the web page content, specifically the forms, and identify all input elements that the user needs to fill out or select. For each element found, extract the following data:
+        You must analyze the web page content and identify all elements that the user needs to fill out or select. For each element found, extract the following data:
         
         1. **type**: The type of the form element, such as "input", "select", "button", etc.
         2. **request_description**: A clear description of what the field asks from the user. For example, if it's a field for entering a name, the description would be "Field to enter the Name".
@@ -160,11 +163,14 @@ with open(unique_filename, "w", encoding="utf-8") as f:
 with open("signUp.feature", "r", encoding="utf-8") as file:
     signUp_content = file.read()
 
+with open("signIn.feature", "r", encoding="utf-8") as file:
+    signIn_content = file.read()
+
 completion_final = client.chat.completions.create(
     model="gpt-4o",
     messages=[
         {   "role": "user", 
-            "content": f"According to the following user story: {signUp_content}, and the list of JSON objects: {completion.choices[0].message.content}, create the 'example' attribute and add to it a list of strings containing example responses for each index of the list.\n\n" 
+            "content": f"According to the following user story: {signIn_content}, and the list of JSON objects: {completion.choices[0].message.content}, create the 'example' attribute and add to it a list of strings containing example responses for each index of the list.\n\n" 
             "Example:\n"
             "[\n"
             "    {\n"
@@ -215,15 +221,7 @@ robot_test = client.chat.completions.create(
     messages=[
         {
             "role": "user", 
-            "content": f"According to the following user story: {signUp_content}, URL: {url}, and the list of JSON objects: {completion_final.choices[0].message.content}, create an E2E test script using Python, Robot Framework, and Selenium for the Sign-Up page. The script should include the following:\n"
-            "1. Opening the Sign-Up page using the provided URL.\n"
-            "2. Filling in the form fields (Name, Surname, Email, Confirm Email, Password, Confirm Password) with valid example data.\n"
-            "3. Make sure all fields are filled in before sending the form to test validations.\n"
-            "4. Submitting the form and validating if the submission was successful (e.g., checking for a success message or redirection).\n"
-            "5. Verifying that error messages appear when invalid data is entered (e.g., password mismatch, invalid email format).\n"
-            "6. Ensuring that all fields are validated according to the rules defined in the user story.\n"
-            "7. Make sure all fields are filled in before sending the form to test validations.\n"
-            "Please provide the script in Robot Framework format using Python and Selenium."
+            "content": f"According to the following user story: {signIn_content}, URL: {url}, and the list of JSON objects: {completion_final.choices[0].message.content}, create an E2E test script using Python, Robot Framework, and Selenium for the Test Case."
         }
     ]
 )

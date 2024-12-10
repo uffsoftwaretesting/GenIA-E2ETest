@@ -1,0 +1,444 @@
+```json
+[
+    {
+        "type": "button",
+        "request_description": "Button to view the cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[1]/div[1]/button",
+        "naming": "button_view_cart",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to continue shopping",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/div/div/div[1]/div[1]/div/div/div/div[3]/div[2]/div/div/div[2]/div/div/div/div/button",
+        "naming": "button_continue_shopping",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Blue Top to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[1]/div/div/div/div/a[2]/button",
+        "naming": "button_add_blue_top",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Men Tshirt to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[2]/div/div/div/div/a[2]/button",
+        "naming": "button_add_men_tshirt",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Sleeveless Dress to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[3]/div/div/div/div/a[2]/button",
+        "naming": "button_add_sleeveless_dress",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Stylish Dress to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[4]/div/div/div/div/a[2]/button",
+        "naming": "button_add_stylish_dress",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Winter Top to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[5]/div/div/div/div/a[2]/button",
+        "naming": "button_add_winter_top",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Summer White Top to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[6]/div/div/div/div/a[2]/button",
+        "naming": "button_add_summer_white_top",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Madame Top For Women to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[7]/div/div/div/div/a[2]/button",
+        "naming": "button_add_madame_top",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Fancy Green Top to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[8]/div/div/div/div/a[2]/button",
+        "naming": "button_add_fancy_green_top",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Sleeves Printed Top - White to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[9]/div/div/div/div/a[2]/button",
+        "naming": "button_add_sleeves_printed_top_white",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Half Sleeves Top Schiffli Detailing - Pink to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[10]/div/div/div/div/a[2]/button",
+        "naming": "button_add_half_sleeves_top_schiffli_pink",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Frozen Tops For Kids to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[11]/div/div/div/div/a[2]/button",
+        "naming": "button_add_frozen_tops_for_kids",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Full Sleeves Top Cherry - Pink to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[12]/div/div/div/div/a[2]/button",
+        "naming": "button_add_full_sleeves_top_cherry_pink",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Printed Off Shoulder Top - White to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[13]/div/div/div/div/a[2]/button",
+        "naming": "button_add_printed_off_shoulder_top_white",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Sleeves Top and Short - Blue & Pink to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[14]/div/div/div/div/a[2]/button",
+        "naming": "button_add_sleeves_top_and_short_blue_pink",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Little Girls Mr. Panda Shirt to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[15]/div/div/div/div/a[2]/button",
+        "naming": "button_add_little_girls_mr_panda_shirt",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Sleeveless Unicorn Patch Gown - Pink to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[16]/div/div/div/div/a[2]/button",
+        "naming": "button_add_sleeveless_unicorn_patch_gown_pink",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Cotton Mull Embroidered Dress to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[17]/div/div/div/div/a[2]/button",
+        "naming": "button_add_cotton_mull_embroidered_dress",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Blue Cotton Indie Mickey Dress to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[18]/div/div/div/div/a[2]/button",
+        "naming": "button_add_blue_cotton_indie_mickey_dress",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Long Maxi Tulle Fancy Dress Up Outfits - Pink to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[19]/div/div/div/div/a[2]/button",
+        "naming": "button_add_long_maxi_tulle_fancy_dress_up_outfits_pink",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Sleeveless Unicorn Print Fit & Flare Net Dress - Multi to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[20]/div/div/div/div/a[2]/button",
+        "naming": "button_add_sleeveless_unicorn_print_fit_flare_net_dress_multi",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Colour Blocked Shirt \u2013 Sky Blue to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[21]/div/div/div/div/a[2]/button",
+        "naming": "button_add_colour_blocked_shirt_sky_blue",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Pure Cotton V-Neck T-Shirt to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[22]/div/div/div/div/a[2]/button",
+        "naming": "button_add_pure_cotton_v_neck_t_shirt",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Pure Cotton V-Neck T-Shirt to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[23]/div/div/div/div/a[2]/button",
+        "naming": "button_add_to_cart_vneck_tshirt",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Pure Cotton V-Neck T-Shirt product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[23]/div/div/div/div/div/ul/li/a",
+        "naming": "button_view_product_vneck_tshirt",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Green Side Placket Detail T-Shirt to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[24]/div/div/div/div/a[2]/button",
+        "naming": "button_add_to_cart_green_placket_tshirt",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Green Side Placket Detail T-Shirt product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[24]/div/div/div/div/div/ul/li/a",
+        "naming": "button_view_product_green_placket_tshirt",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Premium Polo T-Shirts to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[25]/div/div/div/div/a[2]/button",
+        "naming": "button_add_to_cart_premium_polo_tshirt",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Premium Polo T-Shirts product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[25]/div/div/div/div/div/ul/li/a",
+        "naming": "button_view_product_premium_polo_tshirt",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Pure Cotton Neon Green Tshirt to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[26]/div/div/div/div/a[2]/button",
+        "naming": "button_add_to_cart_neon_green_tshirt",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Pure Cotton Neon Green Tshirt product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[26]/div/div/div/div/div/ul/li/a",
+        "naming": "button_view_product_neon_green_tshirt",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Soft Stretch Jeans to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[27]/div/div/div/div/a[2]/button",
+        "naming": "button_add_to_cart_soft_stretch_jeans",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Soft Stretch Jeans product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[27]/div/div/div/div/div/ul/li/a",
+        "naming": "button_view_product_soft_stretch_jeans",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Regular Fit Straight Jeans to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[28]/div/div/div/div/a[2]/button",
+        "naming": "button_add_to_cart_regular_fit_jeans",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Regular Fit Straight Jeans product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[28]/div/div/div/div/div/ul/li/a",
+        "naming": "button_view_product_regular_fit_jeans",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Grunt Blue Slim Fit Jeans to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[29]/div/div/div/div/a[2]/button",
+        "naming": "button_add_to_cart_grunt_blue_jeans",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Grunt Blue Slim Fit Jeans product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[29]/div/div/div/div/div/ul/li/a",
+        "naming": "button_view_product_grunt_blue_jeans",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Rose Pink Embroidered Maxi Dress to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[30]/div/div/div/div/a[2]/button",
+        "naming": "button_add_to_cart_rose_pink_dress",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Rose Pink Embroidered Maxi Dress product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[30]/div/div/div/div/div/ul/li/a",
+        "naming": "button_view_product_rose_pink_dress",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Cotton Silk Hand Block Print Saree to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[31]/div/div/div/div/a[2]/button",
+        "naming": "button_add_to_cart_cotton_silk_saree",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Cotton Silk Hand Block Print Saree product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[31]/div/div/div/div/div/ul/li/a",
+        "naming": "button_view_product_cotton_silk_saree",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Rust Red Linen Saree to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[32]/div/div/div/div/a[2]/button",
+        "naming": "button_add_to_cart_rust_red_saree",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Rust Red Linen Saree product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[32]/div/div/div/div/div/ul/li/a",
+        "naming": "button_view_product_rust_red_saree",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Beautiful Peacock Blue Cotton Linen Saree to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[33]/div/div/div/div/a[2]/button",
+        "naming": "button_add_to_cart_peacock_blue_saree",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Beautiful Peacock Blue Cotton Linen Saree product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[33]/div/div/div/div/div/ul/li/a",
+        "naming": "button_view_product_peacock_blue_saree",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Lace Top For Women to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[34]/div/div/div/div/a[2]/button",
+        "naming": "button_add_to_cart_lace_top",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Lace Top For Women product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[34]/div/div/div/div/div/ul/li/a",
+        "naming": "button_view_product_lace_top",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add GRAPHIC DESIGN MEN T SHIRT - BLUE to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[35]/div/div/div/div/a[2]/button",
+        "naming": "button_add_to_cart_graphic_design_tshirt",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view GRAPHIC DESIGN MEN T SHIRT - BLUE product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[2]/div[35]/div/div/div/div/div/ul/li/a",
+        "naming": "button_view_product_graphic_design_tshirt",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Blue Top to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[3]/div/div/div/div[1]/div/div[1]/a[2]/button",
+        "naming": "button_add_to_cart_blue_top",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Men Tshirt to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[3]/div/div/div/div[2]/div/div[1]/a[2]/button",
+        "naming": "button_add_to_cart_men_tshirt",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Stylish Dress to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[3]/div/div/div/div[3]/div/div[1]/a[2]/button",
+        "naming": "button_add_to_cart_stylish_dress",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Winter Top to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[3]/div/div/div[2]/div/div/div[1]/a[2]/button",
+        "naming": "button_add_to_cart_winter_top",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Summer White Top to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/section/div/div/div[3]/div/div/div[2]/div/div/div[1]/a[2]/button",
+        "naming": "button_add_to_cart_summer_white_top",
+        "error": false
+    }
+]
+```
