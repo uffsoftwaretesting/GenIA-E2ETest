@@ -1,0 +1,65 @@
+[
+    {
+        "type": "input",
+        "request_description": "Field to enter the Name",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='name_input']",
+        "error": false
+    },
+    {
+        "type": "input",
+        "request_description": "Field to enter the Surname",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='surname_input']",
+        "error": false
+    },
+    {
+        "type": "input",
+        "request_description": "Field to enter the Email",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='email_input']",
+        "error": false
+    },
+    {
+        "type": "input",
+        "request_description": "Field to confirm the Email",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='confirm_email_input']",
+        "error": false
+    },
+    {
+        "type": "input",
+        "request_description": "Field to enter the Password",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='password_input']",
+        "error": false
+    },
+    {
+        "type": "input",
+        "request_description": "Field to confirm the Password",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='confirm_password_input']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to sign up",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='sign_up_button']",
+        "error": false
+    },
+    {
+        "type": "checkbox",
+        "request_description": "Checkbox to agree with the Terms of Use",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='terms_checkbox']",
+        "error": false
+    },
+    {
+        "type": "link",
+        "request_description": "Link to log in if already have an account",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='login_link']",
+        "error": false
+    }
+]
