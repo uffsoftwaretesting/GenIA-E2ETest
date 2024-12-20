@@ -1,0 +1,305 @@
+[
+    {
+        "type": "input",
+        "request_description": "Field to enter the Name",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/div/form/input[1]"
+    },
+    {
+        "type": "input",
+        "request_description": "Field to enter the Email",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/div/form/input[2]"
+    },
+    {
+        "type": "input",
+        "request_description": "Field to enter the Address",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/div/form/input[3]"
+    },
+    {
+        "type": "select",
+        "request_description": "Dropdown to select the Country",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/div/form/select"
+    },
+    {
+        "type": "button",
+        "request_description": "Button to submit the form",
+        "identifier_type": "XPath",
+        "identifier_tracking": "/html/body/div/form/button"
+    },
+    {
+        "type": "button",
+        "request_description": "Add to cart button for Fancy Green Top",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_11']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Add to cart button for Sleeves Printed Top - White",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_12']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Add to cart button for Half Sleeves Top Schiffli Detailing - Pink",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_13']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Add to cart button for Frozen Tops For Kids",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_14']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Add to cart button for Full Sleeves Top Cherry - Pink",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_15']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Add to cart button for Printed Off Shoulder Top - White",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_16']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Add to cart button for Sleeves Top and Short - Blue & Pink",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_18']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Add to cart button for Little Girls Mr. Panda Shirt",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_19']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Add to cart button for Sleeveless Unicorn Patch Gown - Pink",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_20']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Add to cart button for Cotton Mull Embroidered Dress",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_21']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Add to cart button for Blue Cotton Indie Mickey Dress",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_22']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Add to cart button for Long Maxi Tulle Fancy Dress Up Outfits - Pink",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_23']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Add to cart button for Sleeveless Unicorn Print Fit & Flare Net Dress - Multi",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_24']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Add to cart button for Colour Blocked Shirt \u2013 Sky Blue",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_28']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Add to cart button for Pure Cotton V-Neck T-Shirt",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_24']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Pure Cotton V-Neck T-Shirt to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_29']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Pure Cotton V-Neck T-Shirt product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='view_product_29']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Green Side Placket Detail T-Shirt to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_30']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Green Side Placket Detail T-Shirt product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='view_product_30']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Premium Polo T-Shirts to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_31']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Premium Polo T-Shirts product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='view_product_31']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Pure Cotton Neon Green Tshirt to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_33']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Pure Cotton Neon Green Tshirt product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='view_product_33']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Soft Stretch Jeans to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_35']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Soft Stretch Jeans product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='view_product_35']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Regular Fit Straight Jeans to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_37']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Regular Fit Straight Jeans product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='view_product_37']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Grunt Blue Slim Fit Jeans to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_38']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Grunt Blue Slim Fit Jeans product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='view_product_38']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Rose Pink Embroidered Maxi Dress to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_39']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Rose Pink Embroidered Maxi Dress product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='view_product_39']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Cotton Silk Hand Block Print Saree to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_40']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Cotton Silk Hand Block Print Saree product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='view_product_40']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Rust Red Linen Saree to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_41']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Rust Red Linen Saree product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='view_product_41']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Beautiful Peacock Blue Cotton Linen Saree to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_42']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Beautiful Peacock Blue Cotton Linen Saree product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='view_product_42']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to add Lace Top For Women to cart",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='add_to_cart_43']",
+        "error": false
+    },
+    {
+        "type": "button",
+        "request_description": "Button to view Lace Top For Women product",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='view_product_43']",
+        "error": false
+    }
+]

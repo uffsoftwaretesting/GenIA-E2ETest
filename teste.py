@@ -65,10 +65,16 @@ url = os.getenv("URL")
 
 test_case_file = os.getenv("TEST_CASE")
 
+# test_case_file = "Test_Case_3.feature"
+
 with open(test_case_file, "r", encoding="utf-8") as file:
     test_case = file.read()
 
 api_key_string = os.getenv("OPENAI_API_KEY")
+
+print (url)
+print (test_case)
+print (api_key_string)
 
 
 class OpenAIModelForm(BaseModel):
@@ -98,11 +104,11 @@ json_result = crawler.run(
     word_count_threshold=1,
     css_selector="div",
     extraction_strategy= LLMExtractionStrategy(
-        provider= "openai/gpt-4o", api_token= api_key_string, 
+        provider= "openai/gpt-3.5-turbo", api_token= api_key_string, 
         schema=OpenAIModelForm.model_json_schema(),
         extraction_type="schema",
         instruction = 
-            """ Analyze the web page content and identify all elements that are essential for creating an efficient End-To-End testing script for the following Test Case: {test_case}. For each identified element, extract the following details:
+            """ Analyze the web page content and identify only the elements that are essential for creating an efficient End-To-End testing script for the following Test Case: {test_case}. For each identified element, extract the following details:
 
             1. **type**: The type of form element (e.g., "input", "select", "button", etc.).
             2. **request_description**: A clear description of what the element requires from the user (e.g., "Field to enter the Name").
@@ -147,21 +153,39 @@ html_body = (html_result.body).prettify
 
 client = openai.OpenAI(api_key=api_key_string)
 
-response = client.beta.chat.completions.parse(
+
+
+# response = client.beta.chat.completions.parse(
+#     model="gpt-4o",
+#     messages=[
+#         {"role": "system", "content": "You are an experienced software tester. Your task is to help the user refine the JSON object list by analyzing the HTML structure and ensuring that the XPath expressions for the required elements in the test case are correct and error-free."},
+#         {"role": "user", "content": 
+#             f"Given the following test case: {test_case}, the HTML code: {html_body}, and the JSON result: {json_result}, analyze the HTML structure and improve the list of JSON objects to ensure there are no errors in the XPath expressions for the required elements in the test case."}
+#     ]
+# )
+
+print (test_case)
+print (html_body)
+print (json_result)
+
+response = client.chat.completions.create(
     model="gpt-4o",
     messages=[
-        {"role": "system", "content": "You are an experienced software tester. Your task is to help the user refine the JSON    object list by analyzing the HTML structure and ensuring that the XPath expressions for the required elements in the test case are correct and error-free."},
-        {"role": "user", "content": 
-            f"Given the following test case: {test_case}, the HTML code: {html_body}, and the JSON result: {json_result}, analyze the HTML structure and improve the list of JSON objects to ensure there are no errors in the XPath expressions for the required elements in the test case."}
-    ],
-    response_format=OpenAIModelForm,
+        {
+            "role": "system",
+            "content": "You are an experienced software tester. Your task is to help the user refine the JSON object list by analyzing the HTML structure and ensuring that the XPath expressions for the required elements in the test case are correct and error-free."
+        },
+        {
+            "role": "user",
+            "content": "Given the following test case: {test_case}, the HTML code: {html_body}, and the JSON result: {json_result}, analyze the HTML structure and improve the list of JSON objects to ensure there are no errors in the XPath expressions for the required elements in the test case."
+        }
+    ]
 )
 
 json_result_final = response.choices[0].message.content
 
 with open(unique_filename_OpenAI, "w", encoding="utf-8") as f:
     f.write(json_result_final)
-
 
 robot_test = client.chat.completions.create(
     model="gpt-4o",

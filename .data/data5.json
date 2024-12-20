@@ -1,9 +1,0 @@
-[
-    {
-        "type": "input",
-        "request_description": "Sign Up NomeSobrenomeE-mailConfirmar e-mailSenhaConfirmar senha Eu concordo com os  Termos de uso",
-        "identifier_type": "ID",
-        "identifier_tracking": "inputSignUpForm",
-        "naming": "input_sign_up_form"
-    }
-]

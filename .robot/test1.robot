@@ -11,7 +11,7 @@ ${VALID_NAME}      Maria
 ${VALID_SURNAME}   Silva
 ${VALID_EMAIL}     maria@example.com
 ${VALID_PASSWORD}  Senha123
-${SUCCESS_MESSAGE} Cadastro realizado com sucesso!
+${SUCCESS_MESSAGE}  Cadastro realizado com sucesso!
 
 *** Test Cases ***
 Cadastro Com Todos Os Campos Válidos
