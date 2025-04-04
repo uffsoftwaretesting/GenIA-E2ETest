@@ -1,282 +1,69 @@
 [
     {
-        "type": "button",
-        "request_description": "Button to add Blue Top to cart",
+        "type": "input",
+        "request_description": "Field to enter the email address",
         "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product1']/button",
+        "identifier_tracking": "//input[@id='email']"
+    },
+    {
+        "type": "input",
+        "request_description": "Field to enter the password",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//input[@id='password']"
+    },
+    {
+        "type": "button",
+        "request_description": "Button to login",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//button[contains(text(),'Login')]"
+    },
+    {
+        "type": "input",
+        "request_description": "Field to enter email address",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//input[@id='email']",
+        "error": false
+    },
+    {
+        "type": "input",
+        "request_description": "Field to enter password",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//input[@id='password']",
         "error": false
     },
     {
         "type": "button",
-        "request_description": "Button to add Men Tshirt to cart",
+        "request_description": "Button to login",
         "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product2']/button",
+        "identifier_tracking": "//button[@id='login_button']",
+        "error": false
+    },
+    {
+        "type": "text",
+        "request_description": "Error message for incorrect email or password",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//div[@id='error_message']",
+        "error": false
+    },
+    {
+        "type": "input",
+        "request_description": "Field to enter the email address",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//input[@id='email']",
+        "error": false
+    },
+    {
+        "type": "input",
+        "request_description": "Field to enter the password",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//input[@id='password']",
         "error": false
     },
     {
         "type": "button",
-        "request_description": "Button to add Sleeveless Dress to cart",
+        "request_description": "Button to login",
         "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product3']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Stylish Dress to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product4']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Winter Top to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product5']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Summer White Top to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product6']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Madame Top For Women to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product7']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Fancy Green Top to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_11']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Sleeves Printed Top - White to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_12']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Half Sleeves Top Schiffli Detailing - Pink to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_13']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Frozen Tops For Kids to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_14']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Full Sleeves Top Cherry - Pink to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_15']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Printed Off Shoulder Top - White to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_16']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Sleeves Top and Short - Blue & Pink to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_18']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Little Girls Mr. Panda Shirt to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_19']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Sleeveless Unicorn Patch Gown - Pink to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_20']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Cotton Mull Embroidered Dress to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_21']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Blue Cotton Indie Mickey Dress to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_22']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Long Maxi Tulle Fancy Dress Up Outfits -Pink to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_23']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Sleeveless Unicorn Print Fit & Flare Net Dress - Multi to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_24']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Colour Blocked Shirt \u2013 Sky Blue to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_28']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Pure Cotton V-Neck T-Shirt to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_24']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Pure Cotton V-Neck T-Shirt to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_29']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Green Side Placket Detail T-Shirt to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_30']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Premium Polo T-Shirts to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_31']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Pure Cotton Neon Green Tshirt to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_33']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Soft Stretch Jeans to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_35']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Regular Fit Straight Jeans to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_37']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Grunt Blue Slim Fit Jeans to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_38']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Rose Pink Embroidered Maxi Dress to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_39']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Cotton Silk Hand Block Print Saree to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_40']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Rust Red Linen Saree to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_41']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Beautiful Peacock Blue Cotton Linen Saree to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_42']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Lace Top For Women to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_43']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add GRAPHIC DESIGN MEN T SHIRT - BLUE to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_44']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Blue Top to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_1']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Men Tshirt to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_2']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Stylish Dress to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_5']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Winter Top to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_6']/button",
-        "error": false
-    },
-    {
-        "type": "button",
-        "request_description": "Button to add Summer White Top to cart",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='product_7']/button",
+        "identifier_tracking": "//button[contains(text(),'Login')]",
         "error": false
     }
 ]

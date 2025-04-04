@@ -1,52 +1,63 @@
-Certainly! Based on your requirements and the provided HTML, here's a Robot Framework script for the scenario "Cadastro com todos os campos válidos". This script uses Selenium to automate the test:
+To create an end-to-end (E2E) test script using Python, Robot Framework, and Selenium for the provided test case, you must first ensure that your development environment is set up with the necessary libraries and tools. Assuming you have installed Python, Selenium, and Robot Framework along with the Browser library for Selenium integration, you can proceed to write the test script as follows:
 
 ```robot framework
 *** Settings ***
 Library    SeleniumLibrary
-Library    Collections
-
-*** Variables ***
-${URL}     http://localhost:5173
-${VALID_NAME}      Maria
-${VALID_SURNAME}   Silva
-${VALID_EMAIL}     maria@example.com
-${VALID_PASSWORD}  Senha123
-${SUCCESS_MESSAGE}  Cadastro realizado com sucesso!
+Suite Setup    Open Browser    http://automationexercise.com    chrome
+Suite Teardown    Close Browser
 
 *** Test Cases ***
-Cadastro Com Todos Os Campos Válidos
-    [Documentation]    Teste de cadastro com todos os campos válidos.
-    Open Browser   ${URL}/SignUp   Chrome
-    Maximize Browser Window
-    Preencher Cadastro Válido
-    Clicar Botao Cadastrar
-    Verificar Mensagem Sucesso
-    [Teardown]   Close Browser
+Login User With Incorrect Email And Password
+    [Documentation]    Test Case 3: Login User with incorrect email and password
+    ...    1. Launch browser
+    ...    2. Navigate to url 'http://automationexercise.com'
+    ...    3. Verify that home page is visible successfully
+    ...    4. Click on 'Signup / Login' button
+    ...    5. Verify 'Login to your account' is visible
+    ...    6. Enter incorrect email address and password
+    ...    7. Click 'login' button
+    ...    8. Verify error 'Your email or password is incorrect!' is visible
+    Verify Home Page Is Visible
+    Click Signup Login Button
+    Verify Login To Your Account Is Visible
+    Enter Incorrect Email And Password
+    Click Login Button
+    Verify Incorrect Email Or Password Error Is Visible
 
 *** Keywords ***
-Preencher Cadastro Válido
-    [Documentation]    Preenche o formulário de cadastro com dados válidos.
-    Input Text   xpath=//*[@id='input_nome']      ${VALID_NAME}
-    Input Text   xpath=//*[@id='input_sobrenome'] ${VALID_SURNAME}
-    Input Text   xpath=//*[@id='input_email']     ${VALID_EMAIL}
-    Input Text   xpath=//*[@id='input_confirmar_email']  ${VALID_EMAIL}
-    Input Password   xpath=//*[@id='input_senha']  ${VALID_PASSWORD}
-    Input Password   xpath=//*[@id='input_confirmar_senha']  ${VALID_PASSWORD}
-    Click Element   xpath=//input[@type='checkbox']
+# Verify Home Page Is Visible
+#     Wait Until Element Is Visible    //div[@class='logo']//img[@alt='Website for automation practice']    10s
+#     Element Should Be Visible    //div[@class='logo']//img[@alt='Website for automation practice']
 
-Clicar Botao Cadastrar
-    [Documentation]    Clica no botão de cadastro.
-    Click Button    xpath=//*[@id='submit_form']
+Click Signup Login Button
+    Click Element    //a[@href='/login']//i[@class='fa fa-lock']/..
 
-Verificar Mensagem Sucesso
-    [Documentation]    Verifica se a mensagem de sucesso é exibida.
-    Wait Until Page Contains   ${SUCCESS_MESSAGE}   timeout=10s
-```
+Verify Login To Your Account Is Visible
+    Wait Until Element Is Visible    //h2[contains(text(),'Login to your account')]    10s
+    Element Should Be Visible    //h2[contains(text(),'Login to your account')]
 
-#### Explanation:
-- **Open Browser**: This keyword opens the specified URL in a Chrome browser.
-- **Preencher Cadastro Válido**: Fills out the registration form with valid data.
-- **Clicar Botao Cadastrar**: Simulates clicking the "Register" button.
-- **Verificar Mensagem Sucesso**: Waits to ensure that the success message appears on the page after submission.
+Enter Incorrect Email And Password
+    Input Text    //input[@id='email']    invalid_email@example.com
+    Input Text    //input[@id='password']    invalid_password
 
-This script is specifically for the "Cadastro com todos os campos válidos" scenario. For other scenarios such as invalid name or mismatched emails, you would modify the input data accordingly and check for the respective error messages. You can expand the test suite by adding additional test cases and utilizing the similar structure of the keywords.
+Click Login Button
+    Click Button    //button[contains(text(),'Login')]
+
+Verify Incorrect Email Or Password Error Is Visible
+    Wait Until Element Is Visible    //div[contains(text(),'Your email or password is incorrect!')]    10s
+    Element Should Be Visible    //div[contains(text(),'Your email or password is incorrect!')]
+# ```
+
+### Explanation:
+
+# - **Suite Setup and Teardown**: Open the browser to `http://automationexercise.com` with Chrome at the start and close it at the end.
+# - **Test Case**: `Login User With Incorrect Email And Password` with detailed steps outlined in comments.
+# - **Keywords**:
+#   - **Verify Home Page Is Visible**: Ensures the homepage is loaded by verifying the visibility of the logo.
+#   - **Click Signup Login Button**: Clicks the 'Signup / Login' button using its XPath.
+#   - **Verify Login To Your Account Is Visible**: Checks the presence of the login heading.
+#   - **Enter Incorrect Email And Password**: Inputs incorrect credentials into the email and password fields.
+#   - **Click Login Button**: Submits the form by clicking the login button.
+#   - **Verify Incorrect Email Or Password Error Is Visible**: Confirms that the error message for incorrect credentials is displayed.
+
+# This script automates the process of logging in with incorrect credentials and verifies expected UI changes and messages. Ensure the XPaths exactly match those on the website, as any changes to the site could require XPath adjustments.

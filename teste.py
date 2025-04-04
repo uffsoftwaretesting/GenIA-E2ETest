@@ -65,12 +65,13 @@ url = os.getenv("URL")
 
 test_case_file = os.getenv("TEST_CASE")
 
+api_key_string = os.getenv("OPENAI_API_KEY")
+
 # test_case_file = "Test_Case_3.feature"
 
 with open(test_case_file, "r", encoding="utf-8") as file:
     test_case = file.read()
-
-api_key_string = os.getenv("OPENAI_API_KEY")
+    
 
 print (url)
 print (test_case)
@@ -104,39 +105,39 @@ json_result = crawler.run(
     word_count_threshold=1,
     css_selector="div",
     extraction_strategy= LLMExtractionStrategy(
-        provider= "openai/gpt-3.5-turbo", api_token= api_key_string, 
+        provider= "openai/gpt-4-mini", api_token= api_key_string, 
         schema=OpenAIModelForm.model_json_schema(),
         extraction_type="schema",
-        instruction = 
-            """ Analyze the web page content and identify only the elements that are essential for creating an efficient End-To-End testing script for the following Test Case: {test_case}. For each identified element, extract the following details:
+        instruction = f""" 
+                        Analyze the web page content and identify only the elements that are essential for creating an efficient End-To-End testing script for the following Test Case: {test_case}. For each identified element, extract the following details:
 
-            1. **type**: The type of form element (e.g., "input", "select", "button", etc.).
-            2. **request_description**: A clear description of what the element requires from the user (e.g., "Field to enter the Name").
-            3. **identifier_type**: The method used to identify the element (preferably using XPath for precise identification).
-            4. **identifier_tracking**: The exact path or identifier (e.g., XPath or ID) to locate the element in the HTML structure.
+                        1. **type**: The type of form element (e.g., "input", "select", "button", etc.).
+                        2. **request_description**: A clear description of what the element requires from the user (e.g., "Field to enter the Name").
+                        3. **identifier_type**: The method used to identify the element (preferably using XPath for precise identification).
+                        4. **identifier_tracking**: The exact path or identifier (e.g., XPath or ID) to locate the element in the HTML structure.
 
-            Example extraction in JSON format:
+                        Example extraction in JSON format:
 
-            [
-                {
-                    "type": "input",
-                    "request_description": "Field to enter the First Name",
-                    "identifier_type": "Full XPath",
-                    "identifier_tracking": "/html/body/div/form/input",
-                },
-                {
-                    "type": "button",
-                    "request_description": "Button to sign up",
-                    "identifier_type": "Full XPath",
-                    "identifier_tracking": "//*[@id='submit_form']/img[1]",
-                }
-            ]
+                        [
+                            {{
+                                "type": "input",
+                                "request_description": "Field to enter the First Name",
+                                "identifier_type": "Full XPath",
+                                "identifier_tracking": "/html/body/div/form/input",
+                            }},
+                            {{
+                                "type": "button",
+                                "request_description": "Button to sign up",
+                                "identifier_type": "Full XPath",
+                                "identifier_tracking": "//*[@id='submit_form']/img[1]",
+                            }}
+                        ]
 
-            Task: Analyze the form and extract all relevant elements needed for the QA tester, including inputs, buttons, selections, checkboxes, links, and other essential elements. Ensure that each element is accurately identified and that its XPath corresponds exactly to the HTML structure.
+                        Task: Analyze the form and extract all relevant elements needed for the QA tester, including inputs, buttons, selections, checkboxes, links, and other essential elements. Ensure that each element is accurately identified and that its XPath corresponds exactly to the HTML structure.
 
-            Notes:
-            Return each element's data in a structured JSON format.
-            Do not omit any elements necessary to complete the test case."""
+                        Notes:
+                        Return each element's data in a structured JSON format.
+                        Do not omit any elements necessary to complete the test case."""
     ),
     bypass_cache=True,
     verbose= True, 
@@ -149,7 +150,7 @@ with open(unique_filename_Crawl4AI, "w", encoding="utf-8") as f:
 
 html_result = BeautifulSoup(crawler.run(url).html, 'html.parser')
 
-html_body = (html_result.body).prettify
+html_body = html_result.body.prettify()
 
 client = openai.OpenAI(api_key=api_key_string)
 
@@ -169,7 +170,7 @@ print (html_body)
 print (json_result)
 
 response = client.chat.completions.create(
-    model="gpt-4o",
+    model="gpt-4-mini",
     messages=[
         {
             "role": "system",
@@ -177,7 +178,7 @@ response = client.chat.completions.create(
         },
         {
             "role": "user",
-            "content": "Given the following test case: {test_case}, the HTML code: {html_body}, and the JSON result: {json_result}, analyze the HTML structure and improve the list of JSON objects to ensure there are no errors in the XPath expressions for the required elements in the test case."
+            "content": f"Given the following test case: {test_case}, the HTML code: {html_body}, and the JSON result: {json_result}, analyze the HTML structure and improve the list of JSON objects to ensure there are no errors in the XPath expressions for the required elements in the test case."
         }
     ]
 )
@@ -188,12 +189,13 @@ with open(unique_filename_OpenAI, "w", encoding="utf-8") as f:
     f.write(json_result_final)
 
 robot_test = client.chat.completions.create(
-    model="gpt-4o",
+    model="gpt-4-mini",
     messages=[
         {"role": "system", "content": "You are a skilled test automation engineer. Your task is to guide the user in creating an end-to-end (E2E) test script using Python, Robot Framework, and Selenium based on the provided test case, HTML code, and list of JSON objects."},
         {"role": "user", "content": 
         f"""Based on the following test case: {test_case}, HTML code: {html_body}, and the final list of JSON objects: {json_result_final}, generate an E2E test script using Python, Robot Framework, and Selenium for the test case.
         Please provide the test code in the format below:
+        
         ```robot framework
         
         Test Script

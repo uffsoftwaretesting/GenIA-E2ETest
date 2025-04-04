@@ -1,85 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-12-20T11:49:40.932688" rpa="false" schemaversion="5">
-<suite id="s1" name="Test4" source="c:\Users\Elvis\OneDrive\Área de Trabalho\Crawl4AI_Test\.robot\test4.robot">
-<test id="s1-t1" name="Login User With Incorrect Email And Password" line="15">
+<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2025-04-04T12:23:35.624157" rpa="false" schemaversion="5">
+<suite id="s1" name="Test5" source="C:\Users\Elvis\OneDrive\Área de Trabalho\Crawl4AI_Test\.robot\test5.robot">
+<test id="s1-t1" name="Login With Incorrect Email And Password" line="24">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-12-20T11:49:41.320866" level="INFO">Opening browser 'Chrome' to base url 'http://automationexercise.com'.</msg>
-<msg time="2024-12-20T11:49:41.869835" level="WARN">The chromedriver version (130.0.6723.116) detected in PATH at C:\Users\Elvis\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.205); currently, chromedriver 131.0.6778.204 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-04-04T12:23:36.399622" level="INFO">Opening browser 'Chrome' to base url 'http://automationexercise.com'.</msg>
 <arg>${URL}</arg>
-<arg>Chrome</arg>
+<arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-20T11:49:41.318826" elapsed="4.428683"/>
+<status status="PASS" start="2025-04-04T12:23:36.399622" elapsed="8.153202"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-20T11:49:45.747509" elapsed="0.040817"/>
+<status status="PASS" start="2025-04-04T12:23:44.559152" elapsed="0.383535"/>
 </kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-12-20T11:49:45.812829" level="INFO">Current page contains element 'xpath=//a[@href='/login']'.</msg>
-<arg>xpath=//a[@href='/login']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-12-20T11:49:45.788326" elapsed="0.024503"/>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-04-04T12:23:44.971442" level="INFO">Page title is 'Automation Exercise'.</msg>
+<arg>Automation Exercise</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-04-04T12:23:44.942687" elapsed="0.028755"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-20T11:49:45.821548" level="INFO">Clicking element 'xpath=//a[@href='/login']'.</msg>
-<arg>xpath=//a[@href='/login']</arg>
+<msg time="2025-04-04T12:23:44.991495" level="INFO">Clicking element 'xpath=//a[contains(text(),'Signup / Login')]'.</msg>
+<arg>xpath=//a[contains(text(),'Signup / Login')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-20T11:49:45.820827" elapsed="1.734449"/>
+<status status="PASS" start="2025-04-04T12:23:44.990377" elapsed="4.063219"/>
 </kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-12-20T11:49:47.585601" level="INFO">Current page contains text 'Login to your account'.</msg>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-04-04T12:23:49.057410" level="INFO">Verifying element 'xpath=//h2[contains(text(),'Login to your account')]' contains exact text 'Login to your account'.</msg>
+<arg>xpath=//h2[contains(text(),'Login to your account')]</arg>
 <arg>Login to your account</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-12-20T11:49:47.555276" elapsed="0.030325"/>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-04-04T12:23:49.056403" elapsed="0.057006"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-20T11:49:47.585601" level="INFO">Typing text 'invalid@example.com' into text field 'id=email'.</msg>
-<msg time="2024-12-20T11:49:47.804886" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-12-20T11:49:47.804886" level="FAIL">Element with locator 'id=email' not found.</msg>
-<arg>id=email</arg>
+<msg time="2025-04-04T12:23:49.121112" level="INFO">Typing text 'invalid@example.com' into text field 'xpath=//*[@name='email']'.</msg>
+<arg>xpath=//*[@name='email']</arg>
 <arg>${INVALID_EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="FAIL" start="2024-12-20T11:49:47.585601" elapsed="0.299169">Element with locator 'id=email' not found.</status>
+<status status="PASS" start="2025-04-04T12:23:49.121112" elapsed="0.428247"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<arg>id=password</arg>
+<msg time="2025-04-04T12:23:49.552464" level="INFO">Typing text 'wrongpassword' into text field 'xpath=//*[@name='password']'.</msg>
+<arg>xpath=//*[@name='password']</arg>
 <arg>${INVALID_PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-12-20T11:49:47.884770" elapsed="0.007297"/>
+<status status="PASS" start="2025-04-04T12:23:49.551108" elapsed="0.299395"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<arg>xpath=//button[contains(text(), 'Login')]</arg>
+<msg time="2025-04-04T12:23:49.853523" level="INFO">Clicking button 'xpath=//button[contains(.,'Login')]'.</msg>
+<arg>xpath=//button[contains(.,'Login')]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-12-20T11:49:47.892067" elapsed="0.000000"/>
+<status status="PASS" start="2025-04-04T12:23:49.850503" elapsed="1.663484"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${ERROR_MSG}</arg>
-<arg>10s</arg>
+<arg>${LOGIN_ERROR_MESSAGE}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="NOT RUN" start="2024-12-20T11:49:47.892067" elapsed="0.000000"/>
+<status status="PASS" start="2025-04-04T12:23:51.513987" elapsed="0.026591"/>
 </kw>
-<doc>This test case checks the login functionality with incorrect email and password.</doc>
-<tag>Login</tag>
-<status status="FAIL" start="2024-12-20T11:49:41.318039" elapsed="6.574028">Element with locator 'id=email' not found.</status>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-04T12:23:51.542596" elapsed="2.942387"/>
+</kw>
+<doc>Test Case 3: Login User with incorrect email and password.</doc>
+<status status="PASS" start="2025-04-04T12:23:36.397306" elapsed="18.130228"/>
 </test>
-<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-12-20T11:49:47.896916" elapsed="6.441559"/>
-</kw>
-<status status="FAIL" start="2024-12-20T11:49:40.964055" elapsed="13.374420"/>
+<status status="PASS" start="2025-04-04T12:23:35.627457" elapsed="18.928304"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">Login</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Test4">Test4</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test5">Test5</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-12-20T11:49:41.869835" level="WARN">The chromedriver version (130.0.6723.116) detected in PATH at C:\Users\Elvis\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.205); currently, chromedriver 131.0.6778.204 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
 </errors>
 </robot>

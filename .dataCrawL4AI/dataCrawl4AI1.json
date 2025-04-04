@@ -1,65 +1,65 @@
 [
     {
         "type": "input",
-        "request_description": "Field to enter the Name",
+        "request_description": "Field to enter email address",
         "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='name_input']",
+        "identifier_tracking": "//input[@id='email']"
+    },
+    {
+        "type": "input",
+        "request_description": "Field to enter password",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//input[@id='password']"
+    },
+    {
+        "type": "button",
+        "request_description": "Button to login",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//button[contains(text(),'Login')]"
+    },
+    {
+        "type": "text",
+        "request_description": "Error message for incorrect email or password",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//div[contains(text(),'Your email or password is incorrect!')]"
+    },
+    {
+        "type": "input",
+        "request_description": "Field to enter the email address",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//input[@id='email']",
         "error": false
     },
     {
         "type": "input",
-        "request_description": "Field to enter the Surname",
+        "request_description": "Field to enter the password",
         "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='surname_input']",
-        "error": false
-    },
-    {
-        "type": "input",
-        "request_description": "Field to enter the Email",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='email_input']",
-        "error": false
-    },
-    {
-        "type": "input",
-        "request_description": "Field to confirm the Email",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='confirm_email_input']",
-        "error": false
-    },
-    {
-        "type": "input",
-        "request_description": "Field to enter the Password",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='password_input']",
-        "error": false
-    },
-    {
-        "type": "input",
-        "request_description": "Field to confirm the Password",
-        "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='confirm_password_input']",
+        "identifier_tracking": "//input[@id='password']",
         "error": false
     },
     {
         "type": "button",
-        "request_description": "Button to sign up",
+        "request_description": "Button to login",
         "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='sign_up_button']",
+        "identifier_tracking": "//button[contains(text(),'Login')]",
         "error": false
     },
     {
-        "type": "checkbox",
-        "request_description": "Checkbox to agree with the Terms of Use",
+        "type": "input",
+        "request_description": "Field to enter the email address",
         "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='terms_checkbox']",
-        "error": false
+        "identifier_tracking": "//input[@id='email']"
     },
     {
-        "type": "link",
-        "request_description": "Link to log in if already have an account",
+        "type": "input",
+        "request_description": "Field to enter the password",
         "identifier_type": "XPath",
-        "identifier_tracking": "//*[@id='login_link']",
-        "error": false
+        "identifier_tracking": "//input[@id='password']"
+    },
+    {
+        "type": "button",
+        "request_description": "Button to login",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//button[contains(text(),'Login')]"
     }
 ]
