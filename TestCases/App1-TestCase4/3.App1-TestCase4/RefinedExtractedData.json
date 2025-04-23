@@ -1,0 +1,274 @@
+{
+    "testCase": "Verify Subscription in Cart page",
+    "modules": [
+        {
+            "url": "http://automationexercise.com",
+            "purpose": "Landing page of the automation exercise site",
+            "execution_steps": [
+                {
+                    "step": "Launch browser",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Navigate to url 'http://automationexercise.com'",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Verify that home page is visible successfully",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Click 'Cart' button",
+                    "extracted_data": [
+                        {
+                            "type": "button",
+                            "request_description": "Click the 'Cart' button to view the shopping cart.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(text(), 'Cart')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to navigate to the Test Cases page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(@class, 'test_cases_list')]//button[contains(text(), 'Test Cases')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click the 'Cart' button to view the shopping cart.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='cartModal']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click the 'Cart' button to view the shopping cart.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='btn btn-default add-to-cart']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click the 'Cart' button to view the shopping cart.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(text(), 'Cart')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to navigate to the Cart page",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(@class, 'test_cases_list')]//button[contains(text(), 'Test Cases')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click the 'Cart' button to view the shopping cart.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='cartModal']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click the 'Add to cart' button for the product.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='btn btn-default add-to-cart']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click the 'Cart' button to view the shopping cart.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(@class, 'cart')]//button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to navigate to the Cart page",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(@class, 'test_cases_list')]//button[contains(text(), 'Test Cases')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click the 'Cart' button to view the shopping cart.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(text(), 'Cart')]"
+                        },
+                        {
+                            "type": "link",
+                            "request_description": "Click on the 'Cart' button to view the shopping cart.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(text(), 'Cart')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click the 'Cart' button to view the shopping cart.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='cartModal']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click the 'Cart' button to view the shopping cart.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='btn btn-default add-to-cart']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click the 'Cart' button to view the shopping cart.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(@class, 'cart')]//button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to navigate to the Test Cases page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(@class, 'test_cases_list')]//button[contains(text(), 'Test Cases')]"
+                        },
+                        {
+                            "type": "link",
+                            "request_description": "Click on the 'Cart' button to view the shopping cart.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(text(), 'Cart')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click the 'Cart' button to view the shopping cart.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='cartModal']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click the 'Add to Cart' button to add the item to the shopping cart.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='btn btn-default add-to-cart']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click the 'Cart' button to view the shopping cart.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(text(), 'Cart')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to navigate to the Cart page",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(@class, 'test_cases_list')]//button[contains(text(), 'Test Cases')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click the 'Cart' button to view the shopping cart.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='cartModal']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click the 'Cart' button to view the shopping cart.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='btn btn-default add-to-cart']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click the 'Cart' button to view the shopping cart.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(text(), 'Cart')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to navigate to the Cart page",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(@class, 'test_cases_list')]//button[contains(text(), 'Test Cases')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click the 'Cart' button to view the shopping cart.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='cartModal']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click the 'Cart' button to view the shopping cart.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='btn btn-default add-to-cart']"
+                        }
+                    ]
+                }
+            ],
+            "token": {
+                "completion_tokens": 1902,
+                "prompt_tokens": 48805,
+                "total_tokens": 50707,
+                "completion_tokens_details": null,
+                "prompt_tokens_details": null
+            },
+            "dispatcher": {
+                "memory_usage_MB": -7.13671875,
+                "peak_memory_MB": -7.13671875,
+                "start_time": "2025-04-20T15:20:10.436548",
+                "end_time": "2025-04-20T15:20:28.137641",
+                "duration_seconds": 17.701093
+            }
+        },
+        {
+            "url": "https://automationexercise.com/view_cart",
+            "purpose": "Cart page where users can view their selected items and subscription",
+            "execution_steps": [
+                {
+                    "step": "Scroll down to footer",
+                    "extracted_data": [
+                        {
+                            "type": "footer",
+                            "request_description": "Scroll down to the footer section of the page.",
+                            "identifier_type": "CSS Selector",
+                            "identifier_tracking": "footer#footer"
+                        }
+                    ]
+                },
+                {
+                    "step": "Verify text 'SUBSCRIPTION'",
+                    "extracted_data": [
+                        {
+                            "type": "h2",
+                            "request_description": "Verify the presence of the 'SUBSCRIPTION' section.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//h2[text()='Subscription']"
+                        }
+                    ]
+                },
+                {
+                    "step": "Enter email address in input and click arrow button",
+                    "extracted_data": [
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email address for subscription.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='susbscribe_email']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the email address for subscription.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='subscribe']"
+                        }
+                    ]
+                },
+                {
+                    "step": "Verify success message 'You have been successfully subscribed!' is visible",
+                    "extracted_data": [
+                        {
+                            "type": "div",
+                            "request_description": "Verify success message indicating successful subscription.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='success-subscribe']"
+                        }
+                    ]
+                }
+            ],
+            "token": {
+                "completion_tokens": 335,
+                "prompt_tokens": 5958,
+                "total_tokens": 6293,
+                "completion_tokens_details": null,
+                "prompt_tokens_details": null
+            },
+            "dispatcher": {
+                "memory_usage_MB": 0.03515625,
+                "peak_memory_MB": 0.03515625,
+                "start_time": "2025-04-20T15:20:36.472165",
+                "end_time": "2025-04-20T15:20:44.757142",
+                "duration_seconds": 8.284977
+            }
+        }
+    ]
+}

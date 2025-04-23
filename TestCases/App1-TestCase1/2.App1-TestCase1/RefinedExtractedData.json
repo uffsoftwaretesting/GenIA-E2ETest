@@ -1,0 +1,193 @@
+{
+    "testCase": "Verify Subscription in home page",
+    "modules": [
+        {
+            "url": "http://automationexercise.com",
+            "purpose": "Home page of the application where subscription occurs.",
+            "execution_steps": [
+                {
+                    "step": "Launch browser",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Navigate to url 'http://automationexercise.com'",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Verify that home page is visible successfully",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Scroll down to footer",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Verify text 'SUBSCRIPTION'",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Enter email address in input and click arrow button",
+                    "extracted_data": [
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the email address for subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='susbscribe_email']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the subscription request",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='subscribe']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the email address for subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='susbscribe_email']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the subscription request",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='subscribe']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the email address for subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='susbscribe_email']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the subscription request",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='subscribe']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the email address for subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='susbscribe_email']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the subscription request",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='subscribe']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the email address for subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='susbscribe_email']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the subscription request",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='subscribe']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the email address for subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='susbscribe_email']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the subscription request",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='subscribe']"
+                        }
+                    ]
+                },
+                {
+                    "step": "Verify success message 'You have been successfully subscribed!' is visible",
+                    "extracted_data": [
+                        {
+                            "type": "div",
+                            "request_description": "Div element that displays the success message after subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[contains(text(), 'You have been successfully subscribed!')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Success message displayed after subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='success-subscribe']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div element that displays the success message after subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[contains(text(), 'You have been successfully subscribed!')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div element that contains the success message after subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='success-subscribe']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div element that displays the success message after subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[contains(text(), 'You have been successfully subscribed!')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div that displays the success message after subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='success-subscribe']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div element that displays the success message after subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[contains(text(), 'You have been successfully subscribed!')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div element that contains the success message after subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='success-subscribe']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div element that displays the success message after subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='success-subscribe']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div element that displays the success message after subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[contains(text(), 'You have been successfully subscribed!')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div element that contains the success message after subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='success-subscribe']"
+                        }
+                    ]
+                }
+            ],
+            "token": {
+                "completion_tokens": 1644,
+                "prompt_tokens": 51967,
+                "total_tokens": 53611,
+                "completion_tokens_details": null,
+                "prompt_tokens_details": null
+            },
+            "dispatcher": {
+                "memory_usage_MB": 0.265625,
+                "peak_memory_MB": 0.265625,
+                "start_time": "2025-04-20T15:14:50.335230",
+                "end_time": "2025-04-20T15:15:04.019438",
+                "duration_seconds": 13.684208
+            }
+        }
+    ]
+}

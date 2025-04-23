@@ -1,0 +1,163 @@
+{
+    "testCase": "Verify Subscription in home page",
+    "modules": [
+        {
+            "url": "http://automationexercise.com",
+            "purpose": "Home page of the application where subscription occurs.",
+            "execution_steps": [
+                {
+                    "step": "Launch browser",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Navigate to url 'http://automationexercise.com'",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Verify that home page is visible successfully",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Scroll down to footer",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Verify text 'SUBSCRIPTION'",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Enter email address in input and click arrow button",
+                    "extracted_data": [
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email address for subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='susbscribe_email']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the email for subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='subscribe']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the email address for subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='susbscribe_email']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the subscription request",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='subscribe']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the email address for subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='susbscribe_email']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the subscription request",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='subscribe']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the email address for subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='susbscribe_email']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the email for subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='subscribe']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email address for subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//input[@id='susbscribe_email']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the subscription form",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//button[@id='subscribe']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the email address for subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='susbscribe_id']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the subscription request",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='subscribe']"
+                        }
+                    ]
+                },
+                {
+                    "step": "Verify success message 'You have been successfully subscribed!' is visible",
+                    "extracted_data": [
+                        {
+                            "type": "div",
+                            "request_description": "Div element that contains the success message after subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[contains(text(), 'You have been successfully subscribed!')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div element that contains the success message after subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='success-subscribe']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div element that contains the success message after subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[contains(text(), 'You have been successfully subscribed!')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div element that displays the success message after subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[contains(text(), 'You have been successfully subscribed!')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Success message displayed after subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='success-subscribe']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div element that contains the success message after subscription",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[contains(text(), 'You have been successfully subscribed!')]"
+                        }
+                    ]
+                }
+            ],
+            "token": {
+                "completion_tokens": 1306,
+                "prompt_tokens": 46141,
+                "total_tokens": 47447,
+                "completion_tokens_details": null,
+                "prompt_tokens_details": null
+            },
+            "dispatcher": {
+                "memory_usage_MB": -0.0546875,
+                "peak_memory_MB": -0.0546875,
+                "start_time": "2025-04-20T15:15:07.034406",
+                "end_time": "2025-04-20T15:15:14.518673",
+                "duration_seconds": 7.484267
+            }
+        }
+    ]
+}

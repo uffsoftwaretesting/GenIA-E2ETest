@@ -1,0 +1,286 @@
+{
+    "testCase": "Test Case 6: Successfully Filter Movies by State",
+    "modules": [
+        {
+            "url": "http://localhost:5173/",
+            "purpose": "Home page where user can filter movies by state",
+            "execution_steps": [
+                {
+                    "step": "Launch browser",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Navigate to url 'http://localhost:5173/'",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Verify that home page is visible successfully",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Click on the select dropdown labeled 'Estado'",
+                    "extracted_data": [
+                        {
+                            "type": "select",
+                            "request_description": "Dropdown to select the state for filtering movies",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='estado']"
+                        },
+                        {
+                            "type": "select",
+                            "request_description": "Dropdown to select the state for filtering movies",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_selection_1tfx4_193']/div/select"
+                        },
+                        {
+                            "type": "select",
+                            "request_description": "Dropdown to select the state for filtering movies",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='estado']"
+                        },
+                        {
+                            "type": "select",
+                            "request_description": "Dropdown to select the state for filtering movies",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='estado']"
+                        },
+                        {
+                            "type": "select",
+                            "request_description": "Dropdown to select the state for filtering movies",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='estado-dropdown']"
+                        },
+                        {
+                            "type": "select",
+                            "request_description": "Dropdown to select the state for filtering movies",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_selection_1tfx4_193']/div/select"
+                        },
+                        {
+                            "type": "select",
+                            "request_description": "Dropdown to select the state for filtering movies",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='estado']"
+                        },
+                        {
+                            "type": "select",
+                            "request_description": "Dropdown to select the state for filtering movies",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='estado']"
+                        },
+                        {
+                            "type": "select",
+                            "request_description": "Dropdown to select the state for filtering movies",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='estado-dropdown']"
+                        },
+                        {
+                            "type": "select",
+                            "request_description": "Dropdown to select the state for filtering movies",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_selection_1tfx4_193']/div/select"
+                        },
+                        {
+                            "type": "select",
+                            "request_description": "Dropdown to select the state for filtering movies",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='estado']"
+                        },
+                        {
+                            "type": "select",
+                            "request_description": "Dropdown to select the state for filtering movies",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='estado']"
+                        },
+                        {
+                            "type": "select",
+                            "request_description": "Dropdown to select the state for filtering movies",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='estado-dropdown']"
+                        }
+                    ]
+                },
+                {
+                    "step": "Select the option 'AM' from the list",
+                    "extracted_data": [
+                        {
+                            "type": "option",
+                            "request_description": "Option to select 'AM' from the dropdown list",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='estado']/option[@value='AM']"
+                        },
+                        {
+                            "type": "option",
+                            "request_description": "Option to select 'AM' from the dropdown list",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_selection_1tfx4_193']/div/select/option[text()='AM']"
+                        },
+                        {
+                            "type": "option",
+                            "request_description": "Option to select the state 'AM'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='estado']/option[@value='AM']"
+                        },
+                        {
+                            "type": "option",
+                            "request_description": "Option to select the state 'AM'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='estado']/option[text()='AM']"
+                        },
+                        {
+                            "type": "option",
+                            "request_description": "Option to select the state 'AM'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='estado-dropdown']/option[text()='AM']"
+                        },
+                        {
+                            "type": "option",
+                            "request_description": "Option to select 'AM' from the dropdown list",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_selection_1tfx4_193']/div/select/option[text()='AM']"
+                        },
+                        {
+                            "type": "option",
+                            "request_description": "Option to select the state 'AM'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='estado']/option[@value='AM']"
+                        },
+                        {
+                            "type": "option",
+                            "request_description": "Option to select the state 'AM'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='estado']/option[text()='AM']"
+                        },
+                        {
+                            "type": "option",
+                            "request_description": "Option to select the state 'AM'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='estado-dropdown']/option[text()='AM']"
+                        },
+                        {
+                            "type": "option",
+                            "request_description": "Option to select 'AM' from the dropdown list",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_selection_1tfx4_193']/div/select/option[text()='AM']"
+                        },
+                        {
+                            "type": "option",
+                            "request_description": "Option to select the state 'AM'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='estado']/option[@value='AM']"
+                        },
+                        {
+                            "type": "option",
+                            "request_description": "Option to select the state 'AM'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='estado']/option[text()='AM']"
+                        },
+                        {
+                            "type": "option",
+                            "request_description": "Option to select the state 'AM'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='estado-dropdown']/option[text()='AM']"
+                        }
+                    ]
+                },
+                {
+                    "step": "Verify that the movie card titled 'Joker' is visible",
+                    "extracted_data": [
+                        {
+                            "type": "div",
+                            "request_description": "Movie card titled 'Joker' that should be visible after filtering",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_card_1tfx4_343']/div/h4[text()='Joker']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Movie card titled 'Joker' that should be visible after filtering",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_card_1tfx4_343']/div/h4[text()='Joker']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Movie card titled 'Joker' to verify its visibility",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//button[div/h4[text()='Joker']]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Movie card titled 'Joker'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[contains(@class, 'movie-card') and contains(., 'Joker')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Movie card displaying the title 'Joker'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='movie-card' and .//h4[text()='Joker']]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Movie card titled 'Joker' that should be visible after filtering",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_card_1tfx4_343']/div/h4[text()='Joker']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Movie card titled 'Joker' to verify its visibility",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//button[div/h4[text()='Joker']]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Movie card titled 'Joker'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[contains(@class, 'movie-card') and contains(., 'Joker')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Movie card displaying the title 'Joker'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='movie-card' and .//h4[text()='Joker']]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Movie card titled 'Joker' that should be visible after filtering",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_card_1tfx4_343']/div/h4[text()='Joker']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Movie card titled 'Joker' to verify its visibility",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//button[div/h4[text()='Joker']]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Movie card titled 'Joker'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[contains(@class, 'movie-card') and contains(., 'Joker')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Movie card displaying the title 'Joker'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='movie-card' and .//h4[text()='Joker']]"
+                        }
+                    ]
+                }
+            ],
+            "token": {
+                "completion_tokens": 2836,
+                "prompt_tokens": 35679,
+                "total_tokens": 38515,
+                "completion_tokens_details": null,
+                "prompt_tokens_details": null
+            },
+            "dispatcher": {
+                "memory_usage_MB": 0.0078125,
+                "peak_memory_MB": 0.0078125,
+                "start_time": "2025-04-20T17:55:26.556948",
+                "end_time": "2025-04-20T17:55:40.037946",
+                "duration_seconds": 13.480998
+            }
+        }
+    ]
+}

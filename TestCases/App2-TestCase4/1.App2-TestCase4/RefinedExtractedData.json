@@ -1,0 +1,572 @@
+{
+    "testCase": "Successfully Navigate to Movie Details Page",
+    "modules": [
+        {
+            "url": "http://localhost:5173/",
+            "purpose": "Home Page - Users can view all available movies.",
+            "execution_steps": [
+                {
+                    "step": "Launch browser",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Navigate to url 'http://localhost:5173/'",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Verify that home page is visible successfully",
+                    "extracted_data": [
+                        {
+                            "type": "div",
+                            "request_description": "Container for the home page where users can view all available movies.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_home_1tfx4_89']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the home page where users can view all available movies.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_home_1tfx4_89']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the home page where users can view all available movies.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_home_1tfx4_89']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the home page where users can view all available movies.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_home_1tfx4_89']"
+                        }
+                    ]
+                },
+                {
+                    "step": "Click on the movie card titled 'Barbie'",
+                    "extracted_data": [
+                        {
+                            "type": "button",
+                            "request_description": "Click on the movie card titled 'Barbie'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//button[div/h4[text()='Barbie']]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click on the movie card titled 'Barbie'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_form_assentos_1vtow_417']//button[contains(., 'Barbie')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click on the movie card titled 'Barbie'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='movie_card_6y9nh_127']//h4[text()='Barbie']/.."
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Movie card titled 'Barbie' that users can click to view more details.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_card_1tfx4_343']//h4[text()='Barbie']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click on the movie card titled 'Barbie'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//button[div/h4[text()='Barbie']]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click on the movie card titled 'Barbie'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_form_assentos_1vtow_417']//button[contains(., 'Barbie')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click on the movie card titled 'Barbie'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='movie_card_6y9nh_127']//h4[text()='Barbie']/.."
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Movie card titled 'Barbie' that users can click to view more details.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_card_1tfx4_343']//h4[text()='Barbie']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click on the movie card titled 'Barbie'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//button[div/h4[text()='Barbie']]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click on the movie card titled 'Barbie'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_form_assentos_1vtow_417']//button[contains(., 'Barbie')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click on the movie card titled 'Barbie'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='movie_card_6y9nh_127']//h4[text()='Barbie']/.."
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Movie card titled 'Barbie' that users can click to view more details.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_card_1tfx4_343']//h4[text()='Barbie']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click on the movie card titled 'Barbie'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//button[div/h4[text()='Barbie']]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click on the movie card titled 'Barbie'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_form_assentos_1vtow_417']//button[contains(., 'Barbie')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click on the movie card titled 'Barbie'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='movie_card_6y9nh_127']//h4[text()='Barbie']/.."
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Movie card titled 'Barbie' that users can click to view more details.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_card_1tfx4_343']//h4[text()='Barbie']"
+                        }
+                    ]
+                }
+            ],
+            "token": {
+                "completion_tokens": 1608,
+                "prompt_tokens": 34363,
+                "total_tokens": 35971,
+                "completion_tokens_details": null,
+                "prompt_tokens_details": null
+            },
+            "dispatcher": {
+                "memory_usage_MB": 0.24609375,
+                "peak_memory_MB": 0.24609375,
+                "start_time": "2025-04-20T17:58:33.310814",
+                "end_time": "2025-04-20T17:58:41.169338",
+                "duration_seconds": 7.858524
+            }
+        },
+        {
+            "url": "http://localhost:5173/MovieSession/",
+            "purpose": "Movie Details Page - Users can see details about the selected movie.",
+            "execution_steps": [
+                {
+                    "step": "Verify that the movie details page for 'Barbie' is visible",
+                    "extracted_data": [
+                        {
+                            "type": "section",
+                            "request_description": "Section displaying details about the movie 'Barbie'.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_card_list_6y9nh_127' and contains(., 'Barbie')]"
+                        },
+                        {
+                            "type": "h4",
+                            "request_description": "Title of the movie 'Barbie'.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_card_list_top_6y9nh_183']/h4[contains(text(), 'Barbie')]"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Description of the movie 'Barbie'.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_card_list_bottom_6y9nh_215']/p[contains(text(), 'Barbie')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for movie details including title, description, and other relevant information.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_profile_user_eeems_99']"
+                        },
+                        {
+                            "type": "h1",
+                            "request_description": "Title of the movie, which should display 'Barbie'.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_modalContainer_142t2_37']/div/h1"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Description of the movie, providing details about the plot and characters.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_modalContainer_142t2_37']/div/p[1]"
+                        },
+                        {
+                            "type": "img",
+                            "request_description": "Image of the movie poster for 'Barbie'.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_section_movie_informations_eeems_393']/img"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the movie details, including title, description, and release status.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='root']"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Paragraph element containing the movie title.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='root']//p[contains(text(), 'Barbie')]"
+                        },
+                        {
+                            "type": "span",
+                            "request_description": "Span element displaying the movie release status.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='root']//span[contains(text(), 'Released')]"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Paragraph element containing the movie description.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='root']//p[contains(@class, '_movie_inf_6y9nh_905')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the movie details including title, description, and other information.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_banner_b0262_11']"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Title of the movie displayed on the details page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_banner_b0262_11']//p[1]"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Description of the movie displayed on the details page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_banner_b0262_11']//p[2]"
+                        },
+                        {
+                            "type": "img",
+                            "request_description": "Image of the movie displayed on the details page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_banner_b0262_11']//img"
+                        },
+                        {
+                            "type": "select",
+                            "request_description": "Dropdown to select the movie session time.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_banner_b0262_11']//select"
+                        },
+                        {
+                            "type": "section",
+                            "request_description": "Section displaying details about the movie 'Barbie'.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_card_list_6y9nh_127' and contains(., 'Barbie')]"
+                        },
+                        {
+                            "type": "h4",
+                            "request_description": "Title of the movie 'Barbie'.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_card_list_top_6y9nh_183']/h4[contains(text(), 'Barbie')]"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Description of the movie 'Barbie'.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_card_list_bottom_6y9nh_215']/p[contains(text(), 'Barbie')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for movie details including title, description, and other relevant information.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_profile_user_eeems_99']"
+                        },
+                        {
+                            "type": "h1",
+                            "request_description": "Title of the movie, which should display 'Barbie'.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_modalContainer_142t2_37']/div/h1"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Description of the movie, providing details about the plot and characters.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_modalContainer_142t2_37']/div/p[1]"
+                        },
+                        {
+                            "type": "img",
+                            "request_description": "Image of the movie poster for 'Barbie'.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_section_movie_informations_eeems_393']/img"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the movie details, including title, description, and release status.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='root']"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Paragraph element containing the movie title.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='root']//p[contains(text(), 'Barbie')]"
+                        },
+                        {
+                            "type": "span",
+                            "request_description": "Span element displaying the movie release status.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='root']//span[contains(text(), 'Released')]"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Paragraph element containing the movie description.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='root']//p[contains(@class, '_movie_inf_6y9nh_905')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the movie details including title, description, and other information.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_banner_b0262_11']"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Title of the movie displayed on the details page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_banner_b0262_11']//p[1]"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Description of the movie displayed on the details page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_banner_b0262_11']//p[2]"
+                        },
+                        {
+                            "type": "img",
+                            "request_description": "Image of the movie displayed on the details page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_banner_b0262_11']//img"
+                        },
+                        {
+                            "type": "select",
+                            "request_description": "Dropdown to select the movie session time.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_banner_b0262_11']//select"
+                        },
+                        {
+                            "type": "section",
+                            "request_description": "Section displaying details about the movie 'Barbie'.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_card_list_6y9nh_127' and contains(., 'Barbie')]"
+                        },
+                        {
+                            "type": "h4",
+                            "request_description": "Title of the movie 'Barbie'.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_card_list_top_6y9nh_183']/h4[contains(text(), 'Barbie')]"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Description of the movie 'Barbie'.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_card_list_bottom_6y9nh_215']/p[contains(text(), 'Barbie')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for movie details including title, description, and other relevant information.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_profile_user_eeems_99']"
+                        },
+                        {
+                            "type": "h1",
+                            "request_description": "Title of the movie, which should display 'Barbie'.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_modalContainer_142t2_37']/div/h1"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Description of the movie, providing details about the plot and characters.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_modalContainer_142t2_37']/div/p[1]"
+                        },
+                        {
+                            "type": "img",
+                            "request_description": "Image of the movie poster for 'Barbie'.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_section_movie_informations_eeems_393']/img"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the movie details, including title, description, and release status.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='root']"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Paragraph element containing the movie title.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='root']//p[contains(text(), 'Barbie')]"
+                        },
+                        {
+                            "type": "span",
+                            "request_description": "Span element displaying the movie release status.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='root']//span[contains(text(), 'Released')]"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Paragraph element containing the movie description.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='root']//p[contains(@class, '_movie_inf_6y9nh_905')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the movie details including title, description, and other information.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_banner_b0262_11']"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Title of the movie displayed on the details page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_banner_b0262_11']//p[1]"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Description of the movie displayed on the details page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_banner_b0262_11']//p[2]"
+                        },
+                        {
+                            "type": "img",
+                            "request_description": "Image of the movie displayed on the details page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_banner_b0262_11']//img"
+                        },
+                        {
+                            "type": "select",
+                            "request_description": "Dropdown to select the movie session time.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_banner_b0262_11']//select"
+                        },
+                        {
+                            "type": "section",
+                            "request_description": "Section displaying details about the movie 'Barbie'.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_card_list_6y9nh_127' and contains(., 'Barbie')]"
+                        },
+                        {
+                            "type": "h4",
+                            "request_description": "Title of the movie 'Barbie'.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_card_list_top_6y9nh_183']/h4[contains(text(), 'Barbie')]"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Description of the movie 'Barbie'.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_card_list_bottom_6y9nh_215']/p[contains(text(), 'Barbie')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for movie details including title, description, and other relevant information.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_profile_user_eeems_99']"
+                        },
+                        {
+                            "type": "h1",
+                            "request_description": "Title of the movie, which should display 'Barbie'.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_modalContainer_142t2_37']/div/h1"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Description of the movie, providing details about the plot and characters.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_modalContainer_142t2_37']/div/p[1]"
+                        },
+                        {
+                            "type": "img",
+                            "request_description": "Image of the movie poster for 'Barbie'.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_section_movie_informations_eeems_393']/img"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the movie details, including title, description, and release status.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='root']"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Paragraph element containing the movie title.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='root']//p[contains(text(), 'Barbie')]"
+                        },
+                        {
+                            "type": "span",
+                            "request_description": "Span element displaying the movie release status.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='root']//span[contains(text(), 'Released')]"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Paragraph element containing the movie description.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='root']//p[contains(@class, '_movie_inf_6y9nh_905')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the movie details including title, description, and other information.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_banner_b0262_11']"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Title of the movie displayed on the details page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_banner_b0262_11']//p[1]"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Description of the movie displayed on the details page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_banner_b0262_11']//p[2]"
+                        },
+                        {
+                            "type": "img",
+                            "request_description": "Image of the movie displayed on the details page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_banner_b0262_11']//img"
+                        },
+                        {
+                            "type": "select",
+                            "request_description": "Dropdown to select the movie session time.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_banner_b0262_11']//select"
+                        }
+                    ]
+                }
+            ],
+            "token": {
+                "completion_tokens": 5033,
+                "prompt_tokens": 29294,
+                "total_tokens": 34327,
+                "completion_tokens_details": null,
+                "prompt_tokens_details": null
+            },
+            "dispatcher": {
+                "memory_usage_MB": -3.98828125,
+                "peak_memory_MB": -3.98828125,
+                "start_time": "2025-04-20T17:58:49.651363",
+                "end_time": "2025-04-20T17:59:09.658302",
+                "duration_seconds": 20.006939
+            }
+        }
+    ]
+}

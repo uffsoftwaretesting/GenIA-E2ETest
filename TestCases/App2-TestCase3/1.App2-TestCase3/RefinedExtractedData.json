@@ -1,0 +1,508 @@
+{
+    "testCase": "Unsuccessfully Login with Incorrect Credentials",
+    "modules": [
+        {
+            "url": "http://localhost:5173/",
+            "purpose": "Home Page - Initial landing page of the application.",
+            "execution_steps": [
+                {
+                    "step": "Launch browser",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Navigate to url 'http://localhost:5173/'",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Verify that home page is visible successfully",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Click on 'LogIn' button",
+                    "extracted_data": [
+                        {
+                            "type": "button",
+                            "request_description": "Button to log in to the application.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_header_axbsj_1']/div/a[2]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to log in to the application.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='login-button']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to log in to the application.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']//button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to log in to the application.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='login-button']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to navigate to the login page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_header_axbsj_1']/div/a[2]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to log in to the application.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='login-button']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to log in to the application.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']//button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to log in to the application.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='login-button']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to navigate to the login page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_header_axbsj_1']/div/a[2]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to log in to the application.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='login-button']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to log in to the application.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']//button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to log in to the application.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='login-button']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to navigate to the login page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_header_axbsj_1']/div/a[2]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to log in to the application.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='login-button']"
+                        }
+                    ]
+                }
+            ],
+            "token": {
+                "completion_tokens": 974,
+                "prompt_tokens": 33967,
+                "total_tokens": 34941,
+                "completion_tokens_details": null,
+                "prompt_tokens_details": null
+            },
+            "dispatcher": {
+                "memory_usage_MB": 0.08984375,
+                "peak_memory_MB": 0.08984375,
+                "start_time": "2025-04-20T17:56:37.620746",
+                "end_time": "2025-04-20T17:56:43.310689",
+                "duration_seconds": 5.689943
+            }
+        },
+        {
+            "url": "http://localhost:5173/LogIn",
+            "purpose": "Login Page - Allows users to enter their credentials.",
+            "execution_steps": [
+                {
+                    "step": "Verify 'Log In' is visible",
+                    "extracted_data": [
+                        {
+                            "type": "div",
+                            "request_description": "'Log In' header visible to the user",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']/div[1]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "'Log In' header visible to the user",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']/div[1]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "'Log In' header visible to the user",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']/div[1]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "'Log In' header visible to the user",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']/div[1]"
+                        }
+                    ]
+                },
+                {
+                    "step": "Enter incorrect email and password",
+                    "extracted_data": [
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='input_email']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's password",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='input_senha']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='email-input']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's password",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='password-input']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']/form/input[1]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's password",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']/form/input[2]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']//input[@type='email']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's password",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']//input[@type='password']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='input_email']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's password",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='input_senha']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='email-input']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's password",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='password-input']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']/form/input[1]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's password",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']/form/input[2]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']//input[@type='email']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's password",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']//input[@type='password']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='input_email']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's password",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='input_senha']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='email-input']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's password",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='password-input']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']/form/input[1]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's password",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']/form/input[2]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']//input[@type='email']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's password",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']//input[@type='password']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='input_email']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's password",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='input_senha']"
+                        }
+                    ]
+                },
+                {
+                    "step": "Click 'Log In' button",
+                    "extracted_data": [
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the login form",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']/form/button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the login form",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='login-button']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the login form",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']/form/button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the login form",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']//button[contains(text(), 'Log In')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the login form",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']/form/button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the login form",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='login-button']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the login form",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']/form/button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the login form",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']//button[contains(text(), 'Log In')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the login form",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']/form/button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the login form",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='login-button']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the login form",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']/form/button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the login form",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']//button[contains(text(), 'Log In')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the login form",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']/form/button"
+                        }
+                    ]
+                },
+                {
+                    "step": "Verify error message 'User not found!' is visible",
+                    "extracted_data": [
+                        {
+                            "type": "div",
+                            "request_description": "Div element displaying the error message for user not found",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_message_Feedback_1caxf_17']"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Error message displayed when user is not found",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[contains(text(), 'User not found!')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div element displaying the error message for user not found",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='error-message']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div to display error message for user not found",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_message_Feedback_lv82k_15']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div element that displays the error message for user not found",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='error-message' and contains(text(), 'User not found!')]"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Error message displayed when user is not found",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[contains(text(), 'User not found!')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div element displaying the error message for user not found",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='error-message']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div to display error message for user not found",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_message_Feedback_lv82k_15']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div element that displays the error message for user not found",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='error-message' and contains(text(), 'User not found!')]"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Error message displayed when user is not found",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[contains(text(), 'User not found!')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div element displaying the error message for user not found",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='error-message']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div to display error message for user not found",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_message_Feedback_lv82k_15']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div element that displays the error message for user not found",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='error-message' and contains(text(), 'User not found!')]"
+                        },
+                        {
+                            "type": "p",
+                            "request_description": "Error message displayed when user is not found",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[contains(text(), 'User not found!')]"
+                        }
+                    ]
+                }
+            ],
+            "token": {
+                "completion_tokens": 3744,
+                "prompt_tokens": 29961,
+                "total_tokens": 33705,
+                "completion_tokens_details": null,
+                "prompt_tokens_details": null
+            },
+            "dispatcher": {
+                "memory_usage_MB": 0.421875,
+                "peak_memory_MB": 0.421875,
+                "start_time": "2025-04-20T17:56:49.991225",
+                "end_time": "2025-04-20T17:57:05.637384",
+                "duration_seconds": 15.646159
+            }
+        }
+    ]
+}

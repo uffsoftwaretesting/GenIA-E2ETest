@@ -1,0 +1,382 @@
+{
+    "testCase": "Register User",
+    "modules": [
+        {
+            "url": "http://automationexercise.com",
+            "purpose": "Homepage access and navigation to login/sign-up area",
+            "execution_steps": [
+                {
+                    "step": "Launch browser",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Navigate to url 'http://automationexercise.com'",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Verify that home page is visible successfully",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Click on 'Signup / Login' button",
+                    "extracted_data": [
+                        {
+                            "type": "button",
+                            "request_description": "Button to navigate to the Signup / Login area",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(text(), 'Signup / Login')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to navigate to the Signup/Login area",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='header']/div[2]/div/div/div[2]/div[4]/a"
+                        }
+                    ]
+                }
+            ],
+            "token": {
+                "completion_tokens": 184,
+                "prompt_tokens": 20856,
+                "total_tokens": 21040,
+                "completion_tokens_details": null,
+                "prompt_tokens_details": null
+            },
+            "dispatcher": {
+                "memory_usage_MB": 0.0703125,
+                "peak_memory_MB": 0.0703125,
+                "start_time": "2025-04-20T15:25:21.934672",
+                "end_time": "2025-04-20T15:25:28.222533",
+                "duration_seconds": 6.287861
+            }
+        },
+        {
+            "url": "https://automationexercise.com/login",
+            "purpose": "Navigate to signup page and register new user",
+            "execution_steps": [
+                {
+                    "step": "Verify 'New User Signup!' is visible",
+                    "extracted_data": [
+                        {
+                            "type": "h2",
+                            "request_description": "'New User Signup!' heading visible to the user",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[2]/div[1]/h2"
+                        }
+                    ]
+                },
+                {
+                    "step": "Enter name and email address",
+                    "extracted_data": [
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's name",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[2]/div[2]/form/input[1]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email address",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[2]/div[2]/form/input[2]"
+                        }
+                    ]
+                },
+                {
+                    "step": "Click 'Signup' button",
+                    "extracted_data": [
+                        {
+                            "type": "button",
+                            "request_description": "'Signup' button to submit the registration form",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[2]/div[2]/form/button"
+                        }
+                    ]
+                },
+                {
+                    "step": "Verify that 'ENTER ACCOUNT INFORMATION' is visible",
+                    "extracted_data": [
+                        {
+                            "type": "h2",
+                            "request_description": "'ENTER ACCOUNT INFORMATION' heading visible to the user",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[3]/div[1]/h2"
+                        }
+                    ]
+                },
+                {
+                    "step": "Fill details: Title, Name, Email, Password, Date of birth",
+                    "extracted_data": [
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's title",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[3]/div[2]/form/select[1]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's name",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[3]/div[2]/form/input[1]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[3]/div[2]/form/input[2]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's password",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[3]/div[2]/form/input[3]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's date of birth",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[3]/div[2]/form/input[4]"
+                        }
+                    ]
+                },
+                {
+                    "step": "Select checkbox 'Sign up for our newsletter!'",
+                    "extracted_data": [
+                        {
+                            "type": "input",
+                            "request_description": "Checkbox to sign up for the newsletter",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[3]/div[2]/form/input[5]"
+                        }
+                    ]
+                },
+                {
+                    "step": "Select checkbox 'Receive special offers from our partners!'",
+                    "extracted_data": [
+                        {
+                            "type": "input",
+                            "request_description": "Checkbox to receive special offers from partners",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[3]/div[2]/form/input[6]"
+                        }
+                    ]
+                },
+                {
+                    "step": "Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number",
+                    "extracted_data": [
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's first name",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[3]/div[2]/form/input[7]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's last name",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[3]/div[2]/form/input[8]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's company name",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[3]/div[2]/form/input[9]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's address",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[3]/div[2]/form/input[10]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's second address line",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[3]/div[2]/form/input[11]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to select the user's country",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[3]/div[2]/form/select[2]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's state",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[3]/div[2]/form/input[12]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's city",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[3]/div[2]/form/input[13]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's zipcode",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[3]/div[2]/form/input[14]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's mobile number",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[3]/div[2]/form/input[15]"
+                        }
+                    ]
+                },
+                {
+                    "step": "Click 'Create Account' button",
+                    "extracted_data": [
+                        {
+                            "type": "button",
+                            "request_description": "'Create Account' button to submit the account creation form",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/div[3]/div[2]/form/button"
+                        }
+                    ]
+                }
+            ],
+            "token": {
+                "completion_tokens": 1879,
+                "prompt_tokens": 5538,
+                "total_tokens": 7417,
+                "completion_tokens_details": null,
+                "prompt_tokens_details": null
+            },
+            "dispatcher": {
+                "memory_usage_MB": 0.01953125,
+                "peak_memory_MB": 0.01953125,
+                "start_time": "2025-04-20T15:25:32.234772",
+                "end_time": "2025-04-20T15:25:59.843497",
+                "duration_seconds": 27.608725
+            }
+        },
+        {
+            "url": "https://automationexercise.com/login",
+            "purpose": "Verify account creation confirmation",
+            "execution_steps": [
+                {
+                    "step": "Verify that 'ACCOUNT CREATED!' is visible",
+                    "extracted_data": [
+                        {
+                            "type": "h2",
+                            "request_description": "Header indicating that the user should log in to their account.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//h2[text()='Login to your account']"
+                        }
+                    ]
+                },
+                {
+                    "step": "Click 'Continue' button",
+                    "extracted_data": [
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the login form.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//button[@data-qa='login-button']"
+                        }
+                    ]
+                }
+            ],
+            "token": {
+                "completion_tokens": 150,
+                "prompt_tokens": 5504,
+                "total_tokens": 5654,
+                "completion_tokens_details": null,
+                "prompt_tokens_details": null
+            },
+            "dispatcher": {
+                "memory_usage_MB": 0.0078125,
+                "peak_memory_MB": 0.0078125,
+                "start_time": "2025-04-20T15:26:24.103376",
+                "end_time": "2025-04-20T15:26:27.317819",
+                "duration_seconds": 3.214443
+            }
+        },
+        {
+            "url": "http://automationexercise.com",
+            "purpose": "Check successful login and account management",
+            "execution_steps": [
+                {
+                    "step": "Verify that 'Logged in as username' is visible",
+                    "extracted_data": [
+                        {
+                            "type": "text",
+                            "request_description": "Text indicating the logged-in user's name.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[contains(text(), 'Logged in as')]"
+                        },
+                        {
+                            "type": "text",
+                            "request_description": "Text indicating the logged-in user's name.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[contains(text(), 'Logged in as')]"
+                        }
+                    ]
+                },
+                {
+                    "step": "Click 'Delete Account' button",
+                    "extracted_data": [
+                        {
+                            "type": "button",
+                            "request_description": "Button to delete the user's account.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='delete-account']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to delete the user's account.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='deleteAccount']"
+                        }
+                    ]
+                },
+                {
+                    "step": "Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button",
+                    "extracted_data": [
+                        {
+                            "type": "text",
+                            "request_description": "Text indicating that the account has been deleted.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[contains(text(), 'ACCOUNT DELETED!')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to continue after account deletion.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='continue']"
+                        },
+                        {
+                            "type": "text",
+                            "request_description": "Text indicating that the account has been deleted.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[contains(text(), 'ACCOUNT DELETED!')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to continue after account deletion.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='continue']"
+                        }
+                    ]
+                }
+            ],
+            "token": {
+                "completion_tokens": 568,
+                "prompt_tokens": 20854,
+                "total_tokens": 21422,
+                "completion_tokens_details": null,
+                "prompt_tokens_details": null
+            },
+            "dispatcher": {
+                "memory_usage_MB": 0.1328125,
+                "peak_memory_MB": 0.1328125,
+                "start_time": "2025-04-20T15:26:30.002756",
+                "end_time": "2025-04-20T15:26:34.898663",
+                "duration_seconds": 4.895907
+            }
+        }
+    ]
+}

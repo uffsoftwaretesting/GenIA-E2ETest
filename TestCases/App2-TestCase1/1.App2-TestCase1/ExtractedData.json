@@ -1,0 +1,138 @@
+{
+    "testCase": "Successfully Search for a Movie",
+    "modules": [
+        {
+            "url": "http://localhost:5173/",
+            "purpose": "Home page for searching movies",
+            "execution_steps": [
+                {
+                    "step": "Launch browser",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Navigate to url 'http://localhost:5173/'",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Verify that home page is visible successfully",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Click on the search input labeled 'Digite o nome do filme'",
+                    "extracted_data": [
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the movie name.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='titulo']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the movie name",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='search-input']"
+                        }
+                    ]
+                },
+                {
+                    "step": "Enter movie name 'Interestellar'",
+                    "extracted_data": [
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the movie name",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='search-input']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the movie name",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_selection_name_1tfx4_257']/input"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the movie name 'Interestellar'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='search-input']"
+                        }
+                    ]
+                }
+            ],
+            "token": {
+                "completion_tokens": 394,
+                "prompt_tokens": 32439,
+                "total_tokens": 32833,
+                "completion_tokens_details": null,
+                "prompt_tokens_details": null
+            },
+            "dispatcher": {
+                "memory_usage_MB": 88.0546875,
+                "peak_memory_MB": 88.0546875,
+                "start_time": "2025-04-20T17:53:53.095352",
+                "end_time": "2025-04-20T17:54:03.775951",
+                "duration_seconds": 10.680599
+            }
+        },
+        {
+            "url": "http://localhost:5173/",
+            "purpose": "Home page after entering a movie name",
+            "execution_steps": [
+                {
+                    "step": "Verify that the movie card titled 'Interestellar' is visible",
+                    "extracted_data": [
+                        {
+                            "type": "button",
+                            "request_description": "Button to view the movie card titled 'Interstellar'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_ticket_eeems_323']//*[contains(text(), 'Interstellar')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the movie card titled 'Interstellar'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_movie_card_1tfx4_343']//h4[contains(text(), 'Interstellar')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the movie card titled 'Interstellar'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[contains(@class, '_movie_card_6y9nh_127')]//*[contains(text(), 'Interstellar')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to search for the movie by name",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='titulo']/following-sibling::button"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the movie name",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='titulo']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Movie card for 'Interestellar'",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//button[contains(., 'Interestellar')]"
+                        }
+                    ]
+                }
+            ],
+            "token": {
+                "completion_tokens": 531,
+                "prompt_tokens": 32151,
+                "total_tokens": 32682,
+                "completion_tokens_details": null,
+                "prompt_tokens_details": null
+            },
+            "dispatcher": {
+                "memory_usage_MB": 0.0078125,
+                "peak_memory_MB": 0.0078125,
+                "start_time": "2025-04-20T17:54:10.688422",
+                "end_time": "2025-04-20T17:54:15.126401",
+                "duration_seconds": 4.437979
+            }
+        }
+    ]
+}

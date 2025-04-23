@@ -1,0 +1,45 @@
+{
+  "testCase": "Test Case 6: Successfully Register a New Movie",
+  "modules": [
+    {
+      "url": "http://localhost:5173/",
+      "purpose": "Home Page - Initial landing page for the application.",
+      "execution_steps": [
+        {
+          "step": "Launch browser",
+          "extracted_data": []
+        },
+        {
+          "step": "Navigate to url 'http://localhost:5173/'",
+          "extracted_data": []
+        },
+        {
+          "step": "Verify that home page is visible successfully",
+          "extracted_data": []
+        },
+        {
+          "step": "Click on 'CreateMovie' button",
+          "extracted_data": []
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:5173/CreateMovie",
+      "purpose": "Create Movie Page - Page to input movie details for registration.",
+      "execution_steps": [
+        {
+          "step": "Fill in all required fields: url cartaz, nome, descrição, faixa etária, diretor(a), escritor(a), ator(a), gênero, and data de lançamento",
+          "extracted_data": []
+        },
+        {
+          "step": "Click 'Criar' button",
+          "extracted_data": []
+        },
+        {
+          "step": "Verify success message 'Film Created Successfully!' is visible",
+          "extracted_data": []
+        }
+      ]
+    }
+  ]
+}
