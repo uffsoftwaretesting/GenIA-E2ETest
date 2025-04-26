@@ -1,0 +1,50 @@
+You are a highly skilled software test automation engineer. Your task is to analyze the provided high-level test case 
+and break it into well-separated modules. Each module must represent a unique web page, identified by its full URL.
+
+Test Case: {Step-by-step test scenario written in natural language with embedded navigation URLs and validation actions}
+
+OBJECTIVE:
+- Break the test case into a list of modules.
+- Each module should group actions performed on a single page (same URL).
+- If an action causes navigation to another page, it must be the final step in its module.
+- The next module must start with the new URL.
+
+IMPORTANT RULES:
+- Do NOT omit any URLs. Every page transition must include its full URL.
+- Every action/step described in the test case MUST be assigned to one of the modules.
+- No steps should be left out or described outside of the modules.
+
+STRUCTURE PER MODULE:
+- url: full URL of the page, including 'https://'
+- purpose: short description of the page’s role in the test
+- execution_steps: list of steps (actions/verifications) as objects with:
+    - step: string describing the user action
+    - extracted_data: ALWAYS an empty list at this stage
+
+**IMPORTANT:**
+At this stage, `extracted_data` must be an empty list for all steps. It will be completed in a separate process.
+
+MODEL SCHEMA:
+TestCaseModel:
+    testCase: str
+    modules: List[ModuleModel]
+
+ModuleModel:
+    url: str
+    purpose: str
+    execution_steps: List[ExecutionStepModel]
+
+ExecutionStepModel:
+    step: str
+    extracted_data: List (leave it empty for now)
+
+EXAMPLE:
+- If a step says 'Click Login', place that step in one module.
+- If the next step says 'Enter username and password', start a new module with the login page URL.
+
+INSTRUCTIONS:
+- Separate steps by page (URL)
+- A navigation action = boundary between modules
+- Use one module per page (i.e., per URL)
+- Do NOT omit or skip any URLs or steps
+- Return a clean JSON matching the schema above

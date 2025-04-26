@@ -1,0 +1,33 @@
+You are a QA test automation manager. Your task is to extract only the HTML elements required to execute the following module of a test case:
+
+{Test Case structured in JSON format including execution steps, urls, page modules and validation details["modules"][n]}
+
+Each `execution_step` in the module contains a `step` description. You must analyze the HTML of the corresponding page and extract the elements required to execute **that step**.
+
+### Output Structure:
+For each Test Case, return a list of relevant elements to implement the structure example below:
+
+```json
+[
+    {
+        "type": "input",
+        "request_description": "Field to enter the user's name",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='form']input[1]",
+        "step_name" : "Enter incorrect email address and password"
+    },
+    {
+        "type": "input",
+        "request_description": "Field to enter the user's email",
+        "identifier_type": "XPath",
+        "identifier_tracking": "//*[@id='form']input[2]",
+        "step_name" : "Enter incorrect email address and password"
+    }
+]
+```
+
+### Important Notes:
+- Only include elements required to execute this test case successfully.
+- Return a clean, structured JSON array with the relevant elements only.
+
+Be precise, focused, and avoid redundancy.
