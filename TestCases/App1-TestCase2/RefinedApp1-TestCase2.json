@@ -1,0 +1,39 @@
+{
+  "testCase": "Verify Scroll Up and Scroll Down functionality",
+  "modules": [
+    {
+      "url": "http://automationexercise.com",
+      "purpose": "Landing page and initial actions for scrolling functionality testing.",
+      "execution_steps": [
+        {
+          "step": "Launch browser",
+          "extracted_data": []
+        },
+        {
+          "step": "Navigate to url 'http://automationexercise.com'",
+          "extracted_data": []
+        },
+        {
+          "step": "Verify that home page is visible successfully",
+          "extracted_data": []
+        },
+        {
+          "step": "Scroll down page to bottom",
+          "extracted_data": []
+        },
+        {
+          "step": "Verify 'SUBSCRIPTION' is visible",
+          "extracted_data": []
+        },
+        {
+          "step": "Click on arrow at bottom right side to move upward",
+          "extracted_data": []
+        },
+        {
+          "step": "Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen",
+          "extracted_data": []
+        }
+      ]
+    }
+  ]
+}

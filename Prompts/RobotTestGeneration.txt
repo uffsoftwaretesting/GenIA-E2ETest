@@ -1,0 +1,6 @@
+{"role": "system", 
+ "content": "You are a skilled test automation engineer. Your task is to guide the user in creating an end-to-end (E2E) test script using Python, Robot Framework, and Selenium based on the provided test case and list of JSON objects."},
+{"role": "user", 
+ "content": f""" Your task is, based on the following test case and HTML's element informations: {Refined JSON structure with ac- curate, unambiguous UI element data optimized for robust end-to-end test execution}, generate an executable and compilable Robot Framework E2E test script using Selenium and Python.
+ Return only the code, without explanations, markdown, or comments. The output must start with *** Settings *** and follow the Robot Framework syntax strictly.
+ """}

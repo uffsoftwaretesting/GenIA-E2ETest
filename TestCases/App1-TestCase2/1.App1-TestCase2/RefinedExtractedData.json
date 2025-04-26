@@ -1,0 +1,1545 @@
+{
+    "testCase": "Verify Scroll Up and Scroll Down functionality",
+    "modules": [
+        {
+            "url": "http://automationexercise.com",
+            "purpose": "Landing page and initial actions for scrolling functionality testing.",
+            "execution_steps": [
+                {
+                    "step": "Launch browser",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Navigate to url 'http://automationexercise.com'",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Verify that home page is visible successfully",
+                    "extracted_data": [
+                        {
+                            "type": "header",
+                            "request_description": "Header section containing navigation links and logo.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//header[@id='header']"
+                        },
+                        {
+                            "type": "section",
+                            "request_description": "Section containing the main slider with promotional text.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//section[@id='slider']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the main content of the landing page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[@class='col-sm-9 padding-right']"
+                        },
+                        {
+                            "type": "h2",
+                            "request_description": "Text that indicates the purpose of the website.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the home page content",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='features_items']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the main content of the landing page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[@class='recommended_items']"
+                        },
+                        {
+                            "type": "header",
+                            "request_description": "Header section containing navigation links and logo.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//header[@id='header']"
+                        },
+                        {
+                            "type": "section",
+                            "request_description": "Section containing the main slider with promotional text.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//section[@id='slider']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the main content of the landing page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[@class='col-sm-9 padding-right']"
+                        },
+                        {
+                            "type": "h2",
+                            "request_description": "Text that indicates the purpose of the website.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the home page content",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='features_items']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the main content of the landing page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[@class='recommended_items']"
+                        },
+                        {
+                            "type": "header",
+                            "request_description": "Header section containing navigation links and logo.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//header[@id='header']"
+                        },
+                        {
+                            "type": "section",
+                            "request_description": "Section containing the main slider with promotional text.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//section[@id='slider']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the main content of the landing page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[@class='col-sm-9 padding-right']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the home page content",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='features_items']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the main content of the landing page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[@class='recommended_items']"
+                        },
+                        {
+                            "type": "header",
+                            "request_description": "Header section containing navigation links and logo.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//header[@id='header']"
+                        },
+                        {
+                            "type": "section",
+                            "request_description": "Section containing the main slider with promotional text.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//section[@id='slider']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the main content of the landing page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[@class='col-sm-9 padding-right']"
+                        },
+                        {
+                            "type": "h2",
+                            "request_description": "Text that indicates the purpose of the website.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the home page content",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='features_items']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the main content of the landing page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[@class='recommended_items']"
+                        },
+                        {
+                            "type": "header",
+                            "request_description": "Header section containing navigation links and logo.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//header[@id='header']"
+                        },
+                        {
+                            "type": "section",
+                            "request_description": "Section containing the main slider with promotional text.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//section[@id='slider']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the main content of the landing page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[@class='col-sm-9 padding-right']"
+                        },
+                        {
+                            "type": "h2",
+                            "request_description": "Text that indicates the purpose of the website.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the home page content",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='features_items']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the main content of the landing page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[@class='recommended_items']"
+                        },
+                        {
+                            "type": "header",
+                            "request_description": "Header section containing navigation links and logo.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//header[@id='header']"
+                        },
+                        {
+                            "type": "section",
+                            "request_description": "Section containing the main slider with promotional text.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//section[@id='slider']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the main content of the landing page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[@class='col-sm-9 padding-right']"
+                        },
+                        {
+                            "type": "h2",
+                            "request_description": "Text that indicates the purpose of the website.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the home page content",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='features_items']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the main content of the landing page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[@class='recommended_items']"
+                        }
+                    ]
+                },
+                {
+                    "step": "Scroll down page to bottom",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Verify 'SUBSCRIPTION' is visible",
+                    "extracted_data": [
+                        {
+                            "type": "div",
+                            "request_description": "Div containing the subscription section.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the subscription section.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='subscribe']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Subscription section to verify visibility.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[@class='single-widget']//h2[text()='Subscription']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div containing the subscription section.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the subscription section.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='subscribe']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Subscription section to verify visibility.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[@class='single-widget']//h2[text()='Subscription']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div containing the subscription section.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Section for subscription visibility.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the subscription section.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Subscription section to verify visibility",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='subscribe']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Subscription section to verify visibility.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[@class='single-widget']//h2[text()='Subscription']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div containing the subscription section.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Section for subscription visibility.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the subscription section.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Subscription section to verify visibility",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='subscribe']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Subscription section to verify visibility.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[@class='single-widget']//h2[text()='Subscription']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div containing the subscription section.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the subscription section.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='subscribe']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Subscription section to verify visibility.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[@class='single-widget']//h2[text()='Subscription']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div containing the subscription section.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Section for subscription visibility.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the subscription section.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='subscribe']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Subscription section to verify visibility.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[@class='single-widget']//h2[text()='Subscription']"
+                        }
+                    ]
+                },
+                {
+                    "step": "Click on arrow at bottom right side to move upward",
+                    "extracted_data": [
+                        {
+                            "type": "button",
+                            "request_description": "Button to scroll back to the top of the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(@class, 'scroll-up')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Arrow button to scroll up the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//button[@class='btn btn-success close-modal btn-block']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to scroll back to the top of the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(@class, 'control-carousel') and contains(@class, 'right')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Arrow button to scroll up the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='scroll-up']"
+                        },
+                        {
+                            "type": "a",
+                            "request_description": "Arrow button to scroll up the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[@id='scrollUp']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to navigate to the Test Cases section.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[@class='test_cases_list']/button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to navigate to the APIs list for practice.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[@class='apis_list']/button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to scroll back to the top of the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(@class, 'scroll-up')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Arrow button to scroll up the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//button[@class='btn btn-success close-modal btn-block']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to scroll back to the top of the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(@class, 'control-carousel') and contains(@class, 'right')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Arrow button to scroll up the page",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='scroll-up']"
+                        },
+                        {
+                            "type": "a",
+                            "request_description": "Arrow button to scroll up the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[@id='scrollUp']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to navigate to the Test Cases section.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[@class='test_cases_list']/button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to navigate to the APIs list for practice.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[@class='apis_list']/button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to scroll back to the top of the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(@class, 'scroll-up')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Arrow button to scroll up the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//button[@class='btn btn-success close-modal btn-block']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to scroll back to the top of the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(@class, 'control-carousel') and contains(@class, 'right')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Arrow button to scroll up the page",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='scroll-up']"
+                        },
+                        {
+                            "type": "a",
+                            "request_description": "Arrow button to scroll up the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[@id='scrollUp']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to navigate to the Test Cases section.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[@class='test_cases_list']/button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to navigate to the APIs list for practice.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[@class='apis_list']/button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to scroll back to the top of the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(@class, 'scroll-up')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Arrow button to scroll up the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//button[@class='btn btn-success close-modal btn-block']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to scroll back to the top of the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(@class, 'control-carousel') and contains(@class, 'right')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Arrow button to scroll up the page",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='scroll-up']"
+                        },
+                        {
+                            "type": "a",
+                            "request_description": "Arrow button to scroll up the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[@id='scrollUp']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to navigate to the Test Cases section.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[@class='test_cases_list']/button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to navigate to the APIs list for practice.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[@class='apis_list']/button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to scroll back to the top of the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(@class, 'scroll-up')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Arrow button to scroll up the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//button[@class='btn btn-success close-modal btn-block']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to scroll back to the top of the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(@class, 'control-carousel') and contains(@class, 'right')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Arrow button to scroll up the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='scroll-up']"
+                        },
+                        {
+                            "type": "a",
+                            "request_description": "Arrow button to scroll up the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[@id='scrollUp']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to navigate to the Test Cases section.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[@class='test_cases_list']/button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to navigate to the APIs list for practice.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[@class='apis_list']/button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to scroll back to the top of the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(@class, 'scroll-up')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Arrow button to scroll up the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//button[@class='btn btn-success close-modal btn-block']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to scroll back to the top of the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(@class, 'control-carousel') and contains(@class, 'right')]"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Arrow button to scroll up the page",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='scroll-up']"
+                        },
+                        {
+                            "type": "a",
+                            "request_description": "Arrow button to scroll up the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[@id='scrollUp']"
+                        }
+                    ]
+                },
+                {
+                    "step": "Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen",
+                    "extracted_data": [
+                        {
+                            "type": "h2",
+                            "request_description": "Text that indicates the purpose of the website.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]"
+                        },
+                        {
+                            "type": "h2",
+                            "request_description": "Text that indicates the purpose of the website.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div containing the text 'Full-Fledged practice website for Automation Engineers'.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Text container that should be visible after scrolling up.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[contains(text(), 'Full-Fledged practice website for Automation Engineers')]"
+                        },
+                        {
+                            "type": "h2",
+                            "request_description": "Text that indicates the purpose of the website.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]"
+                        },
+                        {
+                            "type": "h2",
+                            "request_description": "Text indicating the website's purpose, to verify visibility after scrolling",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[contains(text(), 'Full-Fledged practice website for Automation Engineers')]"
+                        },
+                        {
+                            "type": "h2",
+                            "request_description": "Text indicating the purpose of the website, to verify visibility after scrolling.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]"
+                        }
+                    ]
+                }
+            ],
+            "extracted_data": [
+                {
+                    "type": "header",
+                    "request_description": "Header section containing navigation links and logo.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//header[@id='header']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "section",
+                    "request_description": "Section containing the main slider with promotional text.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//section[@id='slider']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the main content of the landing page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[@class='col-sm-9 padding-right']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "h2",
+                    "request_description": "Text that indicates the purpose of the website.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the home page content",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//*[@class='features_items']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the main content of the landing page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[@class='recommended_items']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Div containing the subscription section.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the subscription section.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//*[@id='subscribe']",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Subscription section to verify visibility.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[@class='single-widget']//h2[text()='Subscription']",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to navigate to the Test Cases section.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[@class='test_cases_list']/button",
+                    "step_name": "Click on 'Test Cases' button",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to navigate to the APIs list for practice.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[@class='apis_list']/button",
+                    "step_name": "Click on 'APIs list for practice' button",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to scroll back to the top of the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[contains(@class, 'scroll-up')]",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Arrow button to scroll up the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//button[@class='btn btn-success close-modal btn-block']",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to scroll back to the top of the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[contains(@class, 'control-carousel') and contains(@class, 'right')]",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Arrow button to scroll up the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//*[@class='scroll-up']",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "a",
+                    "request_description": "Arrow button to scroll up the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[@id='scrollUp']",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "header",
+                    "request_description": "Header section containing navigation links and logo.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//header[@id='header']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "section",
+                    "request_description": "Section containing the main slider with promotional text.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//section[@id='slider']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the main content of the landing page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[@class='col-sm-9 padding-right']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "h2",
+                    "request_description": "Text that indicates the purpose of the website.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the home page content",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//*[@class='features_items']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the main content of the landing page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[@class='recommended_items']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Div containing the subscription section.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the subscription section.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//*[@id='subscribe']",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Subscription section to verify visibility.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[@class='single-widget']//h2[text()='Subscription']",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to navigate to the Test Cases section.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[@class='test_cases_list']/button",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to navigate to the APIs list for practice.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[@class='apis_list']/button",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to scroll back to the top of the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[contains(@class, 'scroll-up')]",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Arrow button to scroll up the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//button[@class='btn btn-success close-modal btn-block']",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to scroll back to the top of the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[contains(@class, 'control-carousel') and contains(@class, 'right')]",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Arrow button to scroll up the page",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//*[@class='scroll-up']",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "a",
+                    "request_description": "Arrow button to scroll up the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[@id='scrollUp']",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "header",
+                    "request_description": "Header section containing navigation links and logo.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//header[@id='header']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "section",
+                    "request_description": "Section containing the main slider with promotional text.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//section[@id='slider']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the main content of the landing page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[@class='col-sm-9 padding-right']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "h2",
+                    "request_description": "Text that indicates the purpose of the website.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]",
+                    "step_name": "Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the home page content",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//*[@class='features_items']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the main content of the landing page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[@class='recommended_items']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Div containing the subscription section.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Section for subscription visibility.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the subscription section.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Subscription section to verify visibility",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//*[@id='subscribe']",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Subscription section to verify visibility.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[@class='single-widget']//h2[text()='Subscription']",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to navigate to the Test Cases section.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[@class='test_cases_list']/button",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to navigate to the APIs list for practice.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[@class='apis_list']/button",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to scroll back to the top of the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[contains(@class, 'scroll-up')]",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Arrow button to scroll up the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//button[@class='btn btn-success close-modal btn-block']",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to scroll back to the top of the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[contains(@class, 'control-carousel') and contains(@class, 'right')]",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Arrow button to scroll up the page",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//*[@class='scroll-up']",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "a",
+                    "request_description": "Arrow button to scroll up the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[@id='scrollUp']",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "header",
+                    "request_description": "Header section containing navigation links and logo.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//header[@id='header']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "section",
+                    "request_description": "Section containing the main slider with promotional text.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//section[@id='slider']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the main content of the landing page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[@class='col-sm-9 padding-right']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "h2",
+                    "request_description": "Text that indicates the purpose of the website.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the home page content",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//*[@class='features_items']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the main content of the landing page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[@class='recommended_items']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Div containing the subscription section.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Section for subscription visibility.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the subscription section.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Subscription section to verify visibility",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//*[@id='subscribe']",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Subscription section to verify visibility.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[@class='single-widget']//h2[text()='Subscription']",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to navigate to the Test Cases section.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[@class='test_cases_list']/button",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to navigate to the APIs list for practice.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[@class='apis_list']/button",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to scroll back to the top of the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[contains(@class, 'scroll-up')]",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Arrow button to scroll up the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//button[@class='btn btn-success close-modal btn-block']",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to scroll back to the top of the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[contains(@class, 'control-carousel') and contains(@class, 'right')]",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Arrow button to scroll up the page",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//*[@class='scroll-up']",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "a",
+                    "request_description": "Arrow button to scroll up the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[@id='scrollUp']",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "h2",
+                    "request_description": "Text that indicates the purpose of the website.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]",
+                    "step_name": "Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Div containing the text 'Full-Fledged practice website for Automation Engineers'.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]",
+                    "step_name": "Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Text container that should be visible after scrolling up.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[contains(text(), 'Full-Fledged practice website for Automation Engineers')]",
+                    "step_name": "Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen",
+                    "error": false
+                },
+                {
+                    "type": "h2",
+                    "request_description": "Text that indicates the purpose of the website.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]",
+                    "step_name": "Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen",
+                    "error": false
+                },
+                {
+                    "type": "h2",
+                    "request_description": "Text indicating the website's purpose, to verify visibility after scrolling",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//*[contains(text(), 'Full-Fledged practice website for Automation Engineers')]",
+                    "step_name": "Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen",
+                    "error": false
+                },
+                {
+                    "type": "h2",
+                    "request_description": "Text indicating the purpose of the website, to verify visibility after scrolling.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]",
+                    "step_name": "Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen",
+                    "error": false
+                },
+                {
+                    "type": "header",
+                    "request_description": "Header section containing navigation links and logo.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//header[@id='header']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "section",
+                    "request_description": "Section containing the main slider with promotional text.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//section[@id='slider']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the main content of the landing page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[@class='col-sm-9 padding-right']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "h2",
+                    "request_description": "Text that indicates the purpose of the website.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the home page content",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//*[@class='features_items']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the main content of the landing page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[@class='recommended_items']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Div containing the subscription section.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the subscription section.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//*[@id='subscribe']",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Subscription section to verify visibility.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[@class='single-widget']//h2[text()='Subscription']",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to navigate to the Test Cases section.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[@class='test_cases_list']/button",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to navigate to the APIs list for practice.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[@class='apis_list']/button",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to scroll back to the top of the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[contains(@class, 'scroll-up')]",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Arrow button to scroll up the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//button[@class='btn btn-success close-modal btn-block']",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to scroll back to the top of the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[contains(@class, 'control-carousel') and contains(@class, 'right')]",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Arrow button to scroll up the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//*[@class='scroll-up']",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "a",
+                    "request_description": "Arrow button to scroll up the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[@id='scrollUp']",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "header",
+                    "request_description": "Header section containing navigation links and logo.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//header[@id='header']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "section",
+                    "request_description": "Section containing the main slider with promotional text.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//section[@id='slider']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the main content of the landing page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[@class='col-sm-9 padding-right']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "h2",
+                    "request_description": "Text that indicates the purpose of the website.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the home page content",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//*[@class='features_items']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the main content of the landing page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[@class='recommended_items']",
+                    "step_name": "Verify that home page is visible successfully",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Div containing the subscription section.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Section for subscription visibility.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Container for the subscription section.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//*[@id='subscribe']",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "div",
+                    "request_description": "Subscription section to verify visibility.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//div[@class='single-widget']//h2[text()='Subscription']",
+                    "step_name": "Verify 'SUBSCRIPTION' is visible",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to navigate to the Test Cases section.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[@class='test_cases_list']/button",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to navigate to the APIs list for practice.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[@class='apis_list']/button",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to scroll back to the top of the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[contains(@class, 'scroll-up')]",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Arrow button to scroll up the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//button[@class='btn btn-success close-modal btn-block']",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Button to scroll back to the top of the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[contains(@class, 'control-carousel') and contains(@class, 'right')]",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "button",
+                    "request_description": "Arrow button to scroll up the page",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//*[@class='scroll-up']",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                },
+                {
+                    "type": "a",
+                    "request_description": "Arrow button to scroll up the page.",
+                    "identifier_type": "XPath",
+                    "identifier_tracking": "//a[@id='scrollUp']",
+                    "step_name": "Click on arrow at bottom right side to move upward",
+                    "error": false
+                }
+            ],
+            "token": {
+                "completion_tokens": 7238,
+                "prompt_tokens": 64285,
+                "total_tokens": 71523,
+                "completion_tokens_details": null,
+                "prompt_tokens_details": null
+            },
+            "dispatcher": {
+                "memory_usage_MB": 1.86328125,
+                "peak_memory_MB": 1.86328125,
+                "start_time": "2025-04-20T15:15:42.323727",
+                "end_time": "2025-04-20T15:16:14.313160",
+                "duration_seconds": 31.989433
+            }
+        }
+    ]
+}

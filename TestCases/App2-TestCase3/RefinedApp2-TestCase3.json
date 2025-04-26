@@ -1,0 +1,49 @@
+{
+  "testCase": "Unsuccessfully Login with Incorrect Credentials",
+  "modules": [
+    {
+      "url": "http://localhost:5173/",
+      "purpose": "Home Page - Initial landing page of the application.",
+      "execution_steps": [
+        {
+          "step": "Launch browser",
+          "extracted_data": []
+        },
+        {
+          "step": "Navigate to url 'http://localhost:5173/'",
+          "extracted_data": []
+        },
+        {
+          "step": "Verify that home page is visible successfully",
+          "extracted_data": []
+        },
+        {
+          "step": "Click on 'LogIn' button",
+          "extracted_data": []
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:5173/LogIn",
+      "purpose": "Login Page - Allows users to enter their credentials.",
+      "execution_steps": [
+        {
+          "step": "Verify 'Log In' is visible",
+          "extracted_data": []
+        },
+        {
+          "step": "Enter incorrect email and password",
+          "extracted_data": []
+        },
+        {
+          "step": "Click 'Log In' button",
+          "extracted_data": []
+        },
+        {
+          "step": "Verify error message 'User not found!' is visible",
+          "extracted_data": []
+        }
+      ]
+    }
+  ]
+}

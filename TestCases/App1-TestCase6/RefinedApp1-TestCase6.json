@@ -1,0 +1,66 @@
+{
+  "testCase": "Test Case 6: Contact Us Form",
+  "modules": [
+    {
+      "url": "http://automationexercise.com",
+      "purpose": "Home page where the user starts the journey.",
+      "execution_steps": [
+        {
+          "step": "Launch browser",
+          "extracted_data": []
+        },
+        {
+          "step": "Navigate to url 'http://automationexercise.com'",
+          "extracted_data": []
+        },
+        {
+          "step": "Verify that home page is visible successfully",
+          "extracted_data": []
+        },
+        {
+          "step": "Click on 'Contact Us' button",
+          "extracted_data": []
+        }
+      ]
+    },
+    {
+      "url": "https://automationexercise.com/contact_us",
+      "purpose": "Contact Us page where users can fill in their details.",
+      "execution_steps": [
+        {
+          "step": "Verify 'GET IN TOUCH' is visible",
+          "extracted_data": []
+        },
+        {
+          "step": "Enter name, email, subject and message",
+          "extracted_data": []
+        },
+        {
+          "step": "Upload file",
+          "extracted_data": []
+        },
+        {
+          "step": "Click 'Submit' button",
+          "extracted_data": []
+        },
+        {
+          "step": "Click OK button",
+          "extracted_data": []
+        },
+        {
+          "step": "Verify success message 'Success! Your details have been submitted successfully.' is visible",
+          "extracted_data": []
+        },
+        {
+          "step": "Click 'Home' button and verify that landed to home page successfully",
+          "extracted_data": []
+        }
+      ]
+    },
+    {
+      "url": "http://automationexercise.com",
+      "purpose": "Returning to Home page after submission.",
+      "execution_steps": []
+    }
+  ]
+}

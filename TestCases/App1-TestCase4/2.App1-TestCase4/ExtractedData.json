@@ -1,0 +1,124 @@
+{
+    "testCase": "Verify Subscription in Cart page",
+    "modules": [
+        {
+            "url": "http://automationexercise.com",
+            "purpose": "Landing page of the automation exercise site",
+            "execution_steps": [
+                {
+                    "step": "Launch browser",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Navigate to url 'http://automationexercise.com'",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Verify that home page is visible successfully",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Click 'Cart' button",
+                    "extracted_data": [
+                        {
+                            "type": "button",
+                            "request_description": "Cart button to view items in the shopping cart",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='btn btn-default add-to-cart']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Click the Cart button to view items in the shopping cart",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(text(), 'Cart')]"
+                        }
+                    ]
+                }
+            ],
+            "token": {
+                "completion_tokens": 169,
+                "prompt_tokens": 20863,
+                "total_tokens": 21032,
+                "completion_tokens_details": null,
+                "prompt_tokens_details": null
+            },
+            "dispatcher": {
+                "memory_usage_MB": 0.0,
+                "peak_memory_MB": 0.0,
+                "start_time": "2025-04-20T15:19:40.188827",
+                "end_time": "2025-04-20T15:19:43.577946",
+                "duration_seconds": 3.389119
+            }
+        },
+        {
+            "url": "https://automationexercise.com/view_cart",
+            "purpose": "Cart page where users can view their selected items and subscription",
+            "execution_steps": [
+                {
+                    "step": "Scroll down to footer",
+                    "extracted_data": [
+                        {
+                            "type": "div",
+                            "request_description": "Container for the footer section of the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//footer[@id='footer']"
+                        }
+                    ]
+                },
+                {
+                    "step": "Verify text 'SUBSCRIPTION'",
+                    "extracted_data": [
+                        {
+                            "type": "h2",
+                            "request_description": "Header for the subscription section.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[contains(@class, 'single-widget')]/h2[text()='Subscription']"
+                        }
+                    ]
+                },
+                {
+                    "step": "Enter email address in input and click arrow button",
+                    "extracted_data": [
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email address for subscription.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//input[@id='susbscribe_email']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the email for subscription.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//button[@id='subscribe']"
+                        }
+                    ]
+                },
+                {
+                    "step": "Verify success message 'You have been successfully subscribed!' is visible",
+                    "extracted_data": [
+                        {
+                            "type": "div",
+                            "request_description": "Container for the success message after subscription.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[@id='success-subscribe']"
+                        }
+                    ]
+                }
+            ],
+            "token": {
+                "completion_tokens": 343,
+                "prompt_tokens": 5724,
+                "total_tokens": 6067,
+                "completion_tokens_details": null,
+                "prompt_tokens_details": null
+            },
+            "dispatcher": {
+                "memory_usage_MB": 0.0,
+                "peak_memory_MB": 0.0,
+                "start_time": "2025-04-20T15:19:50.337205",
+                "end_time": "2025-04-20T15:19:56.377104",
+                "duration_seconds": 6.039899
+            }
+        }
+    ]
+}

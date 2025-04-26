@@ -1,0 +1,39 @@
+{
+  "testCase": "Verify Subscription in home page",
+  "modules": [
+    {
+      "url": "http://automationexercise.com",
+      "purpose": "Home page of the application where subscription occurs.",
+      "execution_steps": [
+        {
+          "step": "Launch browser",
+          "extracted_data": []
+        },
+        {
+          "step": "Navigate to url 'http://automationexercise.com'",
+          "extracted_data": []
+        },
+        {
+          "step": "Verify that home page is visible successfully",
+          "extracted_data": []
+        },
+        {
+          "step": "Scroll down to footer",
+          "extracted_data": []
+        },
+        {
+          "step": "Verify text 'SUBSCRIPTION'",
+          "extracted_data": []
+        },
+        {
+          "step": "Enter email address in input and click arrow button",
+          "extracted_data": []
+        },
+        {
+          "step": "Verify success message 'You have been successfully subscribed!' is visible",
+          "extracted_data": []
+        }
+      ]
+    }
+  ]
+}
