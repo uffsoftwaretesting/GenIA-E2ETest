@@ -156,12 +156,29 @@ For questions or support, please contact:
 
 ---
 
-## 📌 Citation
+## 📚 Citation
+[![Cite this paper](https://img.shields.io/badge/Cite%20this%20paper-SBES%202025-blue)](#citation)
 
-If you use this artifact in your research, please cite:
+If you use **GenIA-E2ETest** in your research or project, please cite:
 
 ```bibtex
-@inproceedings{}
+
+@inproceedings{junior2025genia,
+  author       = {Elvis Junior and Alan Valejo and Jorge Carlos Valverde-Rebaza and Vânia de Oliveira Neves},
+  title        = {GenIA‑E2ETest: A Generative AI‑Based Approach for End‑to‑End Test Automation},
+  booktitle    = {Proceedings of the XXXIX Brazilian Symposium on Software Engineering (SBES)},
+  year         = {2025},
+  address      = {Recife-PE, Brazil},
+  note      = {To appear}
+} 
+
+```
+
+**Text citation format:**
+
+```
+Junior, E., Valejo, A., Valverde-Rebaza, J. C., & Neves, V. O. (2025). GenIA-E2ETest: A generative AI-based approach for end-to-end test automation. In: Proceedings of the XXXIX Brazilian Symposium on Software Engineering (SBES). To appear.
+
 ```
 
 ---
