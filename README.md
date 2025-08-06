@@ -100,12 +100,19 @@ cp .env.example .env
 # Edit the .env file and add your OpenAI API key
 ```
 
-3. **Install dependencies**:
+3. **Activate a virtual environment**:
 ```bash
-pip install -r requirements.txt
+source venv\Scripts\activate
 ```
 
-4. **Define a natural language test scenario and specify the URLs of the target web application**:
+4. **Install dependencies and Playwright setup**:
+```bash
+pip install -r requirements.txt
+playwright install
+playwright install-deps  # Optional: needed only for Linux systems
+```
+
+5. **Define a natural language test scenario and specify the URLs of the target web application**:
 ```bash
 cd TestCaseExamples
 # Create a new .feature file to describe your test scenario
@@ -113,7 +120,7 @@ touch TestCase1.feature
 nano TestCase1.feature
 ```
 
-4.1 **Example content for `TestCase1.feature`**:
+5.1 **Example content for `TestCase1.feature`**:
 ```feature
 urls = ["http://automationexercise.com", "https://automationexercise.com/login"]
 
@@ -126,12 +133,12 @@ Test Case 1: Login User with incorrect email and password
 6. Verify error 'Your email or password is incorrect!' is visible
 ```
 
-5. **Run the full pipeline to generate the end-to-end test script**:
+6. **Run the full pipeline to generate the End-to-End test script**:
 ```bash
 python genIAE2ETest.py
 ```
 
-6. **Execute the generated test script using Robot Framework**:
+7. **Execute the generated test script using Robot Framework**:
 ```bash
 robot TestCases/TestCase1/E2ETest.robot
 ```
