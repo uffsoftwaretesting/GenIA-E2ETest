@@ -189,7 +189,7 @@ async def main():
 
                     test_case_example = json.loads(refinedTestCase)
                             
-                    for i in range(3):
+                    for i in range(1):
 
                         newTestCaseFolderAttempt = newTestCaseFolder / f"{i + 1}.{arquivo.stem}"
                         create_directory_if_not_exists(newTestCaseFolderAttempt)

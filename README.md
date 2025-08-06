@@ -34,7 +34,7 @@ This repository provides all necessary resources to reproduce the methodology, e
 
 ```
 GenIA-E2ETest/
-├── Experimento/                        # Experimental results, validation metrics, and evaluation spreadsheets
+├── Experiment/                         # Experimental results, validation metrics, and evaluation spreadsheets
 │   └── GenIA-E2ETest.xlsx              # Spreadsheet containing metrics and performance indicators of the evaluation
 ├── Prompts/                            # Prompt templates used at each prompting level of the approach
 │   ├── RobotTestGeneration.txt         # Prompt for generating the final Robot Framework script

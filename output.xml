@@ -1,206 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2025-04-22T11:50:57.838471" rpa="false" schemaversion="5">
-<suite id="s1" name="E2ETest" source="C:\Users\Elvis\OneDrive\Área de Trabalho\E2ETestGen\E2ETestGen\TestCases\App1-TestCase5\3.App1-TestCase5\E2ETest.robot">
-<test id="s1-t1" name="Register User" line="22">
+<robot generator="Robot 7.0.1 (Python 3.12.1 on linux)" generated="2025-08-06T04:41:38.051295" rpa="false" schemaversion="5">
+<suite id="s1" name="E2ETest" source="/workspaces/GenIA-E2ETest/TestCases/App1-TestCase1/1.App1-TestCase1/E2ETest.robot">
+<test id="s1-t1" name="Verify Subscription in Home Page" line="9">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-04-22T11:50:58.077266" level="INFO">Opening browser 'Chrome' to base url 'http://automationexercise.com'.</msg>
-<msg time="2025-04-22T11:50:58.609768" level="WARN">The chromedriver version (134.0.6998.165) detected in PATH at C:\Users\Elvis\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (135.0.7049.96); currently, chromedriver 135.0.7049.95 is recommended for chrome 135.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-08-06T04:41:38.245333" level="INFO">Opening browser 'chrome' to base url 'http://automationexercise.com'.</msg>
+<msg time="2025-08-06T04:41:45.591627" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-08-06T04:41:45.591910" level="FAIL">SessionNotCreatedException: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir
+Stacktrace:
+#0 0x61c8962e205a &lt;unknown&gt;
+#1 0x61c895d81a70 &lt;unknown&gt;
+#2 0x61c895dbce07 &lt;unknown&gt;
+#3 0x61c895db75a7 &lt;unknown&gt;
+#4 0x61c895e0793e &lt;unknown&gt;
+#5 0x61c895e06f06 &lt;unknown&gt;
+#6 0x61c895df91b3 &lt;unknown&gt;
+#7 0x61c895dc559b &lt;unknown&gt;
+#8 0x61c895dc6971 &lt;unknown&gt;
+#9 0x61c8962a722b &lt;unknown&gt;
+#10 0x61c8962aaf79 &lt;unknown&gt;
+#11 0x61c89628e309 &lt;unknown&gt;
+#12 0x61c8962abb28 &lt;unknown&gt;
+#13 0x61c896272bef &lt;unknown&gt;
+#14 0x61c8962cf0e8 &lt;unknown&gt;
+#15 0x61c8962cf2c6 &lt;unknown&gt;
+#16 0x61c8962e1036 &lt;unknown&gt;
+#17 0x70fd60814aa4 &lt;unknown&gt;
+#18 0x70fd608a1c3c &lt;unknown&gt;
+</msg>
 <arg>${URL}</arg>
-<arg>Chrome</arg>
+<arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-04-22T11:50:58.077266" elapsed="26.152453"/>
+<status status="FAIL" start="2025-08-06T04:41:38.245078" elapsed="7.481512">SessionNotCreatedException: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir
+Stacktrace:
+#0 0x61c8962e205a &lt;unknown&gt;
+#1 0x61c895d81a70 &lt;unknown&gt;
+#2 0x61c895dbce07 &lt;unknown&gt;
+#3 0x61c895db75a7 &lt;unknown&gt;
+#4 0x61c895e0793e &lt;unknown&gt;
+#5 0x61c895e06f06 &lt;unknown&gt;
+#6 0x61c895df91b3 &lt;unknown&gt;
+#7 0x61c895dc559b &lt;unknown&gt;
+#8 0x61c895dc6971 &lt;unknown&gt;
+#9 0x61c8962a722b &lt;unknown&gt;
+#10 0x61c8962aaf79 &lt;unknown&gt;
+#11 0x61c89628e309 &lt;unknown&gt;
+#12 0x61c8962abb28 &lt;unknown&gt;
+#13 0x61c896272bef &lt;unknown&gt;
+#14 0x61c8962cf0e8 &lt;unknown&gt;
+#15 0x61c8962cf2c6 &lt;unknown&gt;
+#16 0x61c8962e1036 &lt;unknown&gt;
+#17 0x70fd60814aa4 &lt;unknown&gt;
+#18 0x70fd608a1c3c &lt;unknown&gt;
+</status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-04-22T11:51:24.229719" elapsed="0.309970"/>
+<status status="NOT RUN" start="2025-08-06T04:41:45.727043" elapsed="0.000061"/>
 </kw>
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-04-22T11:51:24.541041" level="INFO">Opening url 'http://automationexercise.com'</msg>
-<arg>${URL}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-04-22T11:51:24.541041" elapsed="3.142039"/>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>xpath=//*[contains(text(), 'SUBSCRIPTION')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2025-08-06T04:41:45.727442" elapsed="0.000043"/>
 </kw>
-<kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-04-22T11:51:27.756818" level="INFO">Page title is 'Automation Exercise'.</msg>
-<arg>Automation Exercise</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-04-22T11:51:27.683080" elapsed="0.076504"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-04-22T11:51:27.761582" level="INFO">Clicking element '//a[contains(text(), 'Signup / Login')]'.</msg>
-<arg>//a[contains(text(), 'Signup / Login')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-22T11:51:27.760091" elapsed="1.207996"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-04-22T11:51:29.377709" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-119.png"&gt;&lt;img src="selenium-screenshot-119.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-04-22T11:51:29.384491" level="FAIL">Element with locator '//*[@id='form']/div[2]/div[1]/h2' not found.</msg>
-<arg>//*[@id='form']/div[2]/div[1]/h2</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="FAIL" start="2025-04-22T11:51:28.968087" elapsed="0.442930">Element with locator '//*[@id='form']/div[2]/div[1]/h2' not found.</status>
+<kw name="Scroll To Element">
+<arg>xpath=//*[contains(text(), 'SUBSCRIPTION')]</arg>
+<status status="NOT RUN" start="2025-08-06T04:41:45.727821" elapsed="0.000044"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<arg>//*[@id='form']/div[2]/div[2]/form/input[1]</arg>
-<arg>${USERNAME}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.411017" elapsed="0.000000"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>//*[@id='form']/div[2]/div[2]/form/input[2]</arg>
+<arg>xpath=//*[@id='susbscribe_email']</arg>
 <arg>${EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.411017" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-08-06T04:41:45.728110" elapsed="0.000042"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>//*[@id='form']/div[2]/div[2]/form/button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.411017" elapsed="0.000000"/>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//*[@id='subscribe']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-08-06T04:41:45.728418" elapsed="0.000041"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<arg>//*[@id='form']/div[3]/div[1]/h2</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Select From List By Index" owner="SeleniumLibrary">
-<arg>//*[@id='form']/div[3]/div[2]/form/select[1]</arg>
-<arg>1</arg>
-<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>//*[@id='form']/div[3]/div[2]/form/input[1]</arg>
-<arg>${FIRSTNAME}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>//*[@id='form']/div[3]/div[2]/form/input[2]</arg>
-<arg>${EMAIL}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>//*[@id='form']/div[3]/div[2]/form/input[3]</arg>
-<arg>${PASSWORD}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>//*[@id='form']/div[3]/div[2]/form/input[4]</arg>
-<arg>01/01/1990</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Check Element">
-<arg>//*[@id='form']/div[3]/div[2]/form/input[5]</arg>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Check Element">
-<arg>//*[@id='form']/div[3]/div[2]/form/input[6]</arg>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>//*[@id='form']/div[3]/div[2]/form/input[7]</arg>
-<arg>${FIRSTNAME}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>//*[@id='form']/div[3]/div[2]/form/input[8]</arg>
-<arg>${LASTNAME}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>//*[@id='form']/div[3]/div[2]/form/input[9]</arg>
-<arg>${COMPANY}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>//*[@id='form']/div[3]/div[2]/form/input[10]</arg>
-<arg>${ADDRESS}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>//*[@id='form']/div[3]/div[2]/form/input[11]</arg>
-<arg>${ADDRESS2}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Select From List By Index" owner="SeleniumLibrary">
-<arg>//*[@id='form']/div[3]/div[2]/form/select[2]</arg>
-<arg>1</arg>
-<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>//*[@id='form']/div[3]/div[2]/form/input[12]</arg>
-<arg>${STATE}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>//*[@id='form']/div[3]/div[2]/form/input[13]</arg>
-<arg>${CITY}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>//*[@id='form']/div[3]/div[2]/form/input[14]</arg>
-<arg>${ZIPCODE}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>//*[@id='form']/div[3]/div[2]/form/input[15]</arg>
-<arg>${MOBILENUMBER}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>//*[@id='form']/div[3]/div[2]/form/button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<arg>//h2[text()='Login to your account']</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>//button[@data-qa='login-button']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<arg>//h2[text()='Logged in as']</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>//*[@id='delete-account']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<arg>//*[contains(text(), 'ACCOUNT DELETED!')]</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>//*[@id='continue']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>xpath=//*[contains(text(), 'You have been successfully subscribed!')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2025-08-06T04:41:45.728693" elapsed="0.000038"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2025-04-22T11:51:29.418028" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-08-06T04:41:45.728958" elapsed="0.000038"/>
 </kw>
-<status status="FAIL" start="2025-04-22T11:50:58.077266" elapsed="31.340762">Element with locator '//*[@id='form']/div[2]/div[1]/h2' not found.</status>
+<doc>Verify Subscription in home page</doc>
+<status status="FAIL" start="2025-08-06T04:41:38.244265" elapsed="7.485109">SessionNotCreatedException: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir
+Stacktrace:
+#0 0x61c8962e205a &lt;unknown&gt;
+#1 0x61c895d81a70 &lt;unknown&gt;
+#2 0x61c895dbce07 &lt;unknown&gt;
+#3 0x61c895db75a7 &lt;unknown&gt;
+#4 0x61c895e0793e &lt;unknown&gt;
+#5 0x61c895e06f06 &lt;unknown&gt;
+#6 0x61c895df91b3 &lt;unknown&gt;
+#7 0x61c895dc559b &lt;unknown&gt;
+#8 0x61c895dc6971 &lt;unknown&gt;
+#9 0x61c8962a722b &lt;unknown&gt;
+#10 0x61c8962aaf79 &lt;unknown&gt;
+#11 0x61c89628e309 &lt;unknown&gt;
+#12 0x61c8962abb28 &lt;unknown&gt;
+#13 0x61c896272bef &lt;unknown&gt;
+#14 0x61c8962cf0e8 &lt;unknown&gt;
+#15 0x61c8962cf2c6 &lt;unknown&gt;
+#16 0x61c8962e1036 &lt;unknown&gt;
+#17 0x70fd60814aa4 &lt;unknown&gt;
+#18 0x70fd608a1c3c &lt;unknown&gt;
+</status>
 </test>
-<status status="FAIL" start="2025-04-22T11:50:57.838471" elapsed="31.587565"/>
+<status status="FAIL" start="2025-08-06T04:41:38.052423" elapsed="7.677888"/>
 </suite>
 <statistics>
 <total>
@@ -213,6 +123,5 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2025-04-22T11:50:58.609768" level="WARN">The chromedriver version (134.0.6998.165) detected in PATH at C:\Users\Elvis\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (135.0.7049.96); currently, chromedriver 135.0.7049.95 is recommended for chrome 135.*, so it is advised to delete the driver in PATH and retry</msg>
 </errors>
 </robot>
