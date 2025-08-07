@@ -1,0 +1,41 @@
+{
+  "testCase": "Successfully Search for a Movie",
+  "modules": [
+    {
+      "url": "http://localhost:5173/",
+      "purpose": "Home page for searching movies",
+      "execution_steps": [
+        {
+          "step": "Launch browser",
+          "extracted_data": []
+        },
+        {
+          "step": "Navigate to url 'http://localhost:5173/'",
+          "extracted_data": []
+        },
+        {
+          "step": "Verify that home page is visible successfully",
+          "extracted_data": []
+        },
+        {
+          "step": "Click on the search input labeled 'Digite o nome do filme'",
+          "extracted_data": []
+        },
+        {
+          "step": "Enter movie name 'Interestellar'",
+          "extracted_data": []
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:5173/",
+      "purpose": "Home page after entering a movie name",
+      "execution_steps": [
+        {
+          "step": "Verify that the movie card titled 'Interestellar' is visible",
+          "extracted_data": []
+        }
+      ]
+    }
+  ]
+}

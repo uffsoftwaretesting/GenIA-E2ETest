@@ -1,0 +1,382 @@
+{
+    "testCase": "Successfully Register a New User",
+    "modules": [
+        {
+            "url": "http://localhost:5173/",
+            "purpose": "Home page for initial navigation",
+            "execution_steps": [
+                {
+                    "step": "Launch browser",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Navigate to url 'http://localhost:5173/'",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Verify that home page is visible successfully",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Click on 'LogIn' button",
+                    "extracted_data": [
+                        {
+                            "type": "button",
+                            "request_description": "Button to log in to the application",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='login-button']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to navigate to the login page",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[@class='_header_axbsj_1']/div/a[2]/img"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to log in to the user's account",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='login-button']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to log in to the user account",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']//button"
+                        }
+                    ]
+                }
+            ],
+            "token": {
+                "completion_tokens": 343,
+                "prompt_tokens": 32347,
+                "total_tokens": 32690,
+                "completion_tokens_details": null,
+                "prompt_tokens_details": null
+            },
+            "dispatcher": {
+                "memory_usage_MB": 0.01953125,
+                "peak_memory_MB": 0.01953125,
+                "start_time": "2025-04-20T18:02:43.201703",
+                "end_time": "2025-04-20T18:02:47.033120",
+                "duration_seconds": 3.831417
+            }
+        },
+        {
+            "url": "http://localhost:5173/LogIn",
+            "purpose": "Log In page for navigating to Sign Up",
+            "execution_steps": [
+                {
+                    "step": "Verify 'Log In' is visible",
+                    "extracted_data": [
+                        {
+                            "type": "button",
+                            "request_description": "'Log In' button to submit the login form",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='login-button']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "'Log In' button to submit the login form",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='login-button']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "'Log In' button to initiate the login process",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']//button"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "'Log In' heading visible to the user",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']/div[1]"
+                        }
+                    ]
+                },
+                {
+                    "step": "Click on 'SignUp' button",
+                    "extracted_data": [
+                        {
+                            "type": "button",
+                            "request_description": "'Sign Up' button to navigate to the sign-up page",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='signup-button']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "'Sign Up' button to navigate to the sign-up page",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='signup-button']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "'Sign Up' button to navigate to the sign-up page",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_log_in_lv82k_1']//a[contains(text(), 'Sign Up')]"
+                        },
+                        {
+                            "type": "a",
+                            "request_description": "Link to navigate to the Sign Up page",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='root']//p/a[contains(text(), 'Sign Up')]"
+                        }
+                    ]
+                }
+            ],
+            "token": {
+                "completion_tokens": 619,
+                "prompt_tokens": 25965,
+                "total_tokens": 26584,
+                "completion_tokens_details": null,
+                "prompt_tokens_details": null
+            },
+            "dispatcher": {
+                "memory_usage_MB": 0.0,
+                "peak_memory_MB": 0.0,
+                "start_time": "2025-04-20T18:02:53.171288",
+                "end_time": "2025-04-20T18:02:56.474824",
+                "duration_seconds": 3.303536
+            }
+        },
+        {
+            "url": "http://localhost:5173/SignUp",
+            "purpose": "Sign Up page for user registration",
+            "execution_steps": [
+                {
+                    "step": "Verify 'Sign Up' is visible",
+                    "extracted_data": [
+                        {
+                            "type": "div",
+                            "request_description": "Container for the Sign Up header",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_sign_up_1u6og_1']/div[1]"
+                        }
+                    ]
+                },
+                {
+                    "step": "Enter first name, last name, email, confirm email, password, and confirm password",
+                    "extracted_data": [
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's first name",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']input[1]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's last name",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']input[2]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']input[3]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to confirm the user's email",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']input[4]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's password",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']input[5]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to confirm the user's password",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']input[6]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's first name",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/input[1]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's last name",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/input[2]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/input[3]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to confirm the user's email",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/input[4]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's password",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/input[5]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to confirm the user's password",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/input[6]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's first name",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/input[1]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's last name",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/input[2]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/input[3]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to confirm the user's email",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/input[4]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's password",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/input[5]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to confirm the user's password",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/input[6]"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's first name",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='input_nome']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's last name",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='input_sobrenome']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's email",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='input_email']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to confirm the user's email",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='input_confirmar_email']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to enter the user's password",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='input_senha']"
+                        },
+                        {
+                            "type": "input",
+                            "request_description": "Field to confirm the user's password",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='input_confirmar_senha']"
+                        }
+                    ]
+                },
+                {
+                    "step": "Click 'Sign Up' button",
+                    "extracted_data": [
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the sign-up form",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the sign-up form",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the sign-up form",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='form']/button"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Button to submit the Sign Up form",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='submit_form']"
+                        }
+                    ]
+                },
+                {
+                    "step": "Verify success message 'Registration completed successfully!' is visible",
+                    "extracted_data": [
+                        {
+                            "type": "div",
+                            "request_description": "Div to display the success message after registration",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='success-message']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div to display the success message after registration",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='success-message']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Div to display the success message after registration",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@id='success-message']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Container for the success message after registration",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//*[@class='_message_Feedback_1caxf_17']"
+                        }
+                    ]
+                }
+            ],
+            "token": {
+                "completion_tokens": 2361,
+                "prompt_tokens": 26145,
+                "total_tokens": 28506,
+                "completion_tokens_details": null,
+                "prompt_tokens_details": null
+            },
+            "dispatcher": {
+                "memory_usage_MB": 0.01953125,
+                "peak_memory_MB": 0.01953125,
+                "start_time": "2025-04-20T18:03:05.322127",
+                "end_time": "2025-04-20T18:03:14.077912",
+                "duration_seconds": 8.755785
+            }
+        }
+    ]
+}

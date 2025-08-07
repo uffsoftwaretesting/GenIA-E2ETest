@@ -1,0 +1,112 @@
+{
+    "testCase": "Verify Scroll Up and Scroll Down functionality",
+    "modules": [
+        {
+            "url": "http://automationexercise.com",
+            "purpose": "Landing page and initial actions for scrolling functionality testing.",
+            "execution_steps": [
+                {
+                    "step": "Launch browser",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Navigate to url 'http://automationexercise.com'",
+                    "extracted_data": []
+                },
+                {
+                    "step": "Verify that home page is visible successfully",
+                    "extracted_data": [
+                        {
+                            "type": "div",
+                            "request_description": "Container for the main content of the landing page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[@class='container']"
+                        },
+                        {
+                            "type": "header",
+                            "request_description": "Header section of the landing page containing navigation links.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//header[@id='header']"
+                        }
+                    ]
+                },
+                {
+                    "step": "Scroll down page to bottom",
+                    "extracted_data": [
+                        {
+                            "type": "section",
+                            "request_description": "Main section of the landing page with the slider for scrolling functionality.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//section[@id='slider']"
+                        }
+                    ]
+                },
+                {
+                    "step": "Verify 'SUBSCRIPTION' is visible",
+                    "extracted_data": [
+                        {
+                            "type": "div",
+                            "request_description": "Subscription section to verify visibility.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[@class='footer-widget']//h2[text()='Subscription']"
+                        },
+                        {
+                            "type": "div",
+                            "request_description": "Subscription section to verify visibility.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//div[contains(text(), 'SUBSCRIPTION')]"
+                        }
+                    ]
+                },
+                {
+                    "step": "Click on arrow at bottom right side to move upward",
+                    "extracted_data": [
+                        {
+                            "type": "a",
+                            "request_description": "Arrow button to scroll up the page.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[@id='scrollUp']"
+                        },
+                        {
+                            "type": "button",
+                            "request_description": "Arrow button at the bottom right side to scroll up.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//a[contains(@class, 'control-carousel') and contains(@class, 'right')]"
+                        }
+                    ]
+                },
+                {
+                    "step": "Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen",
+                    "extracted_data": [
+                        {
+                            "type": "h2",
+                            "request_description": "Text indicating the purpose of the website, to verify visibility after scrolling up.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]"
+                        },
+                        {
+                            "type": "h2",
+                            "request_description": "Text that should be visible after scrolling up.",
+                            "identifier_type": "XPath",
+                            "identifier_tracking": "//h2[contains(text(), 'Full-Fledged practice website for Automation Engineers')]"
+                        }
+                    ]
+                }
+            ],
+            "token": {
+                "completion_tokens": 678,
+                "prompt_tokens": 21009,
+                "total_tokens": 21687,
+                "completion_tokens_details": null,
+                "prompt_tokens_details": null
+            },
+            "dispatcher": {
+                "memory_usage_MB": -0.0078125,
+                "peak_memory_MB": -0.0078125,
+                "start_time": "2025-04-20T15:16:19.300630",
+                "end_time": "2025-04-20T15:16:26.660295",
+                "duration_seconds": 7.359665
+            }
+        }
+    ]
+}
