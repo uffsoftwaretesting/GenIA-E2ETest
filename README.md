@@ -169,7 +169,7 @@ If you use **GenIA-E2ETest** in your research or project, please cite:
 ```bibtex
 
 @inproceedings{junior2025genia,
-  author       = {Elvis Junior and Alan Valejo and Jorge Carlos Valverde-Rebaza and Vânia de Oliveira Neves},
+  author       = {Elvis Junior and Alan Valejo and Jorge C. Valverde-Rebaza and Vânia O. Neves},
   title        = {GenIA‑E2ETest: A Generative AI‑Based Approach for End‑to‑End Test Automation},
   booktitle    = {Proceedings of the XXXIX Brazilian Symposium on Software Engineering (SBES)},
   year         = {2025},
