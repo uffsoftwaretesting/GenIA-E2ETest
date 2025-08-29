@@ -96,13 +96,17 @@ cd GenIA-E2ETest
 
 2. **Configure your OpenAI API key**:
 ```bash
-cp .env.example .env
+copy .env.example .env
 # Edit the .env file and add your OpenAI API key
 ```
 
-3. **Activate a virtual environment**:
+3. **Create and activate a virtual environment**:
 ```bash
-source venv\Scripts\activate
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment
+.\venv\Scripts\Activate
 ```
 
 4. **Install dependencies and Playwright setup**:
@@ -116,8 +120,8 @@ playwright install-deps  # Optional: needed only for Linux systems
 ```bash
 cd TestCaseExamples
 # Create a new .feature file to describe your test scenario
-touch TestCase1.feature
-nano TestCase1.feature
+ni TestCase1.feature
+notepad TestCase1.feature
 ```
 
 5.1 **Example content for `TestCase1.feature`**:
