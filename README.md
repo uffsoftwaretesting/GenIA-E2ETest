@@ -177,8 +177,7 @@ If you use **GenIA-E2ETest** in your research or project, please cite:
   title        = {GenIA‑E2ETest: A Generative AI‑Based Approach for End‑to‑End Test Automation},
   booktitle    = {Proceedings of the XXXIX Brazilian Symposium on Software Engineering (SBES)},
   year         = {2025},
-  address      = {Recife-PE, Brazil},
-  note      = {To appear}
+  address      = {Recife-PE, Brazil}
 } 
 
 ```
