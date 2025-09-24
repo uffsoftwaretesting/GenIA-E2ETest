@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="geniaLogo.jpg" alt="Logo do Projeto" width="150"/>
+</p>
+
 # GenIA-E2ETest: A Generative AI-Based Approach for End-to-End Test Automation
 
 This repository contains the artifacts accompanying the paper:
