@@ -1,0 +1,17 @@
+[project]
+name = "genia-e2etest"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "crawl4ai==0.5.0.post8",
+    "jinja2>=3.1.0",
+    "langgraph>=0.2.0",
+    "openai==1.55.3",
+    "pydantic==2.10",
+    "python-dotenv==1.0.1",
+    "robotframework==7.0.1",
+    "robotframework-seleniumlibrary==6.6.1",
+    "tenacity>=9.1.2",
+]

@@ -1,0 +1,7 @@
+2026-02-09 12:35:20 - GenIA-E2ETest.__main__ - INFO - Starting GenIA E2E Test Generator...
+2026-02-09 12:35:20 - GenIA-E2ETest.src.graph.orchestrator - INFO - Building GenIA workflow graph...
+2026-02-09 12:35:20 - GenIA-E2ETest.src.graph.orchestrator - INFO - Workflow graph built successfully
+2026-02-09 12:35:22 - GenIA-E2ETest.src.graph.orchestrator - INFO - Workflow graph saved to: /home/allber/projects/GenIA-Refactor/TestCases/workflow.png
+2026-02-09 12:35:22 - GenIA-E2ETest.__main__ - INFO - Processing test case: App2-TestCase6.feature
+2026-02-09 12:35:22 - GenIA-E2ETest.__main__ - INFO - Attempt 1/3 for App2-TestCase6
+2026-02-09 12:35:22 - GenIA-E2ETest.src.graph.orchestrator - INFO - Starting workflow for test case: App2-TestCase6

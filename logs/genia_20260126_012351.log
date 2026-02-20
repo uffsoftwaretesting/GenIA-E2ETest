@@ -1,0 +1,90 @@
+2026-01-26 01:23:52 - GenIA-E2ETest.src.main - INFO - Starting GenIA E2E Test Generator...
+2026-01-26 01:23:52 - GenIA-E2ETest.src.graph.orchestrator - INFO - Building GenIA workflow graph...
+2026-01-26 01:23:52 - GenIA-E2ETest.src.graph.orchestrator - INFO - Workflow graph built successfully
+2026-01-26 01:23:52 - GenIA-E2ETest.src.main - INFO - Processing test case: App1-TestCase6.feature
+2026-01-26 01:23:52 - GenIA-E2ETest.src.main - INFO - Attempt 1/1 for App1-TestCase6
+2026-01-26 01:23:52 - GenIA-E2ETest.src.graph.orchestrator - INFO - Starting workflow for test case: App1-TestCase6
+2026-01-26 01:23:52 - GenIA-E2ETest.src.graph.nodes.restructuring - INFO - Starting test case restructuring...
+2026-01-26 01:24:01 - GenIA-E2ETest.src.graph.nodes.restructuring - INFO - Test case restructured successfully: 3 modules
+2026-01-26 01:24:01 - GenIA-E2ETest.src.graph.edges.route_after_restructuring - INFO - Saved refined test case to: /home/injunior/projects/GenIA-E2ETest/TestCases/App1-TestCase6/RefinedApp1-TestCase6.json
+2026-01-26 01:24:01 - GenIA-E2ETest.src.graph.nodes.extraction - INFO - Starting element extraction...
+2026-01-26 01:24:01 - GenIA-E2ETest.src.graph.nodes.extraction - INFO - Processing module 1/3: http://automationexercise.com
+2026-01-26 01:24:01 - GenIA-E2ETest.src.graph.agents.explorer - INFO - Extracting elements from: http://automationexercise.com
+2026-01-26 01:24:01 - GenIA-E2ETest.src.tools.browser - INFO - Creating new AsyncWebCrawler instance
+2026-01-26 01:24:02 - GenIA-E2ETest.src.tools.browser - INFO - Extracting elements from: http://automationexercise.com
+2026-01-26 01:24:08 - GenIA-E2ETest.src.graph.agents.explorer - INFO - Extraction completed for: http://automationexercise.com
+2026-01-26 01:24:08 - GenIA-E2ETest.src.graph.nodes.extraction - INFO - Extraction completed for module 1
+2026-01-26 01:24:08 - GenIA-E2ETest.src.graph.nodes.refinement - INFO - Starting element refinement...
+2026-01-26 01:24:08 - GenIA-E2ETest.src.graph.nodes.refinement - INFO - Refining module 1/3: http://automationexercise.com
+2026-01-26 01:24:08 - GenIA-E2ETest.src.graph.agents.refiner - INFO - Refining elements for: http://automationexercise.com
+2026-01-26 01:24:08 - GenIA-E2ETest.src.tools.browser - INFO - Extracting elements from: http://automationexercise.com
+2026-01-26 01:24:12 - GenIA-E2ETest.src.graph.agents.refiner - INFO - Refinement completed for: http://automationexercise.com
+2026-01-26 01:24:12 - GenIA-E2ETest.src.graph.nodes.refinement - INFO - Refinement completed for module 1
+2026-01-26 01:24:12 - GenIA-E2ETest.src.graph.nodes.extraction - INFO - Starting element extraction...
+2026-01-26 01:24:12 - GenIA-E2ETest.src.graph.nodes.extraction - INFO - Processing module 2/3: https://automationexercise.com/contact_us
+2026-01-26 01:24:12 - GenIA-E2ETest.src.graph.agents.explorer - INFO - Extracting elements from: https://automationexercise.com/contact_us
+2026-01-26 01:24:12 - GenIA-E2ETest.src.tools.browser - INFO - Extracting elements from: https://automationexercise.com/contact_us
+2026-01-26 01:24:28 - GenIA-E2ETest.src.graph.agents.explorer - INFO - Extraction completed for: https://automationexercise.com/contact_us
+2026-01-26 01:24:28 - GenIA-E2ETest.src.graph.nodes.extraction - INFO - Extraction completed for module 2
+2026-01-26 01:24:28 - GenIA-E2ETest.src.graph.nodes.refinement - INFO - Starting element refinement...
+2026-01-26 01:24:28 - GenIA-E2ETest.src.graph.nodes.refinement - INFO - Refining module 2/3: https://automationexercise.com/contact_us
+2026-01-26 01:24:28 - GenIA-E2ETest.src.graph.agents.refiner - INFO - Refining elements for: https://automationexercise.com/contact_us
+2026-01-26 01:24:28 - GenIA-E2ETest.src.tools.browser - INFO - Extracting elements from: https://automationexercise.com/contact_us
+2026-01-26 01:24:41 - GenIA-E2ETest.src.graph.agents.refiner - INFO - Refinement completed for: https://automationexercise.com/contact_us
+2026-01-26 01:24:41 - GenIA-E2ETest.src.graph.nodes.refinement - INFO - Refinement completed for module 2
+2026-01-26 01:24:41 - GenIA-E2ETest.src.graph.nodes.extraction - INFO - Starting element extraction...
+2026-01-26 01:24:41 - GenIA-E2ETest.src.graph.nodes.extraction - INFO - Processing module 3/3: http://automationexercise.com
+2026-01-26 01:24:41 - GenIA-E2ETest.src.graph.agents.explorer - INFO - Extracting elements from: http://automationexercise.com
+2026-01-26 01:24:41 - GenIA-E2ETest.src.tools.browser - INFO - Extracting elements from: http://automationexercise.com
+2026-01-26 01:24:45 - GenIA-E2ETest.src.graph.agents.explorer - INFO - Extraction completed for: http://automationexercise.com
+2026-01-26 01:24:45 - GenIA-E2ETest.src.graph.nodes.extraction - INFO - Extraction completed for module 3
+2026-01-26 01:24:45 - GenIA-E2ETest.src.graph.nodes.refinement - INFO - Starting element refinement...
+2026-01-26 01:24:45 - GenIA-E2ETest.src.graph.nodes.refinement - INFO - Refining module 3/3: http://automationexercise.com
+2026-01-26 01:24:45 - GenIA-E2ETest.src.graph.agents.refiner - INFO - Refining elements for: http://automationexercise.com
+2026-01-26 01:24:45 - GenIA-E2ETest.src.tools.browser - INFO - Extracting elements from: http://automationexercise.com
+2026-01-26 01:24:50 - GenIA-E2ETest.src.graph.agents.refiner - INFO - Refinement completed for: http://automationexercise.com
+2026-01-26 01:24:50 - GenIA-E2ETest.src.graph.nodes.refinement - INFO - All modules refined, moving to coding phase
+2026-01-26 01:24:50 - GenIA-E2ETest.src.graph.nodes.refinement - INFO - Refinement completed for module 3
+2026-01-26 01:24:50 - GenIA-E2ETest.src.graph.nodes.generation - INFO - Starting Robot Framework script generation...
+2026-01-26 01:24:50 - GenIA-E2ETest.src.graph.nodes.generation - INFO - Calling coder agent to generate Robot Framework script...
+2026-01-26 01:24:50 - GenIA-E2ETest.src.graph.agents.coder - INFO - Generating Robot Framework script...
+2026-01-26 01:24:57 - GenIA-E2ETest.src.graph.agents.coder - INFO - Robot Framework script generated successfully
+2026-01-26 01:24:57 - GenIA-E2ETest.src.graph.nodes.generation - INFO - Robot Framework script generated successfully
+2026-01-26 01:24:57 - GenIA-E2ETest.src.graph.orchestrator - INFO - Saving outputs to: /home/injunior/projects/GenIA-E2ETest/TestCases/App1-TestCase6/1.App1-TestCase6
+2026-01-26 01:24:57 - GenIA-E2ETest.src.tools.file_system - INFO - Wrote Robot Framework file: /home/injunior/projects/GenIA-E2ETest/TestCases/App1-TestCase6/1.App1-TestCase6/E2ETest.robot
+2026-01-26 01:24:57 - GenIA-E2ETest.src.graph.orchestrator - INFO - All outputs saved successfully
+2026-01-26 01:24:57 - GenIA-E2ETest.src.graph.orchestrator - INFO - Workflow completed for test case: App1-TestCase6
+2026-01-26 01:24:57 - GenIA-E2ETest.src.main - INFO - Successfully generated test for App1-TestCase6
+2026-01-26 01:24:57 - GenIA-E2ETest.src.main - INFO - Processing test case: App1-TestCase1.feature
+2026-01-26 01:24:57 - GenIA-E2ETest.src.main - INFO - Attempt 1/1 for App1-TestCase1
+2026-01-26 01:24:57 - GenIA-E2ETest.src.graph.orchestrator - INFO - Starting workflow for test case: App1-TestCase1
+2026-01-26 01:24:57 - GenIA-E2ETest.src.graph.nodes.restructuring - INFO - Starting test case restructuring...
+2026-01-26 01:25:03 - GenIA-E2ETest.src.graph.nodes.restructuring - INFO - Test case restructured successfully: 1 modules
+2026-01-26 01:25:03 - GenIA-E2ETest.src.graph.edges.route_after_restructuring - INFO - Saved refined test case to: /home/injunior/projects/GenIA-E2ETest/TestCases/App1-TestCase1/RefinedApp1-TestCase1.json
+2026-01-26 01:25:03 - GenIA-E2ETest.src.graph.nodes.extraction - INFO - Starting element extraction...
+2026-01-26 01:25:03 - GenIA-E2ETest.src.graph.nodes.extraction - INFO - Processing module 1/1: http://automationexercise.com
+2026-01-26 01:25:03 - GenIA-E2ETest.src.graph.agents.explorer - INFO - Extracting elements from: http://automationexercise.com
+2026-01-26 01:25:03 - GenIA-E2ETest.src.tools.browser - INFO - Extracting elements from: http://automationexercise.com
+2026-01-26 01:25:09 - GenIA-E2ETest.src.graph.agents.explorer - INFO - Extraction completed for: http://automationexercise.com
+2026-01-26 01:25:09 - GenIA-E2ETest.src.graph.nodes.extraction - INFO - Extraction completed for module 1
+2026-01-26 01:25:09 - GenIA-E2ETest.src.graph.nodes.refinement - INFO - Starting element refinement...
+2026-01-26 01:25:09 - GenIA-E2ETest.src.graph.nodes.refinement - INFO - Refining module 1/1: http://automationexercise.com
+2026-01-26 01:25:09 - GenIA-E2ETest.src.graph.agents.refiner - INFO - Refining elements for: http://automationexercise.com
+2026-01-26 01:25:09 - GenIA-E2ETest.src.tools.browser - INFO - Extracting elements from: http://automationexercise.com
+2026-01-26 01:25:19 - GenIA-E2ETest.src.graph.agents.refiner - INFO - Refinement completed for: http://automationexercise.com
+2026-01-26 01:25:19 - GenIA-E2ETest.src.graph.nodes.refinement - INFO - All modules refined, moving to coding phase
+2026-01-26 01:25:19 - GenIA-E2ETest.src.graph.nodes.refinement - INFO - Refinement completed for module 1
+2026-01-26 01:25:19 - GenIA-E2ETest.src.graph.nodes.generation - INFO - Starting Robot Framework script generation...
+2026-01-26 01:25:19 - GenIA-E2ETest.src.graph.nodes.generation - INFO - Calling coder agent to generate Robot Framework script...
+2026-01-26 01:25:19 - GenIA-E2ETest.src.graph.agents.coder - INFO - Generating Robot Framework script...
+2026-01-26 01:25:23 - GenIA-E2ETest.src.graph.agents.coder - INFO - Robot Framework script generated successfully
+2026-01-26 01:25:23 - GenIA-E2ETest.src.graph.nodes.generation - INFO - Robot Framework script generated successfully
+2026-01-26 01:25:23 - GenIA-E2ETest.src.graph.orchestrator - INFO - Saving outputs to: /home/injunior/projects/GenIA-E2ETest/TestCases/App1-TestCase1/1.App1-TestCase1
+2026-01-26 01:25:23 - GenIA-E2ETest.src.tools.file_system - INFO - Wrote Robot Framework file: /home/injunior/projects/GenIA-E2ETest/TestCases/App1-TestCase1/1.App1-TestCase1/E2ETest.robot
+2026-01-26 01:25:23 - GenIA-E2ETest.src.graph.orchestrator - INFO - All outputs saved successfully
+2026-01-26 01:25:23 - GenIA-E2ETest.src.graph.orchestrator - INFO - Workflow completed for test case: App1-TestCase1
+2026-01-26 01:25:23 - GenIA-E2ETest.src.main - INFO - Successfully generated test for App1-TestCase1
+2026-01-26 01:25:23 - GenIA-E2ETest.src.main - INFO - Processing test case: App1-TestCase3.feature
+2026-01-26 01:25:23 - GenIA-E2ETest.src.main - INFO - Attempt 1/1 for App1-TestCase3
+2026-01-26 01:25:23 - GenIA-E2ETest.src.graph.orchestrator - INFO - Starting workflow for test case: App1-TestCase3
+2026-01-26 01:25:23 - GenIA-E2ETest.src.graph.nodes.restructuring - INFO - Starting test case restructuring...
