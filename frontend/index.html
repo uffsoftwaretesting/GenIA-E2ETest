@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GenIA-E2eTest Platform</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="authPanel" class="auth-panel">
+    <section class="auth-container" aria-label="Autenticação">
+      <div class="auth-brand">
+        <div class="brand-mark">G</div>
+        <div>
+          <div class="auth-logo">GenIA-E2ETest</div>
+          <p class="auth-subtitle">Plataforma de geração e validação de testes</p>
+        </div>
+      </div>
+
+      <div class="auth-tabs">
+        <button class="tab-btn active" data-tab="login" type="button">Login</button>
+        <button class="tab-btn" data-tab="register" type="button">Cadastro</button>
+      </div>
+
+      <form id="loginForm" class="auth-form active" data-form="login">
+        <h1>Bem-vindo de volta</h1>
+        <div class="form-group">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" placeholder="seu@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Senha</label>
+          <input type="password" id="loginPassword" placeholder="••••••••" required />
+        </div>
+        <button type="submit" class="btn-primary">Entrar</button>
+      </form>
+
+      <form id="registerForm" class="auth-form" data-form="register">
+        <h1>Criar conta</h1>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="registerFirstName">Nome</label>
+            <input type="text" id="registerFirstName" required />
+          </div>
+          <div class="form-group">
+            <label for="registerLastName">Sobrenome</label>
+            <input type="text" id="registerLastName" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="registerEmail">Email</label>
+          <input type="email" id="registerEmail" required />
+        </div>
+        <div class="form-group">
+          <label for="registerBirthDate">Data de nascimento</label>
+          <input type="date" id="registerBirthDate" required />
+        </div>
+        <div class="form-group">
+          <label for="registerPassword">Senha</label>
+          <input type="password" id="registerPassword" required />
+        </div>
+        <div class="form-group">
+          <label for="registerConfirmPassword">Confirmar senha</label>
+          <input type="password" id="registerConfirmPassword" required />
+        </div>
+        <button type="submit" class="btn-primary">Cadastrar</button>
+      </form>
+    </section>
+  </div>
+
+  <div id="appPanel" class="app-panel">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-mark">G</div>
+        <span class="brand-text">GenIA-E2ETest</span>
+        <img class="geniaLogoPanel" src="geniaLogo.jpg">
+      </div>
+
+      <div class="sidebar-user">
+        <div class="label">Usuário</div>
+        <div class="email" id="userEmail">—</div>
+      </div>
+
+      <nav class="sidebar-nav" aria-label="Navegação principal">
+        <div class="nav-section">
+          <button class="nav-item active" data-screen="dashboard" type="button">
+            <span class="nav-icon">▣</span>
+            Dashboard
+          </button>
+        </div>
+
+        <div class="nav-section">
+          <button class="nav-item" data-screen="llm-config" type="button">
+            <span class="nav-icon">◌</span>
+            Config. LLM
+          </button>
+        </div>
+
+        <div class="nav-section">
+          <button class="nav-item" id="genTestNavBtn" data-screen="test-generator" type="button">
+            <span class="nav-icon">✦</span>
+            Gerar Testes
+            <span class="nav-chevron">›</span>
+          </button>
+          <div class="nav-sub" id="genTestSub">
+            <button class="nav-sub-item" data-screen="test-generator" data-section="input-type" type="button">Tipo de entrada</button>
+            <button class="nav-sub-item" data-screen="test-generator" data-section="project-section" type="button">Projeto</button>
+            <button class="nav-sub-item" data-screen="test-generator" data-section="framework-section" type="button">Framework / linguagem</button>
+            <button class="nav-sub-item" data-screen="test-generator" data-section="prompts-section" type="button">Prompts</button>
+          </div>
+        </div>
+
+        <div class="nav-section">
+          <button class="nav-item" data-screen="history" type="button">
+            <span class="nav-icon">◔</span>
+            Histórico
+          </button>
+        </div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <img class="geniaLogo" src="geniaLogo.jpg">
+        <button id="logoutBtn" class="btn-logout" type="button">
+          <span class="nav-icon">↩</span>
+          Sair
+        </button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section id="dashboard" class="screen active">
+        <header class="page-header">
+            <h2>Dashboard</h2>
+            <p>Visão geral dos testes gerados</p> 
+        </header>
+
+        <div class="filter-bar">
+          <select id="dashboardProjectFilter" class="filter-select"><option value="">Todos os projetos</option></select>
+          <select id="dashboardFrameworkFilter" class="filter-select">
+            <option value="">Todos os frameworks</option>
+            <option value="robotframework">Robot Framework</option>
+            <option value="playwright">Playwright</option>
+            <option value="cypress">Cypress</option>
+            <option value="junit">JUnit</option>
+            <option value="pytest">Pytest</option>
+            <option value="selenium">Selenium</option>
+          </select>
+          <select id="dashboardModelFilter" class="filter-select"><option value="">Todos os modelos</option></select>
+          <select id="dashboardStatusFilter" class="filter-select">
+            <option value="">Todos os status</option>
+            <option value="success">Sucesso</option>
+            <option value="error">Erro</option>
+          </select>
+          <select id="dashboardPeriodFilter" class="filter-select">
+            <option value="">Período</option>
+            <option value="24h">Últimas 24h</option>
+            <option value="7d">Últimos 7 dias</option>
+            <option value="30d">Últimos 30 dias</option>
+          </select>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card"><div class="stat-value" id="totalTests">0</div><div class="stat-label">Scripts gerados</div></div>
+          <div class="stat-card"><div class="stat-value" id="failureRate">0%</div><div class="stat-label">Taxa de falhas</div></div>
+          <div class="stat-card"><div class="stat-value" id="avgDuration">0s</div><div class="stat-label">Tempo médio</div></div>
+          <div class="stat-card"><div class="stat-value" id="popularFramework">—</div><div class="stat-label">Framework mais usado</div></div>
+          <div class="stat-card"><div class="stat-value" id="popularModel">—</div><div class="stat-label">Modelo mais usado</div></div>
+          <div class="stat-card"><div class="stat-value" id="customPromptRate">0%</div><div class="stat-label">Prompts customizados</div></div>
+          <div class="stat-card"><div class="stat-value" id="llmProviderCard">—</div><div class="stat-label">Provedor LLM</div></div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Métricas por projeto</div>
+          <div id="projectMetrics"><p class="empty-state">Nenhum resultado disponível</p></div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Testes recentes</div>
+          <div id="recentTestsList"><p class="empty-state">Nenhum teste executado ainda</p></div>
+        </div>
+      </section>
+
+      <section id="llm-config" class="screen">
+        <header class="page-header">
+          <h2>Configuração LLM</h2>
+          <p>Salve múltiplas configurações e selecione ao gerar testes</p>
+        </header>
+
+        <div class="card">
+          <div class="card-title">Configurações salvas</div>
+          <div id="llmConfigsList" class="llm-configs-list">
+            <p class="empty-state" id="noConfigsMsg">Nenhuma configuração salva</p>
+          </div>
+          <button type="button" id="newLLMConfigBtn" class="btn-secondary" style="margin-top: 2rem;">+ Nova configuração</button>
+        </div>
+
+        <div class="card" id="llmFormCard">
+          <div class="card-title" id="llmFormTitle">Nova configuração</div>
+          <div id="llmConfigForm">
+            <input type="hidden" id="editingConfigId" value="" />
+
+            <div class="form-group">
+              <label for="llmConfigName">Nome da configuração</label>
+              <input type="text" id="llmConfigName" placeholder="Ex: LLM do Projeto X" required />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="llmProvider">Provedor</label>
+                <select id="llmProvider" required>
+                  <option value="">Selecione</option>
+                  <option value="openai">OpenAI</option>
+                  <option value="gemini">Gemini</option>
+                  <option value="claude">Claude</option>
+                  <option value="cohere">Cohere</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="llmModel">Modelo</label>
+                <select id="llmModel" required disabled>
+                  <option value="">Selecione um provedor</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="llmApiKey">API Key</label>
+              <div class="input-group">
+                <input type="password" id="llmApiKey" placeholder="sk-..." required />
+                <button type="button" id="toggleApiKey" class="btn-toggle-visibility">👁</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="llmTemperature">Temperatura</label>
+              <div class="range-row">
+                <input type="range" id="llmTemperature" min="0" max="1" step="0.1" value="0" />
+                <span class="range-value" id="temperatureValue">0</span>
+              </div>
+            </div>
+
+            <div class="button-row">
+              <button type="button" id="saveLLMConfigBtn" class="btn-primary btn-primary-inline">Salvar</button>
+              <button type="button" id="cancelLLMConfigBtn" class="btn-secondary">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="test-generator" class="screen">
+        <header class="page-header">
+          <h2>Gerar teste E2E</h2>
+          <p>Configure e execute o pipeline de geração</p>
+        </header>
+
+        <div class="generator-layout">
+          <section class="section-card" id="input-type">
+            <h3>Tipo de entrada</h3>
+            <div class="radio-group">
+              <label class="radio-option"><input type="radio" name="inputMode" value="free" checked /> Entrada livre</label>
+              <label class="radio-option"><input type="radio" name="inputMode" value="structured" /> Entrada estruturada</label>
+            </div>
+
+            <div id="freeTextSection">
+              <div class="radio-group">
+                <label class="radio-option"><input type="radio" name="inputType" value="testcase" checked /> Caso de teste</label>
+                <label class="radio-option"><input type="radio" name="inputType" value="gherkin" /> História de usuário</label>
+              </div>
+              <div id="testCaseGroup" class="form-group">
+                <label for="freeTextInput">Caso de teste</label>
+                <textarea id="freeTextInput" rows="5" placeholder="Descreva o caso de teste com as URLs de cada página."></textarea>
+              </div>
+              <div id="gherkinGroup" class="gherkin-panel hidden">
+                <div class="gherkin-panel-head">
+                  <div>
+                    <label for="gherkinInput">História de usuário (Gherkin)</label>
+                    <p class="helper-text">Anexe um arquivo `.feature` ou `.txt`:</p>
+                  </div>
+                  <div class="gherkin-file-wrap">
+                    <label for="gherkinFileInput" class="btn-secondary btn-file">Anexar arquivo</label>
+                    <input type="file" id="gherkinFileInput" accept=".feature,.txt,text/plain,.feature,text/plain" hidden />
+                    <span class="gherkin-file-name" id="gherkinFileName">Nenhum arquivo selecionado</span>
+                  </div>
+                </div>
+                <textarea id="gherkinInput" rows="5" placeholder="Feature: ...&#10;Scenario: ..."></textarea>
+                <div class="form-group">
+                  <label for="gherkinUrlsInput">URLs manuais da história de usuário</label>
+                  <textarea id="gherkinUrlsInput" rows="3" placeholder="https://site.com/login&#10;https://site.com/signup"></textarea>
+                  <p class="helper-text">As URLs serão combinadas com as encontradas no texto para alimentar a etapa de estruturação.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="structuredSection" class="hidden">
+              <div class="form-group">
+                <label for="structuredTitle">Título do caso de teste</label>
+                <input type="text" id="structuredTitle" placeholder="Ex: Login com credenciais inválidas" />
+              </div>
+              <div id="structuredModules"></div>
+              <button type="button" id="addModuleBtn" class="btn-secondary">+ Adicionar módulo</button>
+            </div>
+          </section>
+
+          <section class="section-card" id="project-section">
+            <h3>Projeto</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="projectSelect">Selecionar projeto</label>
+                <select id="projectSelect">
+                  <option value="">Selecionar projeto</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="newProjectName">Novo projeto</label>
+                <div class="input-group">
+                  <input type="text" id="newProjectName" placeholder="Nome do projeto" />
+                  <button type="button" id="createProjectBtn" class="btn-secondary">Criar</button>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="testCaseName">Nome do teste</label>
+              <input type="text" id="testCaseName" placeholder="Ex: Login inválido" required />
+            </div>
+          </section>
+
+          <section class="section-card" id="framework-section">
+            <h3>Framework / linguagem</h3>
+            <div class="form-row" style="gap: 0rem">
+              <div class="form-group">
+                <label for="testFramework">Framework</label>
+                <select id="testFramework" required>
+                  <option value="">Selecione</option>
+                  <option value="robotframework">Robot Framework</option>
+                  <option value="playwright">Playwright</option>
+                  <option value="cypress">Cypress</option>
+                  <option value="junit">JUnit</option>
+                  <option value="pytest">Pytest</option>
+                  <option value="selenium">Selenium</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="testLanguage">Linguagem</label>
+                <select id="testLanguage" disabled required>
+                  <option value="">Selecione framework</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-card" id="prompts-section">
+            <h3>Prompts</h3>
+            <p class="helper-text">Customize os prompts de cada etapa do pipeline, ou use os padrões do backend</p>
+            <div class="prompt-llm-panel">
+              <div class="prompt-llm-panel-head">
+                <div>
+                  <h4>LLM global</h4>
+                  <p>Esta configuração é herdada por todas as etapas, a menos que você escolha um modelo específico no card da etapa.</p>
+                </div>
+              </div>
+              <div id="llmSelectorList" class="llm-selector-list">
+                <p class="empty-state">Nenhuma configuração de LLM salva. Configure em <strong>Config. LLM</strong>.</p>
+              </div>
+            </div>
+            <div id="promptsAccordion" class="stack"></div>
+          </section>
+
+          <button type="button" id="generateTestBtn" class="btn-generate">Gerar teste</button>
+          <div id="generationResults" class="generation-results" style="display:none;"></div>
+        </div>
+      </section>
+
+      <section id="history" class="screen">
+        <header class="page-header">
+          <h2>Histórico</h2>
+          <p>Todos os testes gerados</p>
+        </header>
+
+        <div class="filter-bar">
+          <input type="text" id="historySearch" class="search-input" placeholder="Buscar por nome, projeto..." />
+          <select id="historyFilter" class="filter-select">
+            <option value="">Todos</option>
+            <option value="success">Sucesso</option>
+            <option value="error">Erro</option>
+          </select>
+        </div>
+
+        <div id="historyList" class="history-list">
+          <p class="empty-state">Nenhum teste encontrado</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast-container" class="toast-container"></div>
+
+  <script src="scripts/core/constants.js" defer></script>
+  <script src="scripts/core/dom.js" defer></script>
+  <script src="scripts/core/utils.js" defer></script>
+  <script src="scripts/core/state.js" defer></script>
+  <script src="scripts/ui/toast.js" defer></script>
+  <script src="scripts/ui/layout.js" defer></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="scripts/services/api.js" defer></script>
+  <script src="scripts/services/auth.js" defer></script>
+  <script src="scripts/services/generation.js" defer></script>
+  <script src="scripts/features/navigation.js" defer></script>
+  <script src="scripts/features/dashboard.js" defer></script>
+  <script src="scripts/features/history.js" defer></script>
+  <script src="scripts/features/llm-config.js" defer></script>
+  <script src="scripts/features/generator.js" defer></script>
+  <script src="scripts/features/auth.js" defer></script>
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>

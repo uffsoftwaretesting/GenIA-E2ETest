@@ -1,0 +1,39 @@
+{"role": "system",
+ "content": "You are a senior QA automation engineer specialized in Robot Framework with SeleniumLibrary. Generate production-ready E2E tests that run reliably on Linux servers and containerized environments such as Render."},
+{"role": "user",
+ "content": f"""
+Based on the following structured test case and refined HTML element data:
+{Refined JSON structure with ac- curate, unambiguous UI element data optimized for robust end-to-end test execution}
+
+Generate a complete Robot Framework E2E test script using Python and SeleniumLibrary.
+
+HARD REQUIREMENTS:
+- The script must be executable on Linux/headless environments such as Render.
+- Use headless Chrome configuration explicitly.
+- Use a real ChromeOptions object. Do not pass a plain string, list, or comma-separated text to the `options=` argument.
+- If you define a browser bootstrap, define `Open Headless Browser` and call it from `Suite Setup`.
+- Inside `Open Headless Browser`, create `ChromeOptions` with `Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium`.
+- Add each Chrome argument by first storing it in a Robot variable, then passing that variable to `Call Method`. Example:
+  - `${headless_arg}=    Set Variable    --headless=new`
+  - `Call Method    ${chrome_options}    add_argument    ${headless_arg}`
+- Include Chrome arguments at minimum:
+  - --headless=new
+  - --no-sandbox
+  - --disable-dev-shm-usage
+  - --window-size=1920,1080
+- If available, use the environment variable `CHROME_BIN` to set the browser binary location on the ChromeOptions object with `Evaluate    setattr($chrome_options, 'binary_location', $chrome_bin)`.
+- If you need the Chrome binary path in `*** Variables ***`, use Robot environment variable syntax `%{CHROME_BIN}` instead of `${CHROME_BIN}`.
+- Do not use a custom helper keyword named `Create Webdriver`.
+- Do not use the deprecated old Robot Framework `:FOR` loop syntax.
+- If a loop is needed, use only the modern `FOR    ...    END` syntax.
+- Use only valid Robot Framework + SeleniumLibrary keywords.
+- Do not use Playwright/Cypress/JavaScript keywords such as `Navigate To`, `cy.visit`, `describe`, `it`, `expect`, or similar non-Robot syntax.
+- Prefer Robot keywords like `Go To`, `Open Browser`, `Input Text`, `Click Element`, `Wait Until Element Is Visible`, `Page Should Contain`, and `Page Should Contain Element`.
+- Make sure browser initialization is compatible with Selenium on Linux.
+- Use robust waits and stable selectors.
+- Keep the test self-contained and executable.
+- Prefer a simple suite setup with direct SeleniumLibrary usage rather than custom helper keywords.
+- Never generate raw backslashes inside JSON strings; when returning code in JSON, all backslashes must be escaped correctly.
+- Return only raw Robot Framework code, no markdown, no explanations.
+- The output must start with `*** Settings ***`.
+"""}

@@ -1,0 +1,53 @@
+"""Compatibility facade for the application layer."""
+
+from backend.application.pipeline import (
+    ConfirmationStage,
+    ExecutionStage,
+    ExtractionStage,
+    FinalizationStage,
+    GenIAOrchestrator,
+    GenerationStage,
+    HomologationStage,
+    RefactoringStage,
+    RefinementStage,
+    StructuringStage,
+    TestCase,
+    ValidationStage,
+    validate_llm_connection,
+    get_available_frameworks,
+    get_framework_languages,
+    map_extracted_data_to_steps,
+)
+from backend.domain.models import (
+    ExecutionResult,
+    ExecutionStep,
+    ExtractedElement,
+    Module,
+    PipelineSessionState,
+    PipelineStage,
+)
+
+__all__ = [
+    "ConfirmationStage",
+    "ExecutionResult",
+    "ExecutionStage",
+    "ExecutionStep",
+    "ExtractionStage",
+    "ExtractedElement",
+    "FinalizationStage",
+    "GenIAOrchestrator",
+    "GenerationStage",
+    "HomologationStage",
+    "Module",
+    "PipelineSessionState",
+    "PipelineStage",
+    "RefactoringStage",
+    "RefinementStage",
+    "StructuringStage",
+    "TestCase",
+    "ValidationStage",
+    "get_available_frameworks",
+    "get_framework_languages",
+    "map_extracted_data_to_steps",
+    "validate_llm_connection",
+]

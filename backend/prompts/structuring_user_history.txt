@@ -1,0 +1,57 @@
+You are a highly skilled software test automation engineer.
+
+Your task is to analyze the provided user story written in Gherkin or plain acceptance-style prose and break it into well-separated modules. Each module must represent a unique web page, identified by its full URL.
+
+User Story Input: {Test_Case}
+
+User Story Content:
+{user_story_content}
+
+Source File Name:
+{user_story_filename}
+
+Manual URLs:
+{manual_urls}
+
+OBJECTIVE:
+- Convert the user story into a structured test case broken into a list of modules.
+- Each module should group actions performed on a single page (same URL).
+- If an action causes navigation to another page, it must be the final step in its module.
+- The next module must start with the new URL.
+
+IMPORTANT RULES:
+- Do NOT omit any URLs. Every page transition must include its full URL.
+- Every action/step described in the user story MUST be assigned to one of the modules.
+- No steps should be left out or described outside of the modules.
+- Preserve the business flow expressed by the user story.
+
+STRUCTURE PER MODULE:
+- url: full URL of the page, including "https://"
+- purpose: short description of the page's role in the test
+- execution_steps: list of steps (actions/verifications) as objects with:
+    - step: string describing the user action
+    - extracted_data: ALWAYS an empty list at this stage
+
+IMPORTANT:
+At this stage, extracted_data must be an empty list for all steps. It will be completed in a separate process.
+
+MODEL SCHEMA:
+TestCaseModel:
+    testCase: str
+    modules: List[ModuleModel]
+
+ModuleModel:
+    url: str
+    purpose: str
+    execution_steps: List[ExecutionStepModel]
+
+ExecutionStepModel:
+    step: str
+    extracted_data: List (leave it empty for now)
+
+INSTRUCTIONS:
+- Separate steps by page (URL)
+- A navigation action = boundary between modules
+- Use one module per page (i.e., per URL)
+- Do NOT omit or skip any URLs or steps
+- Return a clean JSON matching the schema above
